@@ -4,6 +4,6 @@
         "preloadImg": "{{ image }}",
         "permalink": "/portfolio/{{ url | slug }}/index.html"
     },
-    "tags": "post",
+    "tags": "project",
     "preloadCSS": "/assets/css/blog.css"
 }
