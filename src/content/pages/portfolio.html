@@ -8,25 +8,10 @@ eleventyNavigation:
     order: 300
 ---
 
-{# 
-    The starter kit uses the eleventy navigation plugin to render navigation items using data defined within the page,
-    making the navigation easy to control in larger projects.
-    https://www.11ty.dev/docs/plugins/navigation/
-
-    In the starter kit, dropdowns are created by defining a "parent" in the eleventyNavigation frontmatter data of the child
-    page (see pages/project-one.html as an example).
-
-    To create the dropdown "parent", which gets rendered as a <span> (as opposed to an <a>) we need to create a blank HTML
-    file with the eleventyNavigation frontmatter defined, as shown in this example file.
-
-    Make sure the permalink is set to "false", which prevents a HTML file being made in /public and keeps this page from
-    being written to the sitemap.
-#}
-
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
 {% endblock %}
 
 {% block body %}
@@ -41,51 +26,63 @@ eleventyNavigation:
             <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
             <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
         </picture>
-
     </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--              Main Blog Content               -->
     <!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+    <div class="blog-container main-content-wrapper">
+        <!--Main content -->
+        <div class="main-content">
+            <!-- ============================================ -->
+            <!--                 Blog Articles                -->
+            <!-- ============================================ -->
+
+            {% if collections.post | length == 0 %}
+                <h1>No Recent Posts</h1>
+            {% else %}
+                {%- for post in collections.post | reverse -%}
+                    <article class="recent-articles">
+                        <!--Main Article Image-->
+                        <picture class="blog-mainImage">
+                            <img
+                            src="{{ post.data.image }}"
+                            alt="{{ post.data.imageAlt }}"
+                            width="795"
+                            height="400"
+                            decoding="async"/>
+                        </picture>
+                        <!--Article Info-->
+                        <div class="article-group">
+                            <div class="blog-authorGroup">
+                                <!--Author Image-->
+                                <picture class="blog-author-img">
+                                    <img
+                                    src="/assets/svgs/profile.svg"
+                                    alt="house"
+                                    width="32"
+                                    height="32"
+                                    decoding="async"/>
+                                </picture>
+                                <span class="blog-author">{{ post.data.author }}</span>
+                                <span aria-hidden="true" class="blog-dot"></span>
+                                <!--Blog Date-->
+                                <span class="blog-date">{{ post.date | postDate }}</span>
+                            </div>
+                            <h2 class="blog-h1">
+                                {{ post.data.title }}
+                            </h2>
+                            <p class="blog-desc">
+                                {{ post.data.description }}
+                            </p>
+                            <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+                        </div>
+                    </article>
+                {%- endfor -%}
+            {% endif %}
         </div>
-    </section>
 
-    {% include 'components/cta.html' %}
-
+        {% include 'components/featured-post.html' %}
+    </div>
 {% endblock %}
