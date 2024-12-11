@@ -39,16 +39,16 @@ eleventyNavigation:
             <!--                 Projects                -->
             <!-- ============================================ -->
 
-            {% if collections.post | length == 0 %}
-                <h1>No Recent Posts</h1>
+            {% if collections.project | length == 0 %}
+                <h1>No Recent Projects</h1>
             {% else %}
-                {%- for post in collections.post | reverse -%}
+                {%- for project in collections.project | reverse -%}
                     <article class="recent-articles">
                         <!--Main Article Image-->
                         <picture class="blog-mainImage">
                             <img
-                            src="{{ post.data.image }}"
-                            alt="{{ post.data.imageAlt }}"
+                            src="{{ project.data.image }}"
+                            alt="{{ project.data.imageAlt }}"
                             width="795"
                             height="400"
                             decoding="async"/>
@@ -65,16 +65,16 @@ eleventyNavigation:
                                     height="32"
                                     decoding="async"/>
                                 </picture>
-                                <span class="blog-author">{{ post.data.author }}</span>
+                                <span class="blog-author">{{ project.data.author }}</span>
                                 <span aria-hidden="true" class="blog-dot"></span>
                                 <!--Blog Date-->
-                                <span class="blog-date">{{ post.date | postDate }}</span>
+                                <span class="blog-date">{{ project.date | projectDate }}</span>
                             </div>
                             <h2 class="blog-h1">
-                                {{ post.data.title }}
+                                {{ project.data.title }}
                             </h2>
                             <p class="blog-desc">
-                                {{ post.data.description }}
+                                {{ project.data.description }}
                             </p>
                             <a href="{{ project.url }}" class="blog-link">Continue Reading</a>
                         </div>
