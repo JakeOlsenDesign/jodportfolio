@@ -1,5 +1,5 @@
 {
-    "layout": "layouts/post.html",
+    "layout": "layouts/project.html",
     "eleventyComputed": {
         "preloadImg": "{{ image }}",
         "permalink": "/portfolio/{{ url | slug }}/index.html"
