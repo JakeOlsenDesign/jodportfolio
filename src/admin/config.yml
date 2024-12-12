@@ -16,19 +16,19 @@ collections:
       create: true
       slug: "{{slug}}"
       fields:
-          - { label: "Title", name: "title", widget: "string" required:false }
+          - { label: "Title", name: "title", widget: "string", required: "false" }
           - {
                 label: "URL Slug",
                 name: "url",
-                widget: "string" required:false,
+                widget: "string", required: "false",
                 hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
             }
-          - { label: "Description", name: "description", widget: "string" required:false }
-          - { label: "Author", name: "author", widget: "string" required:false }
+          - { label: "Description", name: "description", widget: "string", required: "false" }
+          - { label: "Author", name: "author", widget: "string", required: "false" }
           - { label: "Date", name: "date", widget: "datetime" }
           - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
           - { label: "Featured Image", name: "image", widget: "image" }
-          - { label: "Image Caption", name: "imageAlt", widget: "string" required:false }
+          - { label: "Image Caption", name: "imageAlt", widget: "string", required: "false" }
           - { label: "Body", name: "body", widget: "markdown" }
     - name: "projects"
       label: "Projects"
@@ -36,40 +36,40 @@ collections:
       create: true
       slug: "{{slug}}"
       fields:
-          - { label: "Title", name: "title", widget: "string" required:false }
+          - { label: "Title", name: "title", widget: "string", required: "false" }
           - {
                 label: "URL Slug",
                 name: "url",
-                widget: "string" required:false,
+                widget: "string", required: "false",
                 hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
             }
-          - { label: "Author", name: "author", widget: "string" required:false }
+          - { label: "Author", name: "author", widget: "string", required: "false" }
           - { label: "Date", name: "date", widget: "datetime" }
           - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
-          - { label: "Description", name: "description", widget: "string" required:false }
+          - { label: "Description", name: "description", widget: "string", required: "false" }
           - { label: "Description Image", name: "descriptionimage", widget: "image" }
           - { label: "Featured Image", name: "image", widget: "image" }
-          - { label: "Image Caption", name: "imageAlt", widget: "string" required:false }
-          - { label: "Objective", name: "objective", widget: "string" required:false }
-          - { label: "Goals", name: "goals", widget: "string" required:false }
+          - { label: "Image Caption", name: "imageAlt", widget: "string", required: "false" }
+          - { label: "Objective", name: "objective", widget: "string", required: "false" }
+          - { label: "Goals", name: "outcome", widget: "string", required: "false" }
           - { label: "Project Image 1", name: "pi1", widget: "image" }
           - { label: "Project Image 2", name: "pi2", widget: "image" }
-          - { label: "Services", name: "services", widget: "string" required:false }
-          - { label: "Role", name: "role", widget: "string" required:false }
-          - { label: "Team", name: "team", widget: "string" required:false }
-          - { label: "Background", name: "background", widget: "string" required:false }
-          - { label: "Market Analysis", name: "ma", widget: "string" required:false }
+          - { label: "Services", name: "services", widget: "string", required: "false" }
+          - { label: "Role", name: "role", widget: "string", required: "false" }
+          - { label: "Team", name: "team", widget: "string", required: "false" }
+          - { label: "Background", name: "background", widget: "string", required: "false" }
+          - { label: "Market Analysis", name: "ma", widget: "string", required: "false" }
           - { label: "MA Image 1", name: "ma1", widget: "image" }
           - { label: "MA Image 2", name: "ma2", widget: "image" }
           - { label: "MA Image 3", name: "ma3", widget: "image" }
-          - { label: "Branding", name: "branding", widget: "string" required:false }
+          - { label: "Branding", name: "branding", widget: "string", required: "false" }
           - { label: "Brand Image 1", name: "b1", widget: "image" }
           - { label: "Brand Image 2", name: "b2", widget: "image" }
           - { label: "Brand Image 3", name: "b3", widget: "image" }
           - { label: "Brand Image 4", name: "b4", widget: "image" }
-          - { label: "Web Design", name: "webdesign", widget: "string" required:false }
+          - { label: "Web Design", name: "webdesign", widget: "string", required: "false" }
           - { label: "WD Image 1", name: "wd1", widget: "image" }
           - { label: "WD Image 2", name: "wd2", widget: "image" }
           - { label: "WD Image 3", name: "wd3", widget: "image" }
           - { label: "WD Image 4", name: "wd4", widget: "image" }
-          - { label: "Outcome", name: "outcome", widget: "string" required:false }
+          - { label: "Outcome", name: "outcome", widget: "string", required: "false" }
