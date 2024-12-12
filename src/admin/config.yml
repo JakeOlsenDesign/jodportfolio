@@ -58,8 +58,7 @@ collections:
           - { label: "Role", name: "role", widget: "string" }
           - { label: "Team", name: "team", widget: "string" }
           - { label: "Background", name: "background", widget: "string" }
-          - { label: "Team", name: "team", widget: "string" }
-          - { label: "Market Analysis", name: "team", widget: "string" }
+          - { label: "Market Analysis", name: "ma", widget: "string" }
           - { label: "MA Image 1", name: "ma1", widget: "image" }
           - { label: "MA Image 2", name: "ma2", widget: "image" }
           - { label: "MA Image 3", name: "ma3", widget: "image" }
