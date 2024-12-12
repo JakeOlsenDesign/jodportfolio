@@ -118,4 +118,4 @@ function scrollFunction() {
 }
 
 // Adjust margin for the title header
-document.getElementById('titleHeader').style.marginTop = navbarHeight + 'px';
+// document.getElementById('titleHeader').style.marginTop = navbarHeight + 'px';
