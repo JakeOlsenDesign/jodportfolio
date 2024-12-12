@@ -100,3 +100,22 @@ document.addEventListener("keydown", (event) => {
         toggleMenu();
     }
 });
+
+// NAV FUNCTIONS
+
+// Get the height of the navbar
+var navbarHeight = document.getElementById('cs-navigation').offsetHeight;
+
+// When the user scrolls down, resize the header's font size
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > navbarHeight || document.documentElement.scrollTop > navbarHeight) {
+    document.getElementById('cs-navigation').classList.add('nav-shrink');
+  } else {
+    document.getElementById('cs-navigation').classList.remove('nav-shrink');
+  }
+}
+
+// Adjust margin for the title header
+document.getElementById('titleHeader').style.marginTop = navbarHeight + 'px';
