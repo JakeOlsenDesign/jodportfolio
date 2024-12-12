@@ -27,7 +27,7 @@ collections:
           - { label: "Author", name: "author", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
           - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-          - { label: "Featured Image", name: "image", required: "false", widget: "image", required: "false" }
+          - { label: "Featured Image", name: "image", widget: "image" }
           - { label: "Image Caption", name: "imageAlt", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
     - name: "projects"
@@ -48,7 +48,7 @@ collections:
           - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Description Image", name: "descriptionimage", widget: "image", required: "false" }
-          - { label: "Featured Image", name: "image", required: "false", widget: "image", required: "false" }
+          - { label: "Featured Image", name: "image", widget: "image" }
           - { label: "Image Caption", name: "imageAlt", widget: "string" }
           - { label: "Objective", name: "objective", widget: "string" }
           - { label: "Goals", name: "goals", widget: "string" }
