@@ -1486,7 +1486,15 @@
     border-radius: 0;
 }
 
-.project-peek {
-    object-fit: cover;
-    object-position: center;
+.two-column-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.two-column-container p,
+.two-column-container img,
+.two-column-container div {
+    width: 45%;
 }
