@@ -56,10 +56,10 @@ collections:
           - { label: "Goals", name: "goals", widget: "string", required: false }
           - { label: "Project Image 1", name: "pi1", widget: "image", required: false }
           - { label: "Project Image 2", name: "pi2", widget: "image", required: false }
+          - { label: "Background", name: "background", widget: "string", required: false }
           - { label: "Services", name: "services", widget: "string", required: false }
           - { label: "Role", name: "role", widget: "string", required: false }
           - { label: "Team", name: "team", widget: "string", required: false }
-          - { label: "Background", name: "background", widget: "string", required: false }
           - { label: "Market Analysis", name: "ma", widget: "string", required: false }
           - { label: "MA Image 1", name: "ma1", widget: "image", required: false }
           - { label: "MA Image 2", name: "ma2", widget: "image", required: false }
