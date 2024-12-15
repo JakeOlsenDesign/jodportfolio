@@ -42,6 +42,7 @@ ma: Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
   humor and opinions on serious matters.
 ma1: /assets/images/blog/screenshot-2024-12-14-at-6.05.04 pm.png
 ma2: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
+ma3: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
 branding: Featuring duo-colored logo, the main Gluacomflecken logo leverages the
   partnership between Kristin and Will. While the main logo focuses on their
   teamwork, we created separate identities with their own respective colors to
