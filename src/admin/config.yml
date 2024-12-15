@@ -8,6 +8,7 @@ logo_url: https://codestitch.app/frontend/images/logo.png
 
 media_folder: "src/assets/images/blog"
 public_folder: "/assets/images/blog"
+publish_mode: editorial_workflow
 
 collections:
     - name: "blog"
