@@ -50,7 +50,7 @@ collections:
           - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Description Image", name: "descriptionimage", widget: "image" }
-          - { label: "Featured Image", name: "image", widget: "image" }
+          - { label: "Featured Image", name: "image", widget: "image", required: false }
           - { label: "Image Caption", name: "imageAlt", widget: "string" }
           - { label: "Objective", name: "objective", widget: "string" }
           - { label: "Goals", name: "goals", widget: "string" }
