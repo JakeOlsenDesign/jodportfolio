@@ -39,7 +39,7 @@ eleventyNavigation:
             <!--                 Projects                -->
             <!-- ============================================ -->
 
-            {% if collections.project | length == 0 %}
+            {% if collections.projects | length == 0 %}
                 <h1>No Recent Posts</h1>
             {% else %}
                 {%- for post in collections.projects | reverse -%}
