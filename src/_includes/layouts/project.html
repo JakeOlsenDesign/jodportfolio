@@ -62,36 +62,45 @@
                 <section id="project-content">
 
                     <!--Project Template Start-->
-                    <h1 class="project-h1">{{ title }}</h1>
+                    
                     <div class="intro-container two-column-container">
-                        <p class="description">{{ description }}</p>
+                        <div>
+                            <h1 class="project-h1">{{ title }}</h1>
+                            <p class="description">{{ description }}</p>
+                        </div>
                         <img src="{{ image }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
                     </div>
                     
-                    <div class="overview two-column-container">
-                        <div class="objective">
-                            <p>{{ objective }}</p>
+                    <div class="overview">
+                        <span class="subheader">Project Overview</span>
+                        <div class="two-column-container">
+                            <div class="objective">
+                                <p>{{ objective }}</p>
+                            </div>
+                            <div class="goals">
+                                <p>{{ goals }}</p>
+                            </div>
                         </div>
-                        <div class="goals">
-                            <p>{{ goals }}</p>
+                        <div class="two-column-container">
+                            <img src="{{ pi1 }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
+                            <img src="{{ pi2 }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
                         </div>
-                    </div>
-
-                    <div class="overview two-column-container">
-                        <img src="{{ pi1 }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
-                        <img src="{{ pi2 }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
                     </div>
 
                     <div class="bg-info">
-                        <div class="bg">{{ background }}</div>
-                        <div class="bg">
-                            <p>{{ services }}</p>
-                            <p>{{ role }}</p>
-                            <p>{{ team }}</p>
+                        <span class="subheader">Background</span>
+                        <div class="two-column-container">
+                            <div class="bg">{{ background }}</div>
+                            <div class="bg">
+                                <p>{{ services }}</p>
+                                <p>{{ role }}</p>
+                                <p>{{ team }}</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="market-analysis-container">
+                        <span class="subheader">Background</span>
                         <div class="ma two-column-container">
                             <p>{{ ma }}</p>
                             <img src="{{ ma1 }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
@@ -103,6 +112,7 @@
                     </div>
 
                     <div class="branding">
+                        <span class="subheader">Branding</span>
                         <div class="two-column-container">
                             <p>{{ branding }}</p>
                             <img src="{{ ba1 }}">
@@ -114,6 +124,7 @@
                     </div>
 
                     <div class="web-design">
+                        <span class="subheader">Web Design & Development</span>
                         <div class="two-column-container">
                             <p>{{ webdesign }}</p>
                             <img src="{{ wd1 }}">
@@ -124,6 +135,7 @@
                         </div>
                     </div>
 
+                    <span class="subheader">Outcome</span>
                     <p class="outcome">{{ outcome }}</p>
 
                 </section>
