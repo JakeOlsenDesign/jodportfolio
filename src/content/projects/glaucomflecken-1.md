@@ -64,4 +64,16 @@ webdesign: The primary purpose for the website is to showcase who they are, what
   information they need easily.
 wd1: /assets/images/blog/website-portfolio-mockup_glaucomflecken-copy-2048x1005.webp
 wd2: /assets/images/blog/portfolio-website-display-update.webp
+wd3: /assets/images/blog/lead-magnet-display-1536x1152.webp
+wd4: /assets/images/blog/lead-magnet-display-1536x1152.webp
+outcome: The Glaucomflecken rebrand and website redesign transformed their
+  online presence into a dynamic, scalable platform that celebrates their humor,
+  advocacy, and professionalism. By crafting a cohesive brand identity with
+  vibrant visuals and tailored messaging, we captured the essence of Dr. Will
+  and Kristin Flanary’s mission to inspire hope and humanity in healthcare.  The
+  new website seamlessly guides visitors to learn more, listen to their podcast,
+  and book speaking engagements, making it a powerful tool for connecting with
+  their growing audience and stakeholders. This strategic approach not only
+  strengthened their brand recognition but also empowered them to expand their
+  impact across digital and live platforms.
 ---
