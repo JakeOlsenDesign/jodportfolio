@@ -11,8 +11,11 @@ description: Dr. Will Flanary, an ophthalmologist and comedian known as "Dr.
   the caregiver perspective.
 descriptionimage: /assets/images/blog/website-portfolio-mockup_glaucomflecken-copy-2048x1005.webp
 image: /assets/images/blog/glaucomflecken-intro.webp
-objective: Glaucomflecken was looking to take their online presence to the next
-  level. While experiencing success
+objective: Glaucomflecken was looking to take its online presence to the next
+  level. In addition to Will and Kristin’s massive success through social media,
+  they needed to build a recognizable brand and online hub for their followers,
+  sponsors, and event coordinators to show people what they represent, promote
+  their podcast, and live show engagements.
 goals: Create the Glaucomflecken’s a brand that provides wisdom and hope infused
   with feelings of humor and joy. Utilize the chosen brand direction to design a
   new website that is built to scale alongside with new goals and an
@@ -20,9 +23,6 @@ goals: Create the Glaucomflecken’s a brand that provides wisdom and hope infus
   recognition and trust.
 pi1: /assets/images/blog/screenshot-2024-12-14-at-6.05.04 pm.png
 pi2: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
-services: Branding, Website Design & Development, Graphic Design
-role: Lead Designer
-team: Edge One Media
 background: Will creates medical-themed comedy shorts for an audience of over 3
   million across social media as “Dr. Glaucomflecken”. Kristin (“Lady
   Glaucomflecken”) teaches healthcare workers about the patient and family
@@ -31,6 +31,9 @@ background: Will creates medical-themed comedy shorts for an audience of over 3
   social media presence, impactful writing, creative endeavors, and multimedia
   keynote speaking to promote humanity, and a healthy sense of humor, in
   healthcare.
+services: Branding, Website Design & Development, Graphic Design
+role: Lead Designer
+team: Edge One Media
 ma: Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
   They grew their audience from sharing and criticizing the faults of the
   healthcare system with humor and irreverence that resonated with healthcare
