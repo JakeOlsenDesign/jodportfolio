@@ -92,8 +92,10 @@
                     <div class="bg-info">
                         <span class="subheader">Info</span>
                         <div class="two-column-container">
-                            <h2>Background</h2>
-                            <div class="bg">{{ background }}</div>
+                            <div class="bg">
+                                <h2>Background</h2>
+                                <p>{{ background }}</p>
+                            </div>
                             <div class="bg">
                                 <p>{{ services }}</p>
                                 <p>{{ role }}</p>
@@ -105,9 +107,13 @@
                     <div class="market-analysis">
                         <span class="subheader">Research</span>
                         <div class="ma two-column-container">
-                            <h2>Market Analysis</h2>
-                            <p>{{ ma }}</p>
-                            <img src="{{ ma1 }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
+                            <div>
+                                <h2>Market Analysis</h2>
+                                <p>{{ ma }}</p>
+                            </div>
+                            <div>
+                                <img src="{{ ma1 }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
+                            </div>
                         </div>
                         <div class="two-column-container">
                             <img src="{{ ma2 }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/>
@@ -118,7 +124,7 @@
                     <span class="subheader">Vision Meets Design</span>
                     
                     <div class="branding">
-                        <span class="subheader">Branding</span>
+                        <h2>Branding</h2>
                         <div class="two-column-container">
                             <p>{{ branding }}</p>
                             <img src="{{ ba1 }}">
@@ -130,7 +136,7 @@
                     </div>
 
                     <div class="web-design">
-                        <span class="subheader">Web Design & Development</span>
+                        <h2>Web Design & Development</h2>
                         <div class="two-column-container">
                             <p>{{ webdesign }}</p>
                             <img src="{{ wd1 }}">
