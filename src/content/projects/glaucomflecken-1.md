@@ -38,25 +38,13 @@ background: Will creates medical-themed comedy shorts for an audience of over 3
 services: Branding, Website Design & Development, Graphic Design
 role: Lead Designer
 team: Edge One Media
-ma: Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
-  They grew their audience from sharing and criticizing the faults of the
-  healthcare system with humor and irreverence that resonated with healthcare
-  workers. This stemmed from a desire to bring joy to their viewers with a
-  message of kindness and hope to make things better in the healthcare.  It was
-  important that we showcased their playful personalities while keeping a
-  professional demeanor. This challenge was highlighted since they wished to
-  branch into more podcasting and public speaking and wanted to balance their
-  humor and opinions on serious matters.
-ma1: /assets/images/blog/screenshot-2024-12-14-at-6.05.04 pm.png
-ma2: ""
-ma3: ""
 branding: Featuring duo-colored logo, the main Gluacomflecken logo leverages the
   partnership between Kristin and Will. While the main logo focuses on their
   teamwork, we created separate identities with their own respective colors to
   designate a distinction between the two. Kristin and Will work together but
   also contribute different ways and are passionate about different aspects of
-  Healthcare. The pattern and logo mark are inspired by the medical term
-  “glaukomflecken” which graphically lends itself to an fun theme while the
+  Healthcare. vThe pattern and logo mark are inspired by the medical term
+  “glaukomflecken” which graphically lends itself to a fun theme while the
   typography evokes feelings of professionalism.
 b1: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
 b2: ""
@@ -74,15 +62,27 @@ outcome: The Glaucomflecken rebrand and website redesign transformed their
   online presence into a dynamic, scalable platform that celebrates their humor,
   advocacy, and professionalism. By crafting a cohesive brand identity with
   vibrant visuals and tailored messaging, we captured the essence of Dr. Will
-  and Kristin Flanary’s mission to inspire hope and humanity in healthcare.  The
-  new website seamlessly guides visitors to learn more, listen to their podcast,
-  and book speaking engagements, making it a powerful tool for connecting with
-  their growing audience and stakeholders. This strategic approach not only
-  strengthened their brand recognition but also empowered them to expand their
-  impact across digital and live platforms.
+  and Kristin Flanary’s mission to inspire hope and humanity in
+  healthcare.   The new website seamlessly guides visitors to learn more, listen
+  to their podcast, and book speaking engagements, making it a powerful tool for
+  connecting with their growing audience and stakeholders. This strategic
+  approach not only strengthened their brand recognition but also empowered them
+  to expand their impact across digital and live platforms.
+ma: Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
+  They grew their audience from sharing and criticizing the faults of the
+  healthcare system with humor and irreverence that resonated with healthcare
+  workers. This stemmed from a desire to bring joy to their viewers with a
+  message of kindness and hope to make things better in the healthcare.  It was
+  important that we showcased their playful personalities while keeping a
+  professional demeanor. This challenge was highlighted since they wished to
+  branch into more podcasting and public speaking and wanted to balance their
+  humor and opinions on serious matters.
 objective: Glaucomflecken was looking to take its online presence to the next
   level. In addition to Will and Kristin’s massive success through social media,
   they needed to build a recognizable brand and online hub for their followers,
   sponsors, and event coordinators to show people what they represent, promote
   their podcast, and live show engagements.
+ma1: /assets/images/blog/screenshot-2024-12-14-at-6.05.04 pm.png
+ma2: ""
+ma3: ""
 ---
