@@ -26,7 +26,7 @@ prjbckg: Dr. and Lady Glaucomfecken are extremely tapped in with their target
   they wished to branch into more podcasting and public speaking and wanted to
   balance their humor and opinions on serious matters.
 pi1: /assets/images/blog/screenshot-2024-12-14-at-6.05.04 pm.png
-pi2: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
+pi2: ""
 background: Will creates medical-themed comedy shorts for an audience of over 3
   million across social media as “Dr. Glaucomflecken”. Kristin (“Lady
   Glaucomflecken”) teaches healthcare workers about the patient and family
@@ -48,8 +48,8 @@ ma: Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
   branch into more podcasting and public speaking and wanted to balance their
   humor and opinions on serious matters.
 ma1: /assets/images/blog/screenshot-2024-12-14-at-6.05.04 pm.png
-ma2: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
-ma3: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
+ma2: ""
+ma3: ""
 branding: Featuring duo-colored logo, the main Gluacomflecken logo leverages the
   partnership between Kristin and Will. While the main logo focuses on their
   teamwork, we created separate identities with their own respective colors to
@@ -59,7 +59,7 @@ branding: Featuring duo-colored logo, the main Gluacomflecken logo leverages the
   “glaukomflecken” which graphically lends itself to an fun theme while the
   typography evokes feelings of professionalism.
 b1: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
-b2: /assets/images/blog/lead-magnet-display-1536x1152.webp
+b2: ""
 webdesign: The primary purpose for the website is to showcase who they are, what
   they do, and provide social proof for users to book them for speaking events
   and listen to their podcast. It was important to promote that they share their
@@ -67,9 +67,9 @@ webdesign: The primary purpose for the website is to showcase who they are, what
   design an engaging experience to guide users through the website and find the
   information they need easily.
 wd1: /assets/images/blog/website-portfolio-mockup_glaucomflecken-copy-2048x1005.webp
-wd2: /assets/images/blog/portfolio-website-display-update.webp
-wd3: /assets/images/blog/lead-magnet-display-1536x1152.webp
-wd4: /assets/images/blog/lead-magnet-display-1536x1152.webp
+wd2: ""
+wd3: ""
+wd4: ""
 outcome: The Glaucomflecken rebrand and website redesign transformed their
   online presence into a dynamic, scalable platform that celebrates their humor,
   advocacy, and professionalism. By crafting a cohesive brand identity with
