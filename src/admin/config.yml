@@ -58,10 +58,6 @@ collections:
           - { label: "Services", name: "services", widget: "string", required: false }
           - { label: "Role", name: "role", widget: "string", required: false }
           - { label: "Team", name: "team", widget: "string", required: false }
-          - { label: "Market Analysis", name: "ma", widget: "string", required: false }
-          - { label: "MA Image 1", name: "ma1", widget: "image", required: false }
-          - { label: "MA Image 2", name: "ma2", widget: "image", required: false }
-          - { label: "MA Image 3", name: "ma3", widget: "image", required: false }
           - { label: "Branding", name: "branding", widget: "string", required: false }
           - { label: "Brand Image 1", name: "b1", widget: "image", required: false }
           - { label: "Brand Image 2", name: "b2", widget: "image", required: false }
@@ -73,3 +69,4 @@ collections:
           - { label: "WD Image 3", name: "wd3", widget: "image", required: false }
           - { label: "WD Image 4", name: "wd4", widget: "image", required: false }
           - { label: "Outcome", name: "outcome", widget: "string", required: false }
+          - { label: "Final Image", name: "fi", widget: "image", required: false }
