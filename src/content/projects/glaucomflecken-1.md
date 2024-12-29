@@ -15,7 +15,7 @@ description: Dr. Will Flanary, an ophthalmologist and comedian known as "Dr.
   and educational content that blends healthcare advocacy, medical insights, and
   the caregiver perspective.
 descriptionimage: /assets/images/blog/glaucomflecken-intro-update-update.png
-image: /assets/images/blog/portfolio-website-display-update.webp
+image: /assets/images/blog/lead-magnet-display-1536x1152.webp
 prjbckg: Dr. and Lady Glaucomfecken are extremely tapped in with their target
   market. They grew their audience from sharing and criticizing the faults of
   the healthcare system with humor and irreverence that resonated with
@@ -25,7 +25,7 @@ prjbckg: Dr. and Lady Glaucomfecken are extremely tapped in with their target
   while keeping a professional demeanor. This challenge was highlighted since
   they wished to branch into more podcasting and public speaking and wanted to
   balance their humor and opinions on serious matters.
-pi1: /assets/images/blog/screenshot-2024-12-14-at-6.05.04 pm.png
+pi1: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
 pi2: ""
 background: Will creates medical-themed comedy shorts for an audience of over 3
   million across social media as “Dr. Glaucomflecken”. Kristin (“Lady
@@ -54,7 +54,7 @@ webdesign: The primary purpose for the website is to showcase who they are, what
   knowledge through a variety of avenues. We utilized the brand identity to
   design an engaging experience to guide users through the website and find the
   information they need easily.
-wd1: /assets/images/blog/website-portfolio-mockup_glaucomflecken-copy-2048x1005.webp
+wd1: /assets/images/blog/portfolio-website-display-update.webp
 wd2: ""
 wd3: ""
 wd4: ""
@@ -68,6 +68,7 @@ outcome: The Glaucomflecken rebrand and website redesign transformed their
   connecting with their growing audience and stakeholders. This strategic
   approach not only strengthened their brand recognition but also empowered them
   to expand their impact across digital and live platforms.
+fi: ""
 ma: Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
   They grew their audience from sharing and criticizing the faults of the
   healthcare system with humor and irreverence that resonated with healthcare
