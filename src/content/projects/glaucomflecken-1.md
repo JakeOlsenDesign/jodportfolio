@@ -10,7 +10,7 @@ description: Dr. Will Flanary, an ophthalmologist and comedian known as "Dr.
   and educational content that blends healthcare advocacy, medical insights, and
   the caregiver perspective.
 descriptionimage: /assets/images/blog/glaucomflecken-intro-update-update.png
-image: /assets/images/blog/glaucomflecken-intro.webp
+image: /assets/images/blog/portfolio-website-display-update.webp
 objective: Glaucomflecken was looking to take its online presence to the next
   level. In addition to Will and Kristin’s massive success through social media,
   they needed to build a recognizable brand and online hub for their followers,
