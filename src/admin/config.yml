@@ -51,14 +51,13 @@ collections:
           - { label: "Description", name: "description", widget: "string", required: false }
           - { label: "Description Image", name: "descriptionimage", widget: "image", required: false }
           - { label: "Featured Image", name: "image", widget: "image", required: false }
-          - { label: "Project Background", name: "prjbckg", widget: "string", required: false }
+          - { label: "Project Overview", name: "prjcto", widget: "text", required: false }
           - { label: "Project Image 1", name: "pi1", widget: "image", required: false }
           - { label: "Project Image 2", name: "pi2", widget: "image", required: false }
-          - { label: "Background", name: "background", widget: "string", required: false }
           - { label: "Services", name: "services", widget: "string", required: false }
           - { label: "Role", name: "role", widget: "string", required: false }
           - { label: "Team", name: "team", widget: "string", required: false }
-          - { label: "Branding", name: "branding", widget: "string", required: false }
+          - { label: "Branding", name: "branding", widget: "text", required: false }
           - { label: "Brand Image 1", name: "b1", widget: "image", required: false }
           - { label: "Brand Image 2", name: "b2", widget: "image", required: false }
           - { label: "Brand Image 3", name: "b3", widget: "image", required: false }
@@ -68,5 +67,5 @@ collections:
           - { label: "WD Image 2", name: "wd2", widget: "image", required: false }
           - { label: "WD Image 3", name: "wd3", widget: "image", required: false }
           - { label: "WD Image 4", name: "wd4", widget: "image", required: false }
-          - { label: "Outcome", name: "outcome", widget: "string", required: false }
+          - { label: "Outcome", name: "outcome", widget: "text", required: false }
           - { label: "Final Image", name: "fi", widget: "image", required: false }
