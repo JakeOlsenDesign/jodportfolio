@@ -16,25 +16,17 @@ description: Dr. Will Flanary, an ophthalmologist and comedian known as "Dr.
   the caregiver perspective.
 descriptionimage: /assets/images/blog/glaucomflecken-intro-update-update.png
 image: /assets/images/blog/lead-magnet-display-1536x1152.webp
-prjbckg: Dr. and Lady Glaucomfecken are extremely tapped in with their target
-  market. They grew their audience from sharing and criticizing the faults of
-  the healthcare system with humor and irreverence that resonated with
-  healthcare workers. This stemmed from a desire to bring joy to their viewers
-  with a message of kindness and hope to make things better in the
-  healthcare.  It was important that we showcased their playful personalities
-  while keeping a professional demeanor. This challenge was highlighted since
-  they wished to branch into more podcasting and public speaking and wanted to
-  balance their humor and opinions on serious matters.
+prjcto: >-
+  Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
+  They grew their audience from sharing and criticizing the faults of the
+  healthcare system with humor and irreverence that resonated with healthcare
+  workers. This stemmed from a desire to bring joy to their viewers with a
+  message of kindness and hope to make things better in the healthcare.
+
+
+  It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
 pi1: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
 pi2: ""
-background: Will creates medical-themed comedy shorts for an audience of over 3
-  million across social media as “Dr. Glaucomflecken”. Kristin (“Lady
-  Glaucomflecken”) teaches healthcare workers about the patient and family
-  experience and advocates for caregivers and “co-survivors,” CPR and AED use,
-  and sudden cardiac arrest survivorship. Together and individually, we use our
-  social media presence, impactful writing, creative endeavors, and multimedia
-  keynote speaking to promote humanity, and a healthy sense of humor, in
-  healthcare.
 services: Branding, Website Design & Development, Graphic Design
 role: Lead Designer
 team: Edge One Media
@@ -56,19 +48,35 @@ webdesign: The primary purpose for the website is to showcase who they are, what
   information they need easily.
 wd1: /assets/images/blog/portfolio-website-display-update.webp
 wd2: ""
-wd3: ""
 wd4: ""
-outcome: The Glaucomflecken rebrand and website redesign transformed their
-  online presence into a dynamic, scalable platform that celebrates their humor,
+fi: ""
+prjbckg: Dr. and Lady Glaucomfecken are extremely tapped in with their target
+  market. They grew their audience from sharing and criticizing the faults of
+  the healthcare system with humor and irreverence that resonated with
+  healthcare workers. This stemmed from a desire to bring joy to their viewers
+  with a message of kindness and hope to make things better in the
+  healthcare.  It was important that we showcased their playful personalities
+  while keeping a professional demeanor. This challenge was highlighted since
+  they wished to branch into more podcasting and public speaking and wanted to
+  balance their humor and opinions on serious matters.
+wd3: ""
+background: Will creates medical-themed comedy shorts for an audience of over 3
+  million across social media as “Dr. Glaucomflecken”. Kristin (“Lady
+  Glaucomflecken”) teaches healthcare workers about the patient and family
+  experience and advocates for caregivers and “co-survivors,” CPR and AED use,
+  and sudden cardiac arrest survivorship. Together and individually, we use our
+  social media presence, impactful writing, creative endeavors, and multimedia
+  keynote speaking to promote humanity, and a healthy sense of humor, in
+  healthcare.
+outcome: >-
+  The Glaucomflecken rebrand and website redesign transformed their online
+  presence into a dynamic, scalable platform that celebrates their humor,
   advocacy, and professionalism. By crafting a cohesive brand identity with
   vibrant visuals and tailored messaging, we captured the essence of Dr. Will
-  and Kristin Flanary’s mission to inspire hope and humanity in
-  healthcare.   The new website seamlessly guides visitors to learn more, listen
-  to their podcast, and book speaking engagements, making it a powerful tool for
-  connecting with their growing audience and stakeholders. This strategic
-  approach not only strengthened their brand recognition but also empowered them
-  to expand their impact across digital and live platforms.
-fi: ""
+  and Kristin Flanary’s mission to inspire hope and humanity in healthcare.
+
+
+  The new website seamlessly guides visitors to learn more, listen to their podcast, and book speaking engagements, making it a powerful tool for connecting with their growing audience and stakeholders. This strategic approach not only strengthened their brand recognition but also empowered them to expand their impact across digital and live platforms.
 ma: Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
   They grew their audience from sharing and criticizing the faults of the
   healthcare system with humor and irreverence that resonated with healthcare
