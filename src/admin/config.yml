@@ -51,7 +51,7 @@ collections:
           - { label: "Description", name: "description", widget: "string", required: false }
           - { label: "Description Image", name: "descriptionimage", widget: "image", required: false }
           - { label: "Featured Image", name: "image", widget: "image", required: false }
-          - { label: "Project Overview", name: "prjcto", widget: "markdown", required: false }
+          - { label: "Project Overview", name: "prjcto", widget: "code", required: false }
           - { label: "Project Image 1", name: "pi1", widget: "image", required: false }
           - { label: "Project Image 2", name: "pi2", widget: "image", required: false }
           - { label: "Services", name: "services", widget: "list", required: false }
