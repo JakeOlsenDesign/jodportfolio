@@ -69,14 +69,14 @@ background: Will creates medical-themed comedy shorts for an audience of over 3
   keynote speaking to promote humanity, and a healthy sense of humor, in
   healthcare.
 outcome: >-
-  <p>The Glaucomflecken rebrand and website redesign transformed their online
+  The Glaucomflecken rebrand and website redesign transformed their online
   presence into a dynamic, scalable platform that celebrates their humor,
   advocacy, and professionalism. By crafting a cohesive brand identity with
   vibrant visuals and tailored messaging, we captured the essence of Dr. Will
-  and Kristin Flanary’s mission to inspire hope and humanity in healthcare.</p>
+  and Kristin Flanary’s mission to inspire hope and humanity in healthcare.
 
 
-  <p>The new website seamlessly guides visitors to learn more, listen to their podcast, and book speaking engagements, making it a powerful tool for connecting with their growing audience and stakeholders. This strategic approach not only strengthened their brand recognition but also empowered them to expand their impact across digital and live platforms.</p>
+  <p>The new website seamlessly guides visitors to learn more, listen to their podcast, and book speaking engagements, making it a powerful tool for connecting with their growing audience and stakeholders. This strategic approach not only strengthened their brand recognition but also empowered them to expand their impact across digital and live platforms.
 ma: Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
   They grew their audience from sharing and criticizing the faults of the
   healthcare system with humor and irreverence that resonated with healthcare
