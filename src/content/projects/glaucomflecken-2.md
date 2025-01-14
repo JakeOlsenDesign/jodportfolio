@@ -12,15 +12,7 @@ description: Dr. Will Flanary, an ophthalmologist and comedian known as "Dr.
 descriptionimage: /assets/images/blog/glaucomflecken-intro-update-update.png
 image: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
 prjcto:
-  code:
-    <p>Dr. and Lady Glaucomfecken are extremely tapped in with their target
-    market. They grew their audience from sharing and criticizing the faults of
-    the healthcare system with humor and irreverence that resonated with
-    healthcare workers. This stemmed from a desire to bring joy to their viewers
-    with a message of kindness and hope to make things better in the
-    healthcare.</p>
-
-    <p>It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.</p>
+  code: test
 pi1: /assets/images/blog/lead-magnet-display-1536x1152.webp
 services:
   - Branding
