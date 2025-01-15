@@ -11,6 +11,7 @@ description: Dr. Will Flanary, an ophthalmologist and comedian known as "Dr.
   the caregiver perspective.
 descriptionimage: /assets/images/blog/glaucomflecken-intro-update-update.png
 image: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
+bg: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
 overview: >-
   Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
   They grew their audience from sharing and criticizing the faults of the
