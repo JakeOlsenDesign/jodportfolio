@@ -231,6 +231,39 @@
             /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/PPEditorialOld-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
+    /* space-mono-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/space-mono-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* space-mono-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Space Mono';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/space-mono-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* space-mono-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/space-mono-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* space-mono-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Space Mono';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/space-mono-v14-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
     /* roboto-900 - latin */
     // @font-face {
     //     font-style: normal;
@@ -361,7 +394,7 @@
         box-sizing: border-box;
         padding: (12/16rem) calc(16 / 16 * 1rem);
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "PP Editorial Old", serif;
+        font-family: "Space Mono", serif;
         font-variation-settings: "slnt" 0, "wght" 700, "wdth" 100;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -904,7 +937,7 @@
         box-sizing: border-box;
         padding: 0 (16/16rem);
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "PP Editorial Old", serif;
+        font-family: "Space Mono", serif;
         font-variation-settings: "slnt" 0, "wght" 700, "wdth" 100;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
