@@ -291,7 +291,13 @@
     }
 
     .blur {
-        filter: blur(5px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        backdrop-filter: blur(1px);
     }
 }
 
