@@ -303,6 +303,28 @@
         backdrop-filter: blur(25px);
         filter: brightness(0.5);
     }
+
+// SCROLL ANIMATION
+
+@keyframes scaleProgress {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .progress {
+    animation-timeline: scroll();
+  }
+
+  .progress {
+    animation-timeline: scroll(root block);
+    // animation-timeline: scroll(root);
+    animation: scaleProgress auto linear;
+  }
+
 }
 
 /* Tablet - 1024px */
