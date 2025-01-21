@@ -126,7 +126,7 @@ window.addEventListener('scroll', function() {
   
     document.querySelectorAll('.blur').forEach(function(element) {
       var elementHeight = element.offsetHeight;
-      var opacity = ((1 - (elementHeight - scrollTop) / elementHeight) * 0.1)+1;
+      var opacity = ((0 - (elementHeight - scrollTop) / elementHeight) * 0.1)+1;
       element.style.opacity = opacity;
     });
   });
