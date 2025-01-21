@@ -121,12 +121,14 @@ function scrollFunction() {
 document.getElementById('main').style.marginTop = navbarHeight + 'px';
 
 // BLUR ANIMATION
-window.addEventListener('scroll', function() {
-    var scrollTop = window.scrollY; // Get the current vertical scroll position
-  
-    document.querySelectorAll('.blur').forEach(function(element) {
-      var elementHeight = element.offsetHeight;
-      var opacity = ((1 + (elementHeight - scrollTop) / elementHeight));
-      element.style.opacity = opacity;
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', function() {
+      let scroll = window.scrollY; // Get the current vertical scroll position
+      let opacity = 1 - (scroll / 1000);
+      if (opacity >= 0) {
+        document.querySelectorAll('.blur').forEach(function(element) {
+          element.style.opacity = opacity;
+        });
+      }
     });
   });
