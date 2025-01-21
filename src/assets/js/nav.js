@@ -124,7 +124,7 @@ document.getElementById('main').style.marginTop = navbarHeight + 'px';
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
       let scroll = window.scrollY; // Get the current vertical scroll position
-      let opacity = 1 - (scroll / 1500);
+      let opacity = 1 - (scroll / 3000);
       if (opacity >= 0) {
         document.querySelectorAll('.blur').forEach(function(element) {
           element.style.opacity = opacity;
