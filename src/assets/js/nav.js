@@ -158,7 +158,7 @@ document.getElementById('main').style.paddingTop = navbarHeight + 'px';
   
       // Apply the calculated blur, height, and width dynamically
       blur.style.backdropFilter = `blur(${blurLevel}px)`;
-      bgimage.style.height = `${height}vh`;
+    //   bgimage.style.height = `${height}vh`;
       bgimage.style.width = `${width}%`;
     });
   });
