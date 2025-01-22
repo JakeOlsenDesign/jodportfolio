@@ -143,6 +143,7 @@ document.getElementById('main').style.paddingTop = navbarHeight + 'px';
     const initialHeight = 100; // Initial height of the element
     const initialWidth = 100; // Initial width (percentage of parent container)
     const blur = document.querySelector('.blur'); // Select the element to apply blur
+    const bgimage = document.querySelector('.bgimage'); // Select the element to apply height and width
   
     window.addEventListener('scroll', function () {
       const scrollY = window.scrollY; // Get current scroll position
@@ -157,8 +158,8 @@ document.getElementById('main').style.paddingTop = navbarHeight + 'px';
   
       // Apply the calculated blur, height, and width dynamically
       blur.style.backdropFilter = `blur(${blurLevel}px)`;
-      blur.style.height = `${height}vh`;
-      blur.style.width = `${width}vh`;
+      bgimage.style.height = `${height}vh`;
+      bgimage.style.width = `${width}vh`;
     });
   });
   
