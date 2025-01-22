@@ -136,10 +136,10 @@ document.getElementById('main').style.marginTop = navbarHeight + 'px';
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
       let scroll = window.scrollY; // Get the current vertical scroll position
-      let opacity = 1;
+      let opacity = 1 - (scroll / 500);
       if (opacity >= 0) {
         document.querySelectorAll('.blur').forEach(function(element) {
-          element.style.backdropFilter = opacity+'px';
+          element.style.backdropFilter = 'blur(('opacity'px))';
         });
       }
     });
