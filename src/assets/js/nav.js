@@ -121,26 +121,26 @@ function scrollFunction() {
 document.getElementById('main').style.marginTop = navbarHeight + 'px';
 
 // BLUR ANIMATION
-// document.addEventListener('DOMContentLoaded', function() {
-//     window.addEventListener('scroll', function() {
-//       let scroll = window.scrollY; // Get the current vertical scroll position
-//       let opacity = 1 - (scroll / 500);
-//       if (opacity >= 0) {
-//         document.querySelectorAll('.blur').forEach(function(element) {
-//           element.style.opacity = opacity;
-//         });
-//       }
-//     });
-//   });
-
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
       let scroll = window.scrollY; // Get the current vertical scroll position
       let opacity = 1 - (scroll / 500);
       if (opacity >= 0) {
         document.querySelectorAll('.blur').forEach(function(element) {
-          element.style.backdropFilter = 'blur(('opacity'px))';
+          element.style.opacity = opacity;
         });
       }
     });
   });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     window.addEventListener('scroll', function() {
+//       let scroll = window.scrollY; // Get the current vertical scroll position
+//       let opacity = 1 - (scroll / 500);
+//       if (opacity >= 0) {
+//         document.querySelectorAll('.blur').forEach(function(element) {
+//           element.style.backdropFilter = 'blur(('opacity'px))';
+//         });
+//       }
+//     });
+//   });
