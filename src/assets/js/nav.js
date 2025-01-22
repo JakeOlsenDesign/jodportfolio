@@ -121,10 +121,27 @@ function scrollFunction() {
 document.getElementById('main').style.paddingTop = navbarHeight + 'px';
 
 // BLUR ANIMATION
+// document.addEventListener('DOMContentLoaded', function () {
+//     const maxBlur = 25; // Maximum blur level (starting state)
+//     const blur = document.querySelector('.blur'); // Select the element to apply blur
+  
+//     window.addEventListener('scroll', function () {
+//       const scrollY = window.scrollY; // Get current scroll position
+  
+//       // Adjust the divisor to control the sensitivity (scroll speed)
+//       const sensitivity = 10; // Higher value = slower unblur, lower value = faster unblur
+//       const blurLevel = Math.max(maxBlur - scrollY / sensitivity, 0); // Ensure blur level doesn't go below 0
+  
+//       // Apply the calculated blur level to the backdrop-filter dynamically
+//       blur.style.backdropFilter = `blur(${blurLevel}px)`;
+//     });
+//   });
 
 
-document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const maxBlur = 25; // Maximum blur level (starting state)
+    const initialHeight = 100; // Initial height of the element
+    const initialWidth = 100; // Initial width (percentage of parent container)
     const blur = document.querySelector('.blur'); // Select the element to apply blur
   
     window.addEventListener('scroll', function () {
@@ -134,7 +151,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const sensitivity = 10; // Higher value = slower unblur, lower value = faster unblur
       const blurLevel = Math.max(maxBlur - scrollY / sensitivity, 0); // Ensure blur level doesn't go below 0
   
-      // Apply the calculated blur level to the backdrop-filter dynamically
+      // Adjust height and width based on scroll position (can add limits to avoid shrinking too much)
+      const height = Math.max(initialHeight - scrollY / 5, 80); // Minimum height of 100px
+      const width = Math.max(initialWidth - scrollY / 10, 95); // Minimum width of 50% of the parent container
+  
+      // Apply the calculated blur, height, and width dynamically
       blur.style.backdropFilter = `blur(${blurLevel}px)`;
+      blur.style.height = `${height}vh`;
+      blur.style.width = `${width}vh`;
     });
   });
+  
