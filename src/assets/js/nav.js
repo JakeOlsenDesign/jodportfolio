@@ -144,16 +144,19 @@ document.getElementById('main').style.marginTop = navbarHeight + 'px';
 //     });
 //   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const maxBlur = 25; // Maximum blur level (starting point)
+document.addEventListener('DOMContentLoaded', function () {
+    const maxBlur = 25; // Maximum blur level (starting state)
+    const blur = document.querySelector('.blur'); // Select the element to apply blur
   
-    window.addEventListener('scroll', function() {
-      let scroll = window.scrollY; // Get the current vertical scroll position
-      let blurLevel = Math.max(maxBlur - scroll / 10, 0); // Reduce blur as user scrolls, with a minimum of 0
+    window.addEventListener('scroll', function () {
+      const scrollY = window.scrollY; // Get current scroll position
   
-      document.querySelectorAll('.blur').forEach(function(element) {
-        element.style.backdropFilter = `blur(${blurLevel}px)`; // Apply the blur level to the backdrop-filter
-      });
+      // Adjust the divisor to control the sensitivity (scroll speed)
+      const sensitivity = 15; // Higher value = slower unblur, lower value = faster unblur
+      const blurLevel = Math.max(maxBlur - scrollY / sensitivity, 0); // Ensure blur level doesn't go below 0
+  
+      // Apply the calculated blur level to the backdrop-filter dynamically
+      blur.style.backdropFilter = `blur(${blurLevel}px)`;
     });
   });
 
