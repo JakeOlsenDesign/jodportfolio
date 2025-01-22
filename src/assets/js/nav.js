@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let opacity = 1;
       if (opacity >= 0) {
         document.querySelectorAll('.blur').forEach(function(element) {
-          element.style.backdropFilter = opacity;
+          element.style.backdropFilter = opacity+'px';
         });
       }
     });
