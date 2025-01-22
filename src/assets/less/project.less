@@ -303,6 +303,16 @@
         backdrop-filter: blur(25px);
         filter: brightness(0.5);
         opacity: 1;
+        background: linear-gradient(
+            to bottom,
+            hsl(0deg 0% 0%) 0%,
+            transparent 50%
+        );
+        mask-image: linear-gradient(
+            to bottom,
+            black 0% 50%,
+            transparent 50% 100%
+        );
     }
 }
 
