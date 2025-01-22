@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const scrollY = window.scrollY; // Get current scroll position
   
       // Adjust the divisor to control the sensitivity (scroll speed)
-      const sensitivity = 15; // Higher value = slower unblur, lower value = faster unblur
+      const sensitivity = 10; // Higher value = slower unblur, lower value = faster unblur
       const blurLevel = Math.max(maxBlur - scrollY / sensitivity, 0); // Ensure blur level doesn't go below 0
   
       // Apply the calculated blur level to the backdrop-filter dynamically
