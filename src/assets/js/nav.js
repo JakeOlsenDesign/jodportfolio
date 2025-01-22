@@ -153,8 +153,8 @@ document.getElementById('main').style.paddingTop = navbarHeight + 'px';
       const blurLevel = Math.max(maxBlur - scrollY / sensitivity, 0); // Ensure blur level doesn't go below 0
   
       // Adjust height and width based on scroll position (can add limits to avoid shrinking too much)
-      const height = Math.max(initialHeight - scrollY / 5, 80); // Minimum height of 100px
-      const width = Math.max(initialWidth - scrollY / 10, 95); // Minimum width of 50% of the parent container
+      const height = Math.max(initialHeight - scrollY / 100, 80); // Minimum height of 100px
+      const width = Math.max(initialWidth - scrollY / 100, 95); // Minimum width of 50% of the parent container
   
       // Apply the calculated blur, height, and width dynamically
       blur.style.backdropFilter = `blur(${blurLevel}px)`;
