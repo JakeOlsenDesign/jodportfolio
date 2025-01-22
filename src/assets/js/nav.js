@@ -133,18 +133,29 @@ document.getElementById('main').style.marginTop = navbarHeight + 'px';
 //     });
 //   });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const maxBlur = 25; // Maximum blur level (starting point)
-  
+  document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
       let scroll = window.scrollY; // Get the current vertical scroll position
-      let blurLevel = Math.max(maxBlur - scroll / 10, 0); // Reduce blur as user scrolls, with a minimum of 0
+      let blurLevel = Math.min(scroll / 10, 25); // Calculate blur level, capped at 20px for example
   
-      document.querySelectorAll('.header-title').forEach(function(element) {
+      document.querySelectorAll('.blur').forEach(function(element) {
         element.style.backdropFilter = `blur(${blurLevel}px)`; // Apply the blur level to the backdrop-filter
       });
     });
   });
+
+//   document.addEventListener('DOMContentLoaded', function() {
+//     const maxBlur = 25; // Maximum blur level (starting point)
+  
+//     window.addEventListener('scroll', function() {
+//       let scroll = window.scrollY; // Get the current vertical scroll position
+//       let blurLevel = Math.max(maxBlur - scroll / 10, 0); // Reduce blur as user scrolls, with a minimum of 0
+  
+//       document.querySelectorAll('.header-title').forEach(function(element) {
+//         element.style.backdropFilter = `blur(${blurLevel}px)`; // Apply the blur level to the backdrop-filter
+//       });
+//     });
+//   });
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     window.addEventListener('scroll', function() {
