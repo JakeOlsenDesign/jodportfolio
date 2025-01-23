@@ -897,6 +897,24 @@
             }
         }
 
+        .backdrop {
+            position: absolute;
+            inset: 0;
+            /*
+            By setting “height: 200%”, we ensure that
+            this element is 2x as tall as its parent:
+            */
+            height: 200%;
+            backdrop-filter: blur(16px);
+            mask-image: linear-gradient(
+                to bottom,
+                black 0% 50%,
+                transparent 50% 100%
+            );
+            pointer-events: none;
+            
+        }
+
         .cs-dropdown-button {
             border: none;
             background-color: transparent;
