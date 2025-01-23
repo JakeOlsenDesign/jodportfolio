@@ -497,7 +497,7 @@
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: 'wotfardregular';
         font-variation-settings: "slnt" 0, "wght" 700, "wdth" 100;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
             display: flex;
@@ -769,7 +769,7 @@
 @media only screen and (max-width: 63.9375rem) {
     body.dark-mode {
         #cs-navigation {
-            background-color: var(--dark);
+            // background-color: var(--dark);
 
             .cs-logo {
                 /* makes it white */
@@ -910,12 +910,18 @@
             */
             height: 200%;
             backdrop-filter: blur(16px);
+            -webkit-mask-image: linear-gradient(
+                to bottom,
+                black 0% 50%,
+                transparent 50% 100%
+            );
             mask-image: linear-gradient(
                 to bottom,
                 black 0% 50%,
                 transparent 50% 100%
             );
-            background: rgba(21, 17, 24, 0.5);
+            background: hsl(0deg 0% 100% / 0.1);
+            // background: rgba(21, 17, 24, 0.5);
             pointer-events: none;
             
         }
@@ -1044,7 +1050,7 @@
     body.dark-mode {
         #cs-navigation {
             .cs-drop-ul {
-                background-color: var(--dark);
+                // background-color: var(--dark);
             }
 
             .cs-li-link {
@@ -1081,7 +1087,7 @@
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: 'wotfardregular';
         font-variation-settings: "slnt" 0, "wght" 700, "wdth" 100;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
             display: flex;
@@ -1177,7 +1183,7 @@
 @media only screen and (min-width: 64rem) {
     body.dark-mode {
         #cs-navigation {
-            background-color: var(--dark);
+            // background-color: var(--dark);
 
             .cs-logo {
                 /* makes it turn white */
