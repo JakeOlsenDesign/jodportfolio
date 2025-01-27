@@ -5,6 +5,10 @@ author: Jake Olsen
 date: 2025-01-13T18:26:00.000Z
 tags:
   - project
+services:
+  - Branding
+  - WebDesign
+  - GraphicDesign
 description: Dr. Will Flanary, an ophthalmologist and comedian known as "Dr.
   Glaucomflecken," and his wife Kristin, "Lady Glaucomflecken," create humorous
   and educational content that blends healthcare advocacy, medical insights, and
@@ -21,10 +25,6 @@ overview: >-
 
   It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
 pi1: /assets/images/blog/lead-magnet-display-1536x1152.webp
-services:
-  - Branding
-  - Website Design & Development
-  - Graphic Design
 role: Lead Designer
 team: Edge One Media
 branding: Featuring duo-colored logo, the main Gluacomflecken logo leverages the
