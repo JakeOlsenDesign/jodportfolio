@@ -203,3 +203,18 @@ function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
   document.addEventListener('DOMContentLoaded', function () {
     wrapCommaSeparatedWordsWithDifferentClass('services', 'service');
   });
+
+  import ReactMarkdown from 'react-markdown';
+
+const ProjectPage = ({ data }) => {
+  const { title, body } = data;
+
+  return (
+    <div>
+      <h1>{title}</h1>
+      <ReactMarkdown>{body}</ReactMarkdown>
+    </div>
+  );
+};
+
+export default ProjectPage;
