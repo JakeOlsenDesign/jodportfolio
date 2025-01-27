@@ -203,25 +203,3 @@ function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
   document.addEventListener('DOMContentLoaded', function () {
     wrapCommaSeparatedWordsWithDifferentClass('services', 'service');
   });
-
-//  ADD MISSING FIELDS
-
-const fs = require('fs');
-const path = require('path');
-
-const contentDir = './content/blog'; // Adjust to your content folder
-
-fs.readdirSync(contentDir).forEach((file) => {
-  const filePath = path.join(contentDir, file);
-  const content = fs.readFileSync(filePath, 'utf-8');
-  
-  if (!content.includes('body:')) {
-    const updatedContent = content.replace(
-      '---',
-      '---\nbody: "Write your content here."'
-    );
-    fs.writeFileSync(filePath, updatedContent, 'utf-8');
-    console.log(`Updated ${file}`);
-  }
-});
-  
