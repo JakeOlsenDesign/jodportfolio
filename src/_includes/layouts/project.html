@@ -82,8 +82,7 @@
                         </div>
                     </div>
 
-                    <div class="case-study">{{ body }}</div>
-                    <ReactMarkdown>{ body }</ReactMarkdown>
+                    <div class="case-study">{{ content | safe }}</div>
 
                     <img class="ffw fwimage" src="{{ image }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
                     
