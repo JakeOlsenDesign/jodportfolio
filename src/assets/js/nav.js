@@ -162,4 +162,23 @@ function scrollFunction() {
     //   bgimage.style.width = `${width}%`;
     });
   });
+
+// WRAP EACH WORD IN "SERVICES" WITH A A SPAN AND A CLASS
+function wrapWordsInSpansForSpecificClass(targetClass) {
+    // Select all <p> elements with the specific class
+    const paragraphs = document.querySelectorAll(`p.${services}`);
+  
+    paragraphs.forEach((paragraph) => {
+      // Split the text content of the <p> into words
+      const words = paragraph.textContent.split(/\s+/);
+  
+      // Wrap each word in a <span> with the specified class
+      const wrappedWords = words
+        .map(word => `<span class="${service}">${word}</span>`)
+        .join(' '); // Rejoin the words with spaces
+  
+      // Replace the inner HTML of the <p> with the wrapped words
+      paragraph.innerHTML = wrappedWords;
+    });
+  }
   
