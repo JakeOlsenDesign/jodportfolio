@@ -184,7 +184,7 @@ function scrollFunction() {
 
 function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
     // Select all <p> elements with the specific target class
-    const paragraphs = document.querySelectorAll(`p.${targetClass}`);
+    const paragraphs = document.querySelectorAll(`div.${targetClass}`);
   
     paragraphs.forEach((paragraph) => {
       // Get the text content of the paragraph and split it by commas
