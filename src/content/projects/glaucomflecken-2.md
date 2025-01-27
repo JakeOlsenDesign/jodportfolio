@@ -39,3 +39,5 @@ overview: >-
 <p>The primary purpose for the website is to showcase who they are, what they do, and provide social proof for users to book them for speaking events and listen to their podcast. It was important to promote that they share their knowledge through a variety of avenues. We utilized the brand identity to design an engaging experience to guide users through the website and find the information they need easily.</p>
 
 <p>The Glaucomflecken rebrand and website redesign transformed their online presence into a dynamic, scalable platform that celebrates their humor, advocacy, and professionalism. By crafting a cohesive brand identity with vibrant visuals and tailored messaging, we captured the essence of Dr. Will and Kristin Flanary’s mission to inspire hope and humanity in healthcare. The new website seamlessly guides visitors to learn more, listen to their podcast, and book speaking engagements, making it a powerful tool for connecting with their growing audience and stakeholders. This strategic approach not only strengthened their brand recognition but also empowered them to expand their impact across digital and live platforms.</p>
+
+test test test
