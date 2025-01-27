@@ -183,6 +183,6 @@ function wrapWordsInSpansForSpecificClass(targetClass) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    wrapWordsInSpansForSpecificClass('target-class');
+    wrapWordsInSpansForSpecificClass('service');
   });
   
