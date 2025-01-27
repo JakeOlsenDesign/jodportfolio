@@ -6,7 +6,9 @@ date: 2025-01-13T18:26:00.000Z
 tags:
   - project
 services:
-  - Branding Web Design
+  - Branding
+  - Web Design
+  - Graphic Design
 description: Dr. Will Flanary, an ophthalmologist and comedian known as "Dr.
   Glaucomflecken," and his wife Kristin, "Lady Glaucomflecken," create humorous
   and educational content that blends healthcare advocacy, medical insights, and
