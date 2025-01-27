@@ -181,4 +181,8 @@ function wrapWordsInSpansForSpecificClass(targetClass) {
       paragraph.innerHTML = wrappedWords;
     });
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    wrapWordsInSpansForSpecificClass('services');
+  });
   
