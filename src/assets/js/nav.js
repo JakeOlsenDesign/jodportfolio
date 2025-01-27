@@ -164,25 +164,43 @@ function scrollFunction() {
   });
 
 // WRAP EACH WORD IN "SERVICES" WITH A A SPAN AND A CLASS
-function wrapWordsInSpansForSpecificClass(targetClass) {
-  // Select all <p> elements with the specific class
-  const paragraphs = document.querySelectorAll(`div.${targetClass}`);
+// function wrapWordsInSpansForSpecificClass(targetClass) {
+//   // Select all <p> elements with the specific class
+//   const paragraphs = document.querySelectorAll(`div.${targetClass}`);
 
-  paragraphs.forEach((paragraph) => {
-    // Split the text content of the <p> into words
-    const words = paragraph.textContent.split(/\s+/);
+//   paragraphs.forEach((paragraph) => {
+//     // Split the text content of the <p> into words
+//     const words = paragraph.textContent.split(/\s+/);
 
-    // Wrap each word in a <span> with the specified class
-    const wrappedWords = words
-      .map(word => `<span class="${targetClass}">${word}</span>`)
-      .join(' '); // Rejoin the words with spaces
+//     // Wrap each word in a <span> with the specified class
+//     const wrappedWords = words
+//       .map(word => `<span class="${targetClass}">${word}</span>`)
+//       .join(' '); // Rejoin the words with spaces
 
-    // Replace the inner HTML of the <p> with the wrapped words
-    paragraph.innerHTML = wrappedWords;
-  });
-}
+//     // Replace the inner HTML of the <p> with the wrapped words
+//     paragraph.innerHTML = wrappedWords;
+//   });
+// }
 
-document.addEventListener('DOMContentLoaded', function() {
-    wrapWordsInSpansForSpecificClass('services');
+function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
+    // Select all <p> elements with the specific target class
+    const paragraphs = document.querySelectorAll(`p.${targetClass}`);
+  
+    paragraphs.forEach((paragraph) => {
+      // Get the text content of the paragraph and split it by commas
+      const words = paragraph.textContent.split(',');
+  
+      // Wrap each word in a <span> tag with the specified spanClass
+      const wrappedWords = words
+        .map(word => `<span class="${spanClass}">${word.trim()}</span>`)
+        .join(' '); // Join wrapped words with a space (no commas)
+  
+      // Replace the inner HTML of the <p> with the wrapped words
+      paragraph.innerHTML = wrappedWords;
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    wrapCommaSeparatedWordsWithDifferentClass('services', 'service');
   });
   
