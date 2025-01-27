@@ -166,7 +166,7 @@ function scrollFunction() {
 // WRAP EACH WORD IN "SERVICES" WITH A A SPAN AND A CLASS
 function wrapWordsInSpansForSpecificClass(targetClass) {
   // Select all <p> elements with the specific class
-  const paragraphs = document.querySelectorAll(`p.${targetClass}`);
+  const paragraphs = document.querySelectorAll(`div.${targetClass}`);
 
   paragraphs.forEach((paragraph) => {
     // Split the text content of the <p> into words
