@@ -48,6 +48,7 @@ collections:
           - { label: "Author", name: "author", widget: "string", required: false }
           - { label: "Date", name: "date", widget: "datetime", required: false }
           - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
+          - { label: "Services", name: "services", widget: "list", allow_add: true, required: false }
           - { label: "Description", name: "description", widget: "string", required: false }
           - { label: "Description Image", name: "descriptionimage", widget: "image", required: false }
           - { label: "Featured Image", name: "image", widget: "image", required: false }
@@ -55,7 +56,6 @@ collections:
           - { label: "Project Overview", name: "overview", widget: "text" }
           - { label: "Project Image 1", name: "pi1", widget: "image", required: false }
           - { label: "Project Image 2", name: "pi2", widget: "image", required: false }
-          - { label: "Services", name: "services", widget: "list", allow_add: true, required: false }
           - { label: "Role", name: "role", widget: "string", required: false }
           - { label: "Team", name: "team", widget: "string", required: false }
           - { label: "Branding", name: "branding", widget: "text", required: false }
