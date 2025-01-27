@@ -1,9 +1,14 @@
 ---
 title: test
 url: test
+author: Jake Olsen
 date: 2025-01-27T13:24:00.000Z
 tags:
   - project
+services:
+  - test
+description: test
+descriptionimage: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
 ---
 Write your content here.Dr. and Lady Glaucomfecken are extremely tapped in with their target market. They grew their audience from sharing and criticizing the faults of the healthcare system with humor and irreverence that resonated with healthcare workers. This stemmed from a desire to bring joy to their viewers with a message of kindness and hope to make things better in the healthcare.
 
