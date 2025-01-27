@@ -47,7 +47,7 @@ collections:
           - { label: "Author", name: "author", widget: "string", required: false }
           - { label: "Date", name: "date", widget: "datetime", required: false }
           - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
-          - { label: "Services", name: "services", widget: "list", label_singular: "add"}
+          - { label: "Services", name: "services", widget: "list", min: 2}
           - { label: "Description", name: "description", widget: "string", required: false }
           - { label: "Description Image", name: "descriptionimage", widget: "image", required: false }
           - { label: "Featured Image", name: "image", widget: "image", required: false }
