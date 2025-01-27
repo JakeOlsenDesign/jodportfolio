@@ -204,17 +204,27 @@ function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
     wrapCommaSeparatedWordsWithDifferentClass('services', 'service');
   });
 
-  import ReactMarkdown from 'react-markdown';
+//   
+const fs = require('fs');
+const path = require('path');
 
-const ProjectPage = ({ data }) => {
-  const { title, body } = data;
+const contentDir = './content/projects'; // Path to your content files
 
-  return (
-    <div>
-      <h1>{title}</h1>
-      <ReactMarkdown>{body}</ReactMarkdown>
-    </div>
-  );
-};
-
-export default ProjectPage;
+fs.readdirSync(contentDir).forEach((file) => {
+  const filePath = path.join(contentDir, file);
+  const content = fs.readFileSync(filePath, 'utf-8');
+  
+  const [frontMatter, bodyContent] = content.split('---').slice(1);
+  
+  if (bodyContent) {
+    const updatedFrontMatter = `${frontMatter.trim()}\nbody: |\n${bodyContent
+      .trim()
+      .split('\n')
+      .map((line) => `  ${line}`) // Indent each line for YAML compatibility
+      .join('\n')}`;
+      
+    const updatedContent = `---\n${updatedFrontMatter}\n---`;
+    fs.writeFileSync(filePath, updatedContent, 'utf-8');
+    console.log(`Updated ${file}`);
+  }
+});
