@@ -30,7 +30,7 @@ overview: >-
 
   It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
 ---
-Dr. and Lady Glaucomfecken are extremely tapped in with their target market. They grew their audience from sharing and criticizing the faults of the healthcare system with humor and irreverence that resonated with healthcare workers. This stemmed from a desire to bring joy to their viewers with a message of kindness and hope to make things better in the healthcare.
+Dr. and Lady Glaucomfecken are strategically in tune with their target market. They grew their audience from sharing and criticizing the faults of the healthcare system with humor and irreverence that resonated with healthcare workers. This stemmed from a desire to bring joy to their viewers with a message of kindness and hope to make things better in the healthcare.
 
 It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
 
