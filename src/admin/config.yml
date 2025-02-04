@@ -53,9 +53,9 @@ collections:
           - { label: 'Case Study', name: "body", widget: 'markdown', default: "Write your content here." }
           - { label: "Featured Image", name: "image", widget: "image", required: false }
           - { label: "Background Image", name: "bg", widget: "image", required: false }
-         - label: "Project Images"
-            name: "project_images"
-            widget: "list"
-            fields: 
-              - { label: "Image", name: "image", widget: "image" }
+              - label: "Project Images"
+                  name: "project_images"
+                  widget: "list"
+                  fields: 
+                    - { label: "Image", name: "image", widget: "image" }
           - { label: "Final Image", name: "fi", widget: "image", required: false }
