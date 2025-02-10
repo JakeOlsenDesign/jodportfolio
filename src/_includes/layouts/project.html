@@ -91,6 +91,8 @@
                         </div>
                     </div>
 
+                    <p>project_images: {{ project_images | dump }}</p>
+
                     <div class="project-images">
                         {% for image in project_images %}
                         <img src="{{ item.image }}" alt="{{ item.alt | default('Project Image') }}">
