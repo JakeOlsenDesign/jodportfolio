@@ -317,9 +317,17 @@
         margin: 5rem auto;
         max-width: 800px;
 
+        // display: grid;
+        // grid-template-rows: 0fr;
+        // transition: grid-template-rows 0.5s ease-out;
         display: grid;
         grid-template-rows: 0fr;
-        transition: grid-template-rows 0.5s ease-out;
+        transition: 1s;
+        overflow: hidden;
+    }
+
+    .case-study .content {
+        min-height: 0;
     }
 
     .case-study.expanded {
