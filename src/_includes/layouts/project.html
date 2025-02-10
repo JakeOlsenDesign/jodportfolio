@@ -93,7 +93,7 @@
 
                     <div class="project-images">
                         {% for image in project_images %}
-                        <img src="{{ image }}" alt="Project Image">
+                        <img src="{{ item.image }}" alt="{{ item.alt | default('Project Image') }}">
                         {% endfor %}
                     </div>
 
