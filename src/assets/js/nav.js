@@ -206,6 +206,6 @@ function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
 
 //   BUTTON
 
-document.getElementById("caseStudy").addEventListener("click", function() {
-    document.getElementById("case-study").classList.toggle("expanded");
+document.getElementById("caseStudyToggle").addEventListener("click", function() {
+    document.getElementById("caseStudy").classList.toggle("expanded");
 });
