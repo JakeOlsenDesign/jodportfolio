@@ -91,7 +91,11 @@
                         </div>
                     </div>
 
-                    <div class="project-images"><img src="{{ project_images }}"></div>
+                    <div class="project-images">
+                        {% for image in images %}
+                        <img src="{{ image }}" alt="Project Image">
+                        {% endfor %}
+                    </div>
 
                     <div class="credits">
                         <span class="subheader">Credits</span>
