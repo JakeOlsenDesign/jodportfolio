@@ -203,3 +203,9 @@ function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
   document.addEventListener('DOMContentLoaded', function () {
     wrapCommaSeparatedWordsWithDifferentClass('services', 'service');
   });
+
+//   BUTTON
+
+document.getElementById("caseStudy").addEventListener("click", function() {
+    document.getElementById("case-study").classList.toggle("expanded");
+});
