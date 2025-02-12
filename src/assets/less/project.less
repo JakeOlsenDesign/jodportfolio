@@ -326,6 +326,7 @@
         grid-template-rows: 0fr;
         transition: 1s;
         overflow: hidden;
+        position: relative;
     }
 
     .case-study .content {
@@ -334,6 +335,16 @@
 
     .case-study.expanded {
         grid-template-rows: 1fr;
+    }
+
+    .case-study:after {
+        background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff);
+        bottom: 0;
+        content: "";
+        height: 20vh;
+        left: 0;
+        position: absolute;
+        right: 0;
     }
     
     .services {
