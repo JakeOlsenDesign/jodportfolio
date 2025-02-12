@@ -91,7 +91,7 @@
                         </div>
                     </div>
 
-                    <div class="project-images">
+                    <div class="project-gallery">
                         {% for item in project_images %}
                             <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                         {% endfor %}
