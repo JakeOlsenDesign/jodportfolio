@@ -428,16 +428,31 @@
         margin: 0;
     }
 
-    .credits,
-    .credits div {
+    .credits {
+        margin-top: 1rem;
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
-    }
 
-    .credits .subheader {
-        font-family: 'Jersey 10';
-        font-size: 24px;
+        div {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            p {
+                margin-bottom: 0;
+                line-height: 1.2;
+            }
+        }
+
+        .subheader {
+            font-family: 'Jersey 10';
+            font-size: 32px;
+            color: #FFF;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
     }
 
     .credits p {
