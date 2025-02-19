@@ -163,25 +163,6 @@ function scrollFunction() {
     });
   });
 
-// WRAP EACH WORD IN "SERVICES" WITH A A SPAN AND A CLASS
-// function wrapWordsInSpansForSpecificClass(targetClass) {
-//   // Select all <p> elements with the specific class
-//   const paragraphs = document.querySelectorAll(`div.${targetClass}`);
-
-//   paragraphs.forEach((paragraph) => {
-//     // Split the text content of the <p> into words
-//     const words = paragraph.textContent.split(/\s+/);
-
-//     // Wrap each word in a <span> with the specified class
-//     const wrappedWords = words
-//       .map(word => `<span class="${targetClass}">${word}</span>`)
-//       .join(' '); // Rejoin the words with spaces
-
-//     // Replace the inner HTML of the <p> with the wrapped words
-//     paragraph.innerHTML = wrappedWords;
-//   });
-// }
-
 function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
     // Select all <p> elements with the specific target class
     const paragraphs = document.querySelectorAll(`div.${targetClass}`);
@@ -208,4 +189,20 @@ function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
 
 document.getElementById("caseStudyToggle").addEventListener("click", function() {
     document.getElementById("caseStudy").classList.toggle("expanded");
+});
+
+// OPACITY AND BLUR FOR INTRO CONTENT
+
+window.addEventListener("scroll", function () {
+    const target = document.getElementById("introContent"); // Target div
+    const maxScroll = 500; // Adjust to control how much scroll is needed for full effect
+    
+    let scrollY = window.scrollY || window.pageYOffset;
+    let progress = Math.min(scrollY / maxScroll, 1); // Normalize between 0 and 1
+
+    let opacity = 1 - progress; // Opacity from 1 → 0
+    let blur = progress * 25;   // Blur from 0 → 25px
+
+    target.style.opacity = opacity;
+    target.style.backdropFilter = `blur(${blur}px)`;
 });
