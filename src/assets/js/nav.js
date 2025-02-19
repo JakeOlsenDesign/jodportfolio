@@ -210,34 +210,31 @@ window.addEventListener("scroll", function () {
 // INSERT SVG ARROW AFTER DOWN-ARROW CLASS
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".down-arrow"); // Select all elements with class "down-arrow"
+    const elements = document.querySelectorAll(".down-arrow");
 
     elements.forEach(element => {
+        console.log("Appending SVG to:", element.textContent);
+
+        // Create a wrapper div *inside* the loop
+        let wrapperDiv = document.createElement("div");
+        wrapperDiv.classList.add("svg-wrapper");
+
         // Create an SVG element
-        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+        let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         svg.setAttribute("viewBox", "0 0 500 277.78");
-        svg.setAttribute("width", "50"); // Adjust size if needed
-        svg.setAttribute("height", "50"); // Adjust size if needed
+        svg.classList.add("custom-svg");
 
         // Add SVG content
         svg.innerHTML = `
-            <g id="Layer_1-2" data-name="Layer 1-2">
-                <polygon fill="#231f20" points="444.44 0 388.89 0 333.33 0 277.78 0 222.22 0 166.67 0 111.11 0 55.56 0 0 0 0 55.56 55.56 55.56 55.56 111.11 111.11 111.11 111.11 166.67 166.67 166.67 166.67 222.22 222.22 222.22 222.22 277.78 277.78 277.78 277.78 222.22 333.33 222.22 333.33 166.67 388.89 166.67 388.89 111.11 444.44 111.11 444.44 55.56 500 55.56 500 0 444.44 0"/>
-            </g>
+            <polygon fill="#231f20" points="444.44 0 388.89 0 333.33 0 277.78 0 222.22 0 166.67 0 111.11 0 55.56 0 0 0 0 55.56 55.56 55.56 55.56 111.11 111.11 111.11 111.11 166.67 166.67 166.67 166.67 222.22 222.22 222.22 222.22 277.78 277.78 277.78 277.78 222.22 333.33 222.22 333.33 166.67 388.89 166.67 388.89 111.11 444.44 111.11 444.44 55.56 500 55.56 500 0 444.44 0"/>
         `;
-
-        // Insert the SVG immediately after the .down-arrow element
-        element.insertAdjacentElement("afterend", svg);
 
         // Append the SVG inside the wrapper div
         wrapperDiv.appendChild(svg);
 
         // Insert the wrapper div after the selected element
         element.parentNode.insertBefore(wrapperDiv, element.nextSibling);
-    });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Script loaded and running!"); // Debugging step
+        console.log("SVG inserted after:", element.textContent);
+    });
 });
