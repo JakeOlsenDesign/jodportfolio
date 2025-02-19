@@ -204,5 +204,5 @@ window.addEventListener("scroll", function () {
     let blur = progress * 25;   // Blur from 0 → 25px
 
     target.style.opacity = opacity;
-    target.style.backdropFilter = `blur(${blur}px)`;
+    target.style.filter = `blur(${blur}px)`; // Applying blur effect
 });
