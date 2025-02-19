@@ -229,5 +229,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Insert the SVG immediately after the .down-arrow element
         element.insertAdjacentElement("afterend", svg);
+
+        // Append the SVG inside the wrapper div
+        wrapperDiv.appendChild(svg);
+
+        // Insert the wrapper div after the selected element
+        element.parentNode.insertBefore(wrapperDiv, element.nextSibling);
     });
 });
