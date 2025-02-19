@@ -237,3 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
         element.parentNode.insertBefore(wrapperDiv, element.nextSibling);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Script loaded and running!"); // Debugging step
+});
