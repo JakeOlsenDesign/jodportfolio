@@ -231,7 +231,8 @@
                 background: #FFF;
                 padding: 0.75rem 1rem;
                 border-radius: 10px;
-                box-shadow: 0 7px #ccc;
+                // box-shadow: 0 7px #ccc;
+                position: relative;
                 
                 span {
                     font-family: 'Jersey 10';
@@ -258,6 +259,17 @@
                 // background-color: #3e8e41;
                 box-shadow: 0 5px #aaa;
                 transform: translateY(3px);
+            }
+
+            #caseStudyToggle:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(to top, #FFC371, #FF5F6D);
+                height: 100%;
+                width: 100%;
+                border-radius: 10px;
             }
 
         }
