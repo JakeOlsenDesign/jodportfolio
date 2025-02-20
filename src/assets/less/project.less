@@ -219,6 +219,52 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+    .project-article {
+
+        #project-content {
+
+            #caseStudyToggle {
+                display: inline-flex;
+                align-items: end;
+                margin-bottom: 1.5rem;
+                cursor: pointer;
+                background: #FFF;
+                padding: 0.75rem 1rem;
+                border-radius: 10px;
+                box-shadow: 0 7px #ccc;
+                
+                span {
+                    font-family: 'Jersey 10';
+                    background: #FF5F6D;
+                    background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D);
+                    background: linear-gradient(to top, #FFC371, #FF5F6D);
+                    background-clip: text;
+                    color: transparent;
+                    font-size: 25px;
+                    display: inline-block;
+                    line-height: 0.75;
+                }
+        
+                h2 {
+                    display: inline-block;
+                    line-height: 1;
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                    color: #151118;
+                }
+            }
+        
+            #caseStudyToggle:active {
+                // background-color: #3e8e41;
+                box-shadow: 0 5px #aaa;
+                transform: translateY(3px);
+            }
+
+        }
+
+    }
+
+    
     .project-container {
         // padding: clamp(60px, 4vw, 100px) 0;
     }
@@ -352,44 +398,6 @@
     .case-study.expanded:after {
         opacity: 0;
     }
-
-    #caseStudyToggle {
-        display: inline-flex;
-        align-items: end;
-        margin-bottom: 1.5rem;
-        cursor: pointer;
-        background: #FFF;
-        padding: 0.75rem 1rem;
-        border-radius: 10px;
-        box-shadow: 0 7px #ccc;
-        
-        span {
-            font-family: 'Jersey 10';
-            background: #FF5F6D;
-            background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D);
-            background: linear-gradient(to top, #FFC371, #FF5F6D);
-            background-clip: text;
-            color: transparent;
-            font-size: 25px;
-            display: inline-block;
-            line-height: 0.75;
-        }
-
-        h2 {
-            display: inline-block;
-            line-height: 1;
-            margin-right: 10px;
-            margin-bottom: 0;
-            color: #151118;
-        }
-    }
-
-    #caseStudyToggle:active {
-        // background-color: #3e8e41;
-        box-shadow: 0 5px #aaa;
-        transform: translateY(3px);
-    }
-
 
     .view-toggle {
 
