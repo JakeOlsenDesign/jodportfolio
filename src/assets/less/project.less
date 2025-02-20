@@ -323,7 +323,7 @@
         // grid-template-rows: 0fr;
         // transition: grid-template-rows 0.5s ease-out;
         display: grid;
-        grid-template-rows: 0.2fr;
+        grid-template-rows: 0.16fr;
         transition: 1s;
         overflow: hidden;
         position: relative;
@@ -356,8 +356,12 @@
     #caseStudyToggle {
         display: inline-flex;
         align-items: end;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         cursor: pointer;
+        background: #FFF;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 9px #ccc;
         
         span {
             font-family: 'Jersey 10';
@@ -370,6 +374,12 @@
             display: inline-block;
             line-height: 0.75;
         }
+    }
+
+    #caseStudyToggle:active {
+        // background-color: #3e8e41;
+        box-shadow: 0 5px #aaa;
+        transform: translateY(4px);
     }
 
     .project-article #project-content #caseStudyToggle h2 {
