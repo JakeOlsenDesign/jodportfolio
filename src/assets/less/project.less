@@ -260,14 +260,23 @@
 
     #caseStudyToggle {
         position: relative;
-        z-index: 1;
     }
 
     #caseStudyToggle:active {
         // background-color: #3e8e41;
         box-shadow: 0 5px #aaa;
         transform: translateY(3px);
-        z-index: 1;
+    }
+
+    #caseStudyToggle:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        z-index: 0;
+        background-color: #FFF;
     }
 
     .gradient-bg {
