@@ -276,12 +276,15 @@
         width: 100%;
         height: 16px;
         border-radius: 0 0 10px 10px;
-        background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D);
-        background: linear-gradient(to top, #FFC371, #FF5F6D);
+        background: -webkit-linear-gradient(to top, #ccc, #ccc);
+        background: linear-gradient(to top, #ccc, #ccc);
+        transition: background 0.25s ease-in-out;
     }
 
     #caseStudyToggle:active .gradient-bg {
         top: 43px;
+        background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D);
+        background: linear-gradient(to top, #FFC371, #FF5F6D);
     }
     
     .project-container {
