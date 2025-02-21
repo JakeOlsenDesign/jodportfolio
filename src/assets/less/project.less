@@ -260,12 +260,14 @@
 
     #caseStudyToggle {
         position: relative;
+        z-index: 1;
     }
 
     #caseStudyToggle:active {
         // background-color: #3e8e41;
         box-shadow: 0 5px #aaa;
         transform: translateY(3px);
+        z-index: 1;
     }
 
     .gradient-bg {
@@ -281,10 +283,14 @@
         transition: background 0.25s ease-in-out;
     }
 
-    #caseStudyToggle:active .gradient-bg {
-        top: 43px;
+    #caseStudyToggle:hover .gradient-bg {
         background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D);
         background: linear-gradient(to top, #FFC371, #FF5F6D);
+    }
+
+    #caseStudyToggle:active .gradient-bg {
+        top: 43px;
+        z-index: -1;
     }
     
     .project-container {
