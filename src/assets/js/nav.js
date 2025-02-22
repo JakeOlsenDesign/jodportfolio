@@ -218,8 +218,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Create a wrapper div *inside* the loop
         let wrapperDiv = document.createElement("div");
-        wrapperDiv.classList.add("svg-wrapper");
         wrapperDiv.id = 'downArrow';
+        wrapperDiv.classList.add("svg-wrapper");
 
         // Create an SVG element
         let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
