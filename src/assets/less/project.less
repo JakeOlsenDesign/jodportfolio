@@ -231,7 +231,7 @@
                 background: #FFF;
                 padding: 0.75rem 1rem;
                 border-radius: 10px;
-                // box-shadow: 0 7px #ccc;
+                box-shadow: 0 7px #ccc;
                 
                 span {
                     font-family: 'Jersey 10';
@@ -295,12 +295,14 @@
         border-radius: 0 0 10px 10px;
         background: -webkit-linear-gradient(to top, #ccc, #ccc);
         background: linear-gradient(to top, #ccc, #ccc);
-        transition: background 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+        opacity: 0;
     }
 
     #caseStudyToggle:hover .gradient-bg {
         background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D, #FF5F6D);
         background: linear-gradient(to top, #FFC371, #FF5F6D, #FF5F6D);
+        opacity: 1;
     }
 
     #caseStudyToggle:active .gradient-bg {
