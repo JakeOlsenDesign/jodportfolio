@@ -275,7 +275,7 @@
         z-index: 0;
         background-color: #FFF;
     }
-    
+
     .gradient-bg {
         position: absolute;
         z-index: -1;
@@ -383,14 +383,28 @@
         padding-top: 10rem;
     }
 
+    // .bgimage {
+    //     height: 100vh;
+    //     width: 100%;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: center;
+    //     position: sticky;
+    //     top: 0;
+    // }
+
     .bgimage {
+        position: fixed;
+        z-index: -1;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: sticky;
-        top: 0;
     }
 
     .intro-container .sticky-container {
