@@ -59,59 +59,61 @@
             <!-- ============================================ -->
 
             <article class="project-article">
-                
                 <div class="bgimage" style="background-image:url('{{ bg }}')"></div>
-
-                <div class="intro-container">
-                    <div id="introContent" class="intro-content">
-                        <h1 class="project-h1">{{ title }}</h1>
-                        <div class="two-column-container">
-                            <div>
-                                <div class="services">{{ services }}</div>
-                                <p class="description">{{ description }}</p>
-                            </div>
-                    </div>
-                        <!-- <div class="links">
-                            <p>Gallery</p>
-                            <p>Case Study</p>
-                        </div> -->
-                        <!-- <img src="{{ descriptionimage }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/> -->
-                    </div>
-                    <div class="sticky-container ffw">
-                        <!-- <div class="bgimage" style="background-image:url('{{ bg }}')"></div> -->
-                        <div class="blur"></div>
-                    </div>
-                </div>
-
                 <section id="project-content">
 
                     <!--Project Template Start-->
                     
+                    <div class="intro-container">
+                        <div id="introContent" class="intro-content">
+                            <h1 class="project-h1">{{ title }}</h1>
+                            <div class="two-column-container">
+                                <div>
+                                    <div class="services">{{ services }}</div>
+                                    <p class="description">{{ description }}</p>
+                                </div>
+                        </div>
+                            <!-- <div class="links">
+                                <p>Gallery</p>
+                                <p>Case Study</p>
+                            </div> -->
+                            <!-- <img src="{{ descriptionimage }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/> -->
+                        </div>
+                        <div class="sticky-container ffw">
+                            <!-- <div class="bgimage" style="background-image:url('{{ bg }}')"></div> -->
+                            <div class="blur"></div>
+                        </div>
+                    </div>
+                    
                     <div class="content-wrapper">
-                        <div id="caseStudyToggle"><h2 class="down-arrow">Case Study</h2><div class="gradient-bg"></div></div>
-                        <!-- <div id="caseStudyToggle"><h2>Case Study</h2><span class="view-toggle down-arrow">view</span></span></div> -->
-                        <div id="caseStudy" class="case-study">
-                            <div class="content">
-                                {{ content | safe }}
+
+                        <div class="case-study">
+                            <div id="caseStudyToggle"><h2 class="down-arrow">Case Study</h2><div class="gradient-bg"></div></div>
+                            <!-- <div id="caseStudyToggle"><h2>Case Study</h2><span class="view-toggle down-arrow">view</span></span></div> -->
+                            <div id="caseStudy" class="case-study">
+                                <div class="content">
+                                    {{ content | safe }}
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="project-gallery">
-                        {% for item in project_images %}
-                            <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                        {% endfor %}
-                    </div>
-
-                    <div class="credits">
-                        <span class="subheader">Credits</span>
-                        <div>
-                            <p>Role: {{ role }}</p>
-                            <p>Team: {{ team }}</p>
+                        <div class="project-gallery">
+                            {% for item in project_images %}
+                                <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                            {% endfor %}
                         </div>
-                    </div>
 
-                    <img class="ffw fwimage" src="{{ fi }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
+                        <div class="credits">
+                            <span class="subheader">Credits</span>
+                            <div>
+                                <p>Role: {{ role }}</p>
+                                <p>Team: {{ team }}</p>
+                            </div>
+                        </div>
+
+                        <img class="ffw fwimage" src="{{ fi }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
+
+                    </div>
 
                 </section>
             </article>
