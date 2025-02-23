@@ -232,6 +232,7 @@
                 padding: 0.75rem 1rem;
                 border-radius: 10px;
                 box-shadow: 0 7px #ccc;
+                transition: box-shadow 0.25s ease-in-out;
                 
                 span {
                     font-family: 'Jersey 10';
@@ -274,11 +275,7 @@
         z-index: 0;
         background-color: #FFF;
     }
-
-    #caseStudyToggle:active {
-        box-shadow: none;
-    }
-
+    
     .gradient-bg {
         position: absolute;
         z-index: -1;
@@ -302,7 +299,7 @@
 
     #caseStudyToggle:active {
         // background-color: #3e8e41;
-        // box-shadow: 0 5px #aaa !important;
+        box-shadow: 0 5px transparent;
         transform: translateY(2px);
     }
 
