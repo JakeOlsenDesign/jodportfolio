@@ -24,7 +24,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  
+
 // STICKY-CONTAINER OPACITY
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".scroll-opacity"); // Select all elements with the class
+
+    window.addEventListener("scroll", function () {
+        let scrollY = window.scrollY || document.documentElement.scrollTop;
+        let maxScroll = 500; // Adjust for sensitivity
+        let opacity = Math.max(1 - scrollY / maxScroll, 0); // Decreases from 1 to 0
+
+        // Apply opacity to each element
+        elements.forEach(element => {
+            element.style.opacity = opacity;
+        });
+    });
+});
+
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const targetElement = document.querySelector(".scroll-effect"); // Element that changes both opacity and blur
