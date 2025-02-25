@@ -24,6 +24,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+// STICKY-CONTAINER OPACITY
+
+document.addEventListener("DOMContentLoaded", function () {
+    const targetElement = document.querySelector(".scroll-effect"); // Element that changes both opacity and blur
+    const stickyElements = document.querySelectorAll(".sticky-container"); // Elements that only change opacity
+
+    window.addEventListener("scroll", function () {
+        let scrollY = window.scrollY || document.documentElement.scrollTop;
+        let maxScroll = 500; // Adjust this value to control sensitivity
+        let opacity = Math.max(1 - scrollY / maxScroll, 0);
+        let blurAmount = Math.min((scrollY / maxScroll) * 25, 25); // Blur up to 25px
+
+        // Apply opacity and blur to the target element
+        if (targetElement) {
+            targetElement.style.opacity = opacity;
+            targetElement.style.backdropFilter = `blur(${blurAmount}px)`;
+        }
+
+        // Apply only opacity to sticky elements
+        stickyElements.forEach(element => {
+            element.style.opacity = opacity;
+        });
+    });
+});
+
+
+// WRAP CATEGORIES
 function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
     // Select all <p> elements with the specific target class
     const paragraphs = document.querySelectorAll(`div.${targetClass}`);
@@ -53,7 +80,7 @@ document.getElementById("caseStudyToggle").addEventListener("click", function() 
     document.getElementById('downArrow').classList.toggle("flip");
 });
 
-// OPACITY AND BLUR FOR INTRO CONTENT
+// OPACITY AND BLUR FOR TITLE INTRO CONTENT
 
 window.addEventListener("scroll", function () {
     const target = document.getElementById("introContent"); // Target div
