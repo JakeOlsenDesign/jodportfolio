@@ -26,28 +26,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // STICKY-CONTAINER OPACITY
 
-document.addEventListener("DOMContentLoaded", function () {
-    const targetElement = document.querySelector(".scroll-effect"); // Element that changes both opacity and blur
-    const stickyElements = document.querySelectorAll(".sticky-container"); // Elements that only change opacity
+// document.addEventListener("DOMContentLoaded", function () {
+//     const targetElement = document.querySelector(".scroll-effect"); // Element that changes both opacity and blur
+//     const stickyElements = document.querySelectorAll(".sticky-container"); // Elements that only change opacity
 
-    window.addEventListener("scroll", function () {
-        let scrollY = window.scrollY || document.documentElement.scrollTop;
-        let maxScroll = 500; // Adjust this value to control sensitivity
-        let opacity = Math.max(1 - scrollY / maxScroll, 0);
-        let blurAmount = Math.min((scrollY / maxScroll) * 25, 25); // Blur up to 25px
+//     window.addEventListener("scroll", function () {
+//         let scrollY = window.scrollY || document.documentElement.scrollTop;
+//         let maxScroll = 500; // Adjust this value to control sensitivity
+//         let opacity = Math.max(1 - scrollY / maxScroll, 0);
+//         let blurAmount = Math.min((scrollY / maxScroll) * 25, 25); // Blur up to 25px
 
-        // Apply opacity and blur to the target element
-        if (targetElement) {
-            targetElement.style.opacity = opacity;
-            targetElement.style.backdropFilter = `blur(${blurAmount}px)`;
-        }
+//         // Apply opacity and blur to the target element
+//         if (targetElement) {
+//             targetElement.style.opacity = opacity;
+//             targetElement.style.backdropFilter = `blur(${blurAmount}px)`;
+//         }
 
-        // Apply only opacity to sticky elements
-        stickyElements.forEach(element => {
-            element.style.opacity = opacity;
-        });
-    });
-});
+//         // Apply only opacity to sticky elements
+//         stickyElements.forEach(element => {
+//             element.style.opacity = opacity;
+//         });
+//     });
+// });
 
 
 // WRAP CATEGORIES
