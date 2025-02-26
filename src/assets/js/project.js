@@ -95,6 +95,7 @@ function wrapCommaSeparatedWordsWithDifferentClass(targetClass, spanClass) {
 
 document.getElementById("caseStudyToggle").addEventListener("click", function() {
     document.getElementById("caseStudy").classList.toggle("expanded");
+    document.getElementById("contentColumns").classList.toggle("expanded");
     document.getElementById('downArrow').classList.toggle("flip");
 });
 
