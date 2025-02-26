@@ -117,8 +117,8 @@ function scrollFunction() {
   }
 }
 
-// Adjust margin for the title header
-document.getElementById('main').style.paddingTop = navbarHeight + 'px';
+// Adjust padding/margin for the title header
+// document.getElementById('main').style.paddingTop = navbarHeight + 'px';
 
 // BLUR ANIMATION
 document.addEventListener('DOMContentLoaded', function () {
