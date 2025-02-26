@@ -120,7 +120,7 @@ function scrollFunction() {
 // Adjust margin for the title header
 document.getElementById('main').style.paddingTop = navbarHeight + 'px';
 
-BLUR ANIMATION
+// BLUR ANIMATION
 document.addEventListener('DOMContentLoaded', function () {
     const maxBlur = 25; // Maximum blur level (starting state)
     const blur = document.querySelector('.blur'); // Select the element to apply blur
