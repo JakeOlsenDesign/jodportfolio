@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // STICKY-CONTAINER OPACITY
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".scroll-opacity"); // Select all elements with the class
+    const elements = document.querySelectorAll(".opacity-scroll"); // Select all elements with the class
 
     window.addEventListener("scroll", function () {
         let scrollY = window.scrollY || document.documentElement.scrollTop;
