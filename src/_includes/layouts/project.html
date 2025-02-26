@@ -87,20 +87,24 @@
                     
                     <div class="content-wrapper">
 
-                        <div class="case-study-wrapper">
-                            <div id="caseStudyToggle"><h2 class="down-arrow">Case Study</h2><div class="gradient-bg"></div></div>
-                            <!-- <div id="caseStudyToggle"><h2>Case Study</h2><span class="view-toggle down-arrow">view</span></span></div> -->
-                            <div id="caseStudy" class="case-study">
-                                <div class="content">
-                                    {{ content | safe }}
+                        <div class="content-column-container">
+
+                            <div class="case-study-wrapper">
+                                <div id="caseStudyToggle"><h2 class="down-arrow">Case Study</h2><div class="gradient-bg"></div></div>
+                                <!-- <div id="caseStudyToggle"><h2>Case Study</h2><span class="view-toggle down-arrow">view</span></span></div> -->
+                                <div id="caseStudy" class="case-study">
+                                    <div class="content">
+                                        {{ content | safe }}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="project-gallery">
-                            {% for item in project_images %}
-                                <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                            {% endfor %}
+                            <div class="project-gallery">
+                                {% for item in project_images %}
+                                    <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                {% endfor %}
+                            </div>
+                            
                         </div>
 
                         <div class="credits">
