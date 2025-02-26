@@ -14,6 +14,7 @@ image: /assets/images/blog/screencapture-thegarylawgroup-2025-02-22-17_29_30.web
 bg: /assets/images/blog/tglg-bg-3.webp
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
+  - image: /assets/images/blog/tglg-logomock.webp
   - image: /assets/images/blog/tglg-pi-1.webp
   - image: /assets/images/blog/tglg-pi-2.webp
   - image: /assets/images/blog/tglg-pi-3.webp
