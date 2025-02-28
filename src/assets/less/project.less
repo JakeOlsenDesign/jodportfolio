@@ -508,6 +508,7 @@
         opacity: 0;
     }
 
+
     .view-toggle {
 
     }
@@ -543,6 +544,7 @@
         display: grid;
         // grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         gap: 2rem;
+        transition: 1s ease;
     }
       
     .project-gallery img {
@@ -551,6 +553,22 @@
         border-radius: 8px;
         margin: 0;
     }
+
+    .expanded .project-gallery {
+        animation: 3s infinite alternate slide-in;
+    }
+
+    @keyframes slide-in {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+      
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
 
     // @keyframes float {
     //     0% {
