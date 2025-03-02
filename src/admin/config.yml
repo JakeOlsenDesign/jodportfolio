@@ -54,7 +54,6 @@ collections:
               widget: "list"
               fields: 
                 - { label: "Credit", name: "credit", widget: "string", required: false }
-          - { label: "Description Image", name: "descriptionimage", widget: "image", required: false }
           - { label: 'Case Study', name: "body", widget: 'markdown', default: "Write your content here." }
           - { label: "Featured Image", name: "image", widget: "image", required: false }
           - { label: "Background Image", name: "bg", widget: "image", required: false }
@@ -63,4 +62,14 @@ collections:
               widget: "list"
               fields: 
                 - { label: "Image", name: "image", widget: "image" }
+          -   label: "Mobile Website Images"
+              name: "mobile_images"
+              widget: "list"
+              fields: 
+                - { label: "Mobile Image", name: "mi-image", widget: "image" }
+          -   label: "Desktop Website Images"
+              name: "desktop_images"
+              widget: "list"
+              fields: 
+                - { label: "Desktop Image", name: "desk-image", widget: "image" }
           - { label: "Final Image", name: "fi", widget: "image", required: false }
