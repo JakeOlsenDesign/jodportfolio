@@ -121,6 +121,15 @@
                                 {% for item in project_images %}
                                     <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                 {% endfor %}
+
+                                {% for item in mobile_images %}
+                                    <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                {% endfor %}
+
+                                {% for item in desktop_images %}
+                                    <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                {% endfor %}
+
                             </div>
 
                         </div>
