@@ -545,7 +545,7 @@
         display: grid;
         // grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         gap: 2rem;
-        transition: 1s ease;
+        // transition: 1s ease;
     }
       
     .project-gallery img {
@@ -556,7 +556,8 @@
     }
 
     .expanded .project-gallery {
-        animation: 3s slide-in;
+        animation: 2s slide-in;
+        opacity: 0;
     }
 
     @keyframes slide-in {
