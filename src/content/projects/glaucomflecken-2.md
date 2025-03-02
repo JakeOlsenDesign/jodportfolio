@@ -63,49 +63,21 @@ Their website needed to emphasize **who they are, what they do, and how to work 
 
 ### 1. A Brand Identity That Reflects Their Dual Approach
 
-* New messaging positioning them as 
-
-  **both entertainers and educators in healthcare**
-
-  .
-* A 
-
-  **duo-colored logo system**
-
-   representing their partnership while allowing 
-
-  **individual sub-brands**
-
-  .
-* Bold, vibrant colors and typography balancing 
-
-  **humor and credibility**
-
-  .
+* New messaging positioning them as both **entertainers and educators in healthcare.**
+* **A duo-colored logo system** representing their partnership while allowing individual sub-brands.
+* Bold, vibrant colors and typography **balancing humor and credibility.**
 
 ### 2. A Website Built for Clarity & Engagement
 
-* **Streamlined navigation**
-
-   guiding users to speaking requests, content, and social media.
-* **Dedicated Speaking Engagement Hub**
-
-   simplifying the booking process for event organizers.
-* **Integrated social media & content feeds**
-
-   showcasing their latest videos, blog posts, and podcasts.
+* **Streamlined navigation** guiding users to speaking requests, content, and social media.
+* **Dedicated Speaking Engagement Hub** simplifying the booking process for event organizers.
+* **Integrated social media & content feeds** showcasing their latest videos, blog posts, and podcasts.
 
 ### 3. Content & Thought Leadership Strategy
 
-* **A storytelling-driven website**
-
-   that maintains their humor while reinforcing expertise.
-* **Character and content sections**
-
-   giving visitors a way to explore Dr. Glaucomflecken’s personas.
-* **A media & press section**
-
-   reinforcing their credibility and reach in healthcare advocacy.
+* **A storytelling-driven website** that maintains their humor while reinforcing expertise.
+* **Character and content sections** giving visitors a way to explore Dr. Glaucomflecken’s personas.
+* **A media & press section** reinforcing their credibility and reach in healthcare advocacy.
 
 ## Results
 
@@ -115,29 +87,13 @@ Their new branding clearly **defines their individual and shared contributions**
 
 ### 2. A More Functional, Engaging Website
 
-* A structured, 
-
-  **user-friendly site**
-
-   that effectively guides visitors to key resources, speaking requests, and content.
-* Increased 
-
-  **visibility and engagement across blog, social media, and podcast platforms**
-
-  .
+* A structured, **user-friendly site** that effectively guides visitors to key resources, speaking requests, and content.
+* Increased **visibility and engagement across blog, social media, and podcast platforms.**
 
 ### 3. Increased Speaking & Media Opportunities
 
-* A 
-
-  **streamlined booking system**
-
-   that led to increased speaking inquiries.
-* Improved brand recognition, reinforcing them as 
-
-  **leading voices in healthcare humor and advocacy**
-
-  .
+* A **streamlined booking system** that led to increased speaking inquiries.
+* Improved brand recognition, reinforcing them as **leading voices in healthcare humor and advocacy.**
 
 ## Conclusion
 
