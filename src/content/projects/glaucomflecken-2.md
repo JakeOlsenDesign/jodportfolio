@@ -32,14 +32,112 @@ project_images:
   - image: /assets/images/blog/portfolio-website-display-update.webp
   - image: /assets/images/blog/lead-magnet-display-1536x1152.webp
 ---
-Dr. Will Flanary, an ophthalmologist and comedian known as "Dr. Glaucomflecken," and his wife Kristin, "Lady Glaucomflecken," create humorous and educational content that blends healthcare advocacy, medical insights, and the caregiver perspective.
+## **Overview**
 
-Dr. and Lady Glaucomfecken are strategically in tune with their target market. They grew their audience from sharing and criticizing the faults of the healthcare system with humor and irreverence that resonated with healthcare workers. This stemmed from a desire to bring joy to their viewers with a message of kindness and hope to make things better in the healthcare.
+Dr. Will Flanary, known as "Dr. Glaucomflecken," and his wife Kristin, "Lady Glaucomflecken," are more than just medical influencers. They use comedy and advocacy to highlight issues in healthcare while educating and entertaining their growing audience.
 
-It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
+With increasing demand for speaking engagements and expanded content offerings, they needed a **brand identity and website refresh** that showcased their personalities, established credibility, and created a structured user experience for fans, media partners, and event organizers.
 
-Featuring duo-colored logo, the main Gluacomflecken logo leverages the partnership between Kristin and Will. While the main logo focuses on their teamwork, we created separate identities with their own respective colors to designate a distinction between the two. Kristin and Will work together but also contribute different ways and are passionate about different aspects of Healthcare. The pattern and logo mark are inspired by the medical term “glaukomflecken” which graphically lends itself to a fun theme while the typography evokes feelings of professionalism.
+## **Challenges**
 
-The primary purpose for the website is to showcase who they are, what they do, and provide social proof for users to book them for speaking events and listen to their podcast. It was important to promote that they share their knowledge through a variety of avenues. We utilized the brand identity to design an engaging experience to guide users through the website and find the information they need easily.
+### **1. Balancing Comedy with Professionalism**
 
-The Glaucomflecken rebrand and website redesign transformed their online presence into a dynamic, scalable platform that celebrates their humor, advocacy, and professionalism. By crafting a cohesive brand identity with vibrant visuals and tailored messaging, we captured the essence of Dr. Will and Kristin Flanary’s mission to inspire hope and humanity in healthcare. The new website seamlessly guides visitors to learn more, listen to their podcast, and book speaking engagements, making it a powerful tool for connecting with their growing audience and stakeholders. This strategic approach not only strengthened their brand recognition but also empowered them to expand their impact across digital and live platforms.
+Their brand needed to retain its **playful, irreverent tone** while ensuring credibility as healthcare advocates and public speakers. The challenge was maintaining humor while establishing authority.
+
+### **2. Differentiating Dr. & Lady Glaucomflecken**
+
+While a team, Dr. and Lady Glaucomflecken contribute uniquely to their platform. Their branding needed to reflect **both their shared mission and individual expertise**.
+
+### **3. Creating a User-Friendly Digital Experience**
+
+Their website needed to serve **multiple audiences -** fans, media, event organizers - by **streamlining speaking requests, content discovery, and engagement opportunities**.
+
+### **4. Strengthening Messaging & Engagement**
+
+Their website needed to emphasize **who they are, what they do, and how to work with them**, ensuring a clear pathway for speaking engagements, media inquiries, and content consumption.
+
+## **Solutions**
+
+### **1. A Brand Identity That Reflects Their Dual Approach**
+
+* New messaging positioning them as 
+
+  **both entertainers and educators in healthcare**
+
+  .
+* A 
+
+  **duo-colored logo system**
+
+   representing their partnership while allowing 
+
+  **individual sub-brands**
+
+  .
+* Bold, vibrant colors and typography balancing 
+
+  **humor and credibility**
+
+  .
+
+### **2. A Website Built for Clarity & Engagement**
+
+* **Streamlined navigation**
+
+   guiding users to speaking requests, content, and social media.
+* **Dedicated Speaking Engagement Hub**
+
+   simplifying the booking process for event organizers.
+* **Integrated social media & content feeds**
+
+   showcasing their latest videos, blog posts, and podcasts.
+
+### **3. Content & Thought Leadership Strategy**
+
+* **A storytelling-driven website**
+
+   that maintains their humor while reinforcing expertise.
+* **Character and content sections**
+
+   giving visitors a way to explore Dr. Glaucomflecken’s personas.
+* **A media & press section**
+
+   reinforcing their credibility and reach in healthcare advocacy.
+
+## **Results**
+
+### **1. A More Distinct and Recognizable Brand**
+
+Their new branding clearly **defines their individual and shared contributions**, allowing both Dr. and Lady Glaucomflecken to **expand their professional reach** while keeping their comedic foundation.
+
+### **2. A More Functional, Engaging Website**
+
+* A structured, 
+
+  **user-friendly site**
+
+   that effectively guides visitors to key resources, speaking requests, and content.
+* Increased 
+
+  **visibility and engagement across blog, social media, and podcast platforms**
+
+  .
+
+### **3. Increased Speaking & Media Opportunities**
+
+* A 
+
+  **streamlined booking system**
+
+   that led to increased speaking inquiries.
+* Improved brand recognition, reinforcing them as 
+
+  **leading voices in healthcare humor and advocacy**
+
+  .
+
+## **Conclusion**
+
+The Glaucomflecken rebrand and website redesign transformed their online presence into a **dynamic, scalable platform** that captures their **humor, advocacy, and professionalism**. This evolution ensures they can **continue entertaining, educating, and inspiring change in healthcare** while expanding their influence across digital and live platforms.
+
+With Dr. and Lady Glaucomflecken, we have built a **brand identity and online presence ready to grow with them**, supporting their mission to make healthcare more human - one joke at a time.
