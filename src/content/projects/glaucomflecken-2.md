@@ -29,7 +29,7 @@ overview: >-
   It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
 team: Edge One Media
 project_images:
-  - image: /assets/images/blog/glaucomflecken-intro.webp
+  - image: /assets/images/blog/glauctome-banner.webp
   - image: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
   - image: /assets/images/blog/portfolio-website-display-update.webp
   - image: /assets/images/blog/lead-magnet-display-1536x1152.webp
