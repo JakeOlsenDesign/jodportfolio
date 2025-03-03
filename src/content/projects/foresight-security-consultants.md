@@ -13,5 +13,6 @@ credits:
   - credit: "Role: Lead Designer"
 image: /assets/images/blog/foresight-portcover-3.webp
 bg: /assets/images/blog/foresight-portcover-3.webp
+mobile_images: []
 ---
-Write your content here.
+Test
