@@ -123,11 +123,11 @@
                                 {% endfor %}
 
                                 {% for item in mobile_images %}
-                                    <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                    <img src="{{ item.image | url }}" alt="{{ item.alt | default('Mobile Image') }}">
                                 {% endfor %}
 
                                 {% for item in desktop_images %}
-                                    <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                    <img src="{{ item.image | url }}" alt="{{ item.alt | default('Desktop Image') }}">
                                 {% endfor %}
 
                             </div>
