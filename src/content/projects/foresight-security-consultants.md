@@ -1,6 +1,7 @@
 ---
 title: Foresight Security Consultants
 url: foresight-security-consultants
+author: ""
 date: 2025-03-02T14:45:00.000Z
 tags:
   - project
