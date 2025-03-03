@@ -617,6 +617,14 @@
 
 /* Tablet - 1024px */
 @media only screen and (min-width: 64rem) {
+    .project-article {
+        #project-content {
+            .mobile-image-container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+    
     .main-content-wrapper {
         flex-direction: row;
         align-items: flex-start;
@@ -1185,7 +1193,7 @@
                 // display: flex;
                 // flex-wrap: wrap;
                 // align-items: start;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
                 display: grid;
                 gap: 2rem;
                 margin: auto;
