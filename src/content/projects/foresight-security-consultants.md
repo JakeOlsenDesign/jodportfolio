@@ -14,6 +14,9 @@ credits:
   - credit: "Role: Lead Designer"
 image: /assets/images/blog/foresight-portcover-3-crop.webp
 bg: /assets/images/blog/foresight-portcover-3.webp
+project_images:
+  - image: /assets/images/blog/foresight-logo-comparison.webp
+  - image: /assets/images/blog/foresight-bi.webp
 mobile_images:
   - mi-image: /assets/images/blog/foresightsc-mobile-mock-1.webp
   - mi-image: /assets/images/blog/foresightsc-mobile-mock-2.webp
