@@ -122,14 +122,17 @@
                                     <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                 {% endfor %}
 
-                                {% for item in mobile_images %}
-                                    <img src="{{ item['mi-image'] | url }}" alt="{{ item.alt | default('Mobile Image') }}">
-                                {% endfor %}
+                                <div class="mobile-image-container">
+                                    {% for item in mobile_images %}
+                                        <img src="{{ item['mi-image'] | url }}" alt="{{ item.alt | default('Mobile Image') }}">
+                                    {% endfor %}
+                                </div>
 
-                                {% for item in desktop_images %}
-                                    <img src="{{ item['desk-image'] | url }}" alt="{{ item.alt | default('Desktop Image') }}">
-                                {% endfor %}
-
+                                <div class="deskop-image-container">
+                                    {% for item in desktop_images %}
+                                        <img src="{{ item['desk-image'] | url }}" alt="{{ item.alt | default('Desktop Image') }}">
+                                    {% endfor %}
+                                </div>
                             </div>
 
                         </div>
