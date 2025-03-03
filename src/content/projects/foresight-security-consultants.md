@@ -12,7 +12,7 @@ description: Peace Of Mind Through Holistic Security Solutions
 credits:
   - credit: "Team: Edge One"
   - credit: "Role: Lead Designer"
-image: /assets/images/blog/foresight-portcover-3.webp
+image: /assets/images/blog/foresight-portcover-3-crop.webp
 bg: /assets/images/blog/foresight-portcover-3.webp
 mobile_images:
   - mi-image: /assets/images/blog/foresightsc-mobile-mock-1.webp
