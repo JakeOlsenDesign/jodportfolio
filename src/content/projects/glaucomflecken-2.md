@@ -12,8 +12,7 @@ description: Bringing Humor and Humanity to Healthcare
 credits:
   - credit: "Team: Edge One Media"
   - credit: "Role: Lead Designer"
-descriptionimage: ""
-image: /assets/images/blog/glaucomflecken-intro-update-update.png
+image: /assets/images/blog/glaucomflecken-intro-dark.webp
 bg: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
 b1: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
 role: Lead Designer
@@ -34,6 +33,7 @@ project_images:
   - image: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
   - image: /assets/images/blog/portfolio-website-display-update.webp
   - image: /assets/images/blog/lead-magnet-display-1536x1152.webp
+descriptionimage: ""
 ---
 ## Overview
 
