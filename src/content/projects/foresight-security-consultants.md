@@ -41,12 +41,12 @@ Foresight Security Consulting, a Northwest-based global firm, specializes in pro
 1. **Outdated Brand Identity**: Foresight's existing branding lacked modern appeal and did not fully convey their expertise and commitment to safety.
 2. **Ineffective Digital Presence**: Their website was not user-friendly, making it difficult for potential clients to understand their services and engage with them.
 
-## **Solutions**
+## Solutions
 
 1. **Brand Identity Refresh**: We refined and modernized Foresight's existing identity by updating their color palette for a contemporary feel while retaining professional tones. Fonts were chosen for clarity, and the icon was enhanced to better convey themes of protection and foresight.
 2. **Website Redesign**: The website was designed to bring Foresight’s digital presence up to date while improving usability. Clear navigation and restructured content make it easy for visitors to explore their wide range of services, including risk assessments, executive protection, and training programs. The refreshed site features a clean, professional design, paired with updated imagery and messaging that emphasizes their commitment to proactive security.
 
-## **Results**
+## Results
 
 * **Enhanced Brand Image**: The refreshed brand identity resonated with existing clients while appealing to new audiences, reinforcing Foresight's reputation as a trusted security partner.
 * **Improved User Engagement**: The new website's clear navigation and engaging resources have made it easier for visitors to understand Foresight's services and engage with their content.
