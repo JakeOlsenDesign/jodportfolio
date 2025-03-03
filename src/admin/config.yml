@@ -66,10 +66,10 @@ collections:
               name: "mobile_images"
               widget: "list"
               fields: 
-                - { label: "Mobile Image", name: "mi-image", widget: "image" }
+                - { label: "Mobile Image", name: "image", widget: "image" }
           -   label: "Desktop Website Images"
               name: "desktop_images"
               widget: "list"
               fields: 
-                - { label: "Desktop Image", name: "desk-image", widget: "image" }
+                - { label: "Desktop Image", name: "image", widget: "image" }
           - { label: "Final Image", name: "fi", widget: "image", required: false }
