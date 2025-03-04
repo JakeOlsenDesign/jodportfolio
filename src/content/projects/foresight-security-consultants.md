@@ -13,7 +13,8 @@ credits:
   - credit: "Team: Edge One"
   - credit: "Role: Lead Designer"
 image: /assets/images/blog/foresight-portcover-3-crop.webp
-bg: /assets/images/blog/foresight-portcover-3.webp
+logo: /assets/images/blog/foresight-logo-horizontal-white.webp
+bg: /assets/images/blog/nasa-q1p7bh3shj8-unsplash-1-.webp
 project_images:
   - image: /assets/images/blog/foresight-logo-comparison.webp
   - image: /assets/images/blog/foresight-bi.webp
