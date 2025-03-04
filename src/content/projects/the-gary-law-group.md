@@ -11,15 +11,16 @@ description: Fenestration Risk Partners. Foreseeing Risk, Securing Growth.
 credits:
   - credit: "Team: Edge One Media"
   - credit: "Role: Lead Designer"
-image: /assets/images/blog/tglg-bg.webp
+image: /assets/images/blog/tglg-cover.webp
 logo: /assets/images/blog/tglg-logo-horizontal.webp
-bg: /assets/images/blog/tglg-bg-3.webp
+bg: /assets/images/blog/tglg-bg.webp
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
   - image: /assets/images/blog/tglg-logomock.webp
   - image: /assets/images/blog/tglg-pi-1.webp
   - image: /assets/images/blog/tglg-pi-2.webp
   - image: /assets/images/blog/tglg-pi-3.webp
+mobile_images: []
 descriptionimage: /assets/images/blog/screencapture-thegarylawgroup-2025-02-22-17_29_30.webp
 ---
 ## Overview
