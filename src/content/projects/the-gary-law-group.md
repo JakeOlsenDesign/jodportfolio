@@ -13,7 +13,7 @@ credits:
   - credit: "Role: Lead Designer"
 image: /assets/images/blog/tglg-cover.webp
 logo: /assets/images/blog/tglg-logo-horizontal.webp
-bg: /assets/images/blog/tglg-bg.webp
+bg: /assets/images/blog/tglg-bg-resize.webp
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
   - image: /assets/images/blog/tglg-logomock.webp
