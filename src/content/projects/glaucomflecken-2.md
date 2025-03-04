@@ -30,6 +30,7 @@ overview: >-
 image: /assets/images/blog/glaucomflecken-intro-dark.webp
 team: Edge One Media
 project_images:
+  - image: /assets/images/blog/glaucomflecken-pairlogos-copy.webp
   - image: /assets/images/blog/glauctome-banner.webp
   - image: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
   - image: /assets/images/blog/portfolio-website-display-update.webp
