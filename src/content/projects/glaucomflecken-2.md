@@ -4,6 +4,8 @@ title: Glaucomflecken
 url: glaucomflecken
 author: Jake Olsen
 date: 2025-01-13T18:26:00.000Z
+tags:
+  - project
 services:
   - Branding
   - Web Design
@@ -12,13 +14,11 @@ description: Bringing Humor and Humanity to Healthcare
 credits:
   - credit: "Team: Edge One Media"
   - credit: "Role: Lead Designer"
-image: /assets/images/blog/glaucomflecken-intro-dark.webp
-bg: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
+logo: /assets/images/blog/glaucomflecken-mainlogo-bg.webp
+bg: /assets/images/blog/glaucomflecken-pattern-2500-bg.webp
 b1: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
 role: Lead Designer
 pi1: /assets/images/blog/lead-magnet-display-1536x1152.webp
-tags:
-  - project
 overview: >-
   Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
   They grew their audience from sharing and criticizing the faults of the
@@ -27,6 +27,7 @@ overview: >-
   message of kindness and hope to make things better in the healthcare.
 
   It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
+image: /assets/images/blog/glaucomflecken-intro-dark.webp
 team: Edge One Media
 project_images:
   - image: /assets/images/blog/glauctome-banner.webp
