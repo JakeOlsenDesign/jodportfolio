@@ -46,14 +46,19 @@ eleventyNavigation:
                     <article class="recent-articles">
                         <a href="{{ post.url }}" class="portfolio-link">
                             <!--Main Article Image-->
-                            <picture class="blog-mainImage">
+
+                            <div class="intro-image" style="background-image:url('{{ bg }}')">
+                                <img class="project-logo" src="{{ logo }}" alt="{{ imageAlt | default('Project Logo') }}">
+                            </div>
+
+                            <!-- <picture class="blog-mainImage">
                                 <img
                                 src="{{ post.data.image }}"
                                 alt="{{ post.data.imageAlt }}"
                                 width="795"
                                 height="400"
                                 decoding="async"/>
-                            </picture>
+                            </picture> -->
                             <!--Article Info-->
                             <div class="article-group">
                                 <h2 class="blog-h1">
