@@ -110,7 +110,7 @@ eleventyNavigation:
             {% if collections.project | length == 0 %}
                 <h1>No Recent Posts</h1>
             {% else %}
-            <article class="recent-articles"></article>
+            <article class="recent-articles">
                 {%- for post in collections.project | reverse -%}
                         <a href="{{ post.url }}" class="portfolio-link">
                             <!--Main Article Image-->
