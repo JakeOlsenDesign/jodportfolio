@@ -102,10 +102,33 @@ eleventyNavigation:
                 <div><img src="/assets/images/Jake-portrait-square-2.webp"></div>
                 <div>
                     <!-- <h2>I'm Jake, a Portland-based brand and web designer. I work with businesses, designing strategic brands and online solutions built to best serve their customers and communities. I have had an amazing opportunity collaborating with 100+ businesses creating solutions for their unique needs and challenges - from logo + template site packages for family-owned businesses looking to take the next step to multi-medium $1M+ fundraising campaigns to provide healthcare for the underserved. The following projects are some of my favorites and display a breadth of my work.</h2> -->
-                    <p>Welcome! I'm Jake, lead designer for Portland-based marketing agency <a href="https://edge-one.com" style="color:#c6da34;">Edge One Media</a>, designing strategic brands and online solutions built to best serve their customers and communities. The following projects are some of my favorites, enjoy!</p>
+                    <p id="typewriter">Welcome! I'm Jake, lead designer for Portland-based marketing agency <a href="https://edge-one.com" style="color:#c6da34;">Edge One Media</a>, designing strategic brands and online solutions built to best serve their customers and communities. The following projects are some of my favorites, enjoy!</p>
                     <a href="/about/">More About Me</a>
                 </div>
             </div>
+
+            <script>
+                function typeWriterByWord(elementId, text, speed = 300) {
+                    const words = text.split(' ');
+                    const target = document.getElementById(elementId);
+                    target.innerHTML = ''; // Clear any existing content
+                    let index = 0;
+                
+                    function addWord() {
+                        if (index < words.length) {
+                            target.innerHTML += (index === 0 ? '' : ' ') + words[index];
+                            index++;
+                            setTimeout(addWord, speed);
+                        }
+                    }
+                
+                    addWord();
+                }
+                
+                // Usage
+                const paragraph = "This is a typewriter effect that reveals each word one by one.";
+                typeWriterByWord('typewriter', paragraph, 400); // speed is in milliseconds
+            </script>
 
             {% if collections.project | length == 0 %}
                 <h1>No Recent Posts</h1>
