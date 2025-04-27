@@ -108,26 +108,26 @@ eleventyNavigation:
             </div>
 
             <script>
-                function typeWriterByWord(elementId, text, speed = 300) {
-                    const words = text.split(' ');
-                    const target = document.getElementById(elementId);
-                    target.innerHTML = ''; // Clear any existing content
-                    let index = 0;
-                
-                    function addWord() {
-                        if (index < words.length) {
-                            target.innerHTML += (index === 0 ? '' : ' ') + words[index];
-                            index++;
-                            setTimeout(addWord, speed);
-                        }
+                function typeWriterByWord(elementId, speed = 300) {
+                const target = document.getElementById(elementId);
+                const text = target.innerText.trim(); // Get the current text from the <p>
+                const words = text.split(' ');
+                target.innerHTML = ''; // Clear it before starting
+                let index = 0;
+
+                function addWord() {
+                    if (index < words.length) {
+                        target.innerHTML += (index === 0 ? '' : ' ') + words[index];
+                        index++;
+                        setTimeout(addWord, speed);
                     }
-                
-                    addWord();
                 }
-                
-                // Usage
-                const paragraph = "This is a typewriter effect that reveals each word one by one.";
-                typeWriterByWord('typewriter', paragraph, 100); // speed is in milliseconds
+
+                addWord();
+            }
+
+            // Usage
+            typeWriterByWord('typewriter', 400);
             </script>
 
             {% if collections.project | length == 0 %}
