@@ -199,8 +199,18 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        gap: 4rem;
+        justify-content: flex-start;
+        gap: 2rem;
+
+        position: fixed;
+        z-index: 99;
+        background-color: #000000d6;
+        padding: 2rem;
+        bottom: 0;
+        max-width: 70%;
+        border-radius: 10px;
+        border: 1px solid #FFF;
+        margin-bottom: 1rem;
 
         h2 {
             font-size: 18px;
@@ -212,11 +222,11 @@
         }
 
         div:last-child {
-            width: 66.66%;
+            // width: 66.66%;
         }
 
         div {
-            width: 33.33%;
+            // width: 33.33%;
 
             img {
                 width: 100%;
