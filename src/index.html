@@ -108,21 +108,26 @@ eleventyNavigation:
 
             <script>
                 function typeWriterByWord(elementId, speed = 300) {
-                const target = document.getElementById(elementId);
-                const text = target.innerText.trim(); // Get the current text from the <p>
-                const words = text.split(' ');
-                target.innerHTML = ''; // Clear it before starting
-                let index = 0;
+                    const target = document.getElementById(elementId);
+                    const container = target.parentElement; // Assuming it's inside the scrollable div
+                    const text = target.innerText.trim();
+                    const words = text.split(' ');
+                    target.innerHTML = '';
+                    let index = 0;
 
-                function addWord() {
-                    if (index < words.length) {
-                        target.innerHTML += (index === 0 ? '' : ' ') + words[index];
-                        index++;
-                        setTimeout(addWord, speed);
+                    function addWord() {
+                        if (index < words.length) {
+                            target.innerHTML += (index === 0 ? '' : ' ') + words[index];
+                            index++;
+
+                            // Scroll to bottom of the container
+                            container.scrollTop = container.scrollHeight;
+
+                            setTimeout(addWord, speed);
+                        }
                     }
-                }
 
-                addWord();
+                    addWord();
             }
 
             // Usage
