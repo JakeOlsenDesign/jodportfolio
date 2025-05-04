@@ -107,7 +107,7 @@ eleventyNavigation:
             </div>
 
             <script>
-                function typeWriterByWord(elementId, speed = 300) {
+                function typeWriterByWord(elementId, speed = 400) {
                     const target = document.getElementById(elementId);
                     const container = target.parentElement; // Assuming it's inside the scrollable div
                     const text = target.innerText.trim();
@@ -131,7 +131,7 @@ eleventyNavigation:
             }
 
             // Usage
-            typeWriterByWord('typewriter', 50);
+            typeWriterByWord('typewriter', 100);
             </script>
 
             {% if collections.project | length == 0 %}
