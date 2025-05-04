@@ -135,7 +135,7 @@ eleventyNavigation:
             // const tooltip = document.getElementById('tooltip');
 
             document.querySelectorAll('.portfolio-link').forEach(el => {
-            const contentEl = el.querySelector('.blog-desc');
+            const contentEl = el.querySelector('.article-group');
 
             el.addEventListener('mousemove', (e) => {
                 tooltip.textContent = contentEl.textContent;
@@ -181,6 +181,7 @@ eleventyNavigation:
                                     {{ post.data.description }}
                                 </p>
                                 <!-- <a href="{{ post.url }}" class="blog-link">Continue Reading</a> -->
+                            </div>
                         </a>
                 {%- endfor -%}
             </article>
