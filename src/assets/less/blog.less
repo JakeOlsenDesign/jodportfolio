@@ -295,15 +295,23 @@
             // border-radius: 0 0 (8/16em) (8/16em);
             padding: clamp(20px, 5vw, 20px);
             text-align: center;
+        }
 
+        .tooltip {
             position: fixed;
             display: none;
+            padding: 6px 10px;
+            color: #fff;
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 1000;
+            
             pointer-events: none;
             border: 3px solid #FFF;
             box-shadow: inset 2px 2px 5px hsl(0, 0%, 0%);
             backdrop-filter: blur(28px);
             background-color: #006490a8;
-        }
+          }
 
         .blog-author-img {
             position: relative;
