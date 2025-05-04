@@ -132,7 +132,7 @@ eleventyNavigation:
                     
             }
             // Usage
-            // const tooltip = document.getElementById('tooltip');
+            const tooltip = document.getElementById('tooltip');
 
             document.querySelectorAll('.portfolio-link').forEach(el => {
             const contentEl = el.querySelector('.article-group');
@@ -184,6 +184,7 @@ eleventyNavigation:
                             </div>
                         </a>
                 {%- endfor -%}
+                <div id="tooltip" class="tooltip"></div>
             </article>
             {% endif %}
         </div>
