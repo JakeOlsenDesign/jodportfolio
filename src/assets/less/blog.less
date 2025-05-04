@@ -293,6 +293,14 @@
             // border-radius: 0 0 (8/16em) (8/16em);
             padding: clamp(20px, 5vw, 20px);
             text-align: center;
+
+            position: fixed;
+            display: none;
+            pointer-events: none;
+            border: 3px solid #FFF;
+            box-shadow: inset 2px 2px 5px hsl(0, 0%, 0%);
+            backdrop-filter: blur(28px);
+            background-color: #006490a8;
         }
 
         .blog-author-img {
@@ -348,14 +356,6 @@
             font-size: (16/16rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
-
-            position: fixed;
-            display: none;
-            pointer-events: none;
-            border: 3px solid #FFF;
-            box-shadow: inset 2px 2px 5px hsl(0, 0%, 0%);
-            backdrop-filter: blur(28px);
-            background-color: #006490a8;
         }
 
         .blog-link {
