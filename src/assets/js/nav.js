@@ -179,3 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+console.log(contentEl.textContent); // See what it's outputting
+tooltip.textContent = contentEl.textContent;
