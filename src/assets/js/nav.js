@@ -136,3 +136,44 @@ document.addEventListener('DOMContentLoaded', function () {
       blur.style.backdropFilter = `blur(${blurLevel}px)`;
     });
   });
+
+//   TYPEWRITER
+function typeWriterByWord(elementId, speed = 300) {
+  const target = document.getElementById(elementId);
+  const container = target.parentElement;
+  const text = target.innerText.trim();
+  const words = text.split(' ');
+  target.innerHTML = '';
+  let index = 0;
+
+  function addWord() {
+    if (index < words.length) {
+      target.innerHTML += (index === 0 ? '' : ' ') + words[index];
+      index++;
+      container.scrollTop = container.scrollHeight;
+      setTimeout(addWord, speed);
+    }
+  }
+
+  addWord();
+}
+
+typeWriterByWord('typewriter', 400);
+
+// TOOLTIP
+const tooltip = document.getElementById('tooltip');
+
+document.querySelectorAll('.portfolio-link').forEach(el => {
+const contentEl = el.querySelector('.article-group');
+
+el.addEventListener('mousemove', (e) => {
+    tooltip.textContent = contentEl.textContent;
+    tooltip.style.display = 'block';
+    tooltip.style.left = `${e.pageX + 10}px`;
+    tooltip.style.top = `${e.pageY + 10}px`;
+});
+
+el.addEventListener('mouseleave', () => {
+    tooltip.style.display = 'none';
+});
+});
