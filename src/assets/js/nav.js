@@ -161,19 +161,21 @@ function typeWriterByWord(elementId, speed = 300) {
 typeWriterByWord('typewriter', 100);
 
 // TOOLTIP
-const tooltip = document.getElementById('tooltip');
+document.addEventListener('DOMContentLoaded', () => {
+    const tooltip = document.getElementById('tooltip');
 
-document.querySelectorAll('.portfolio-link').forEach(el => {
-const contentEl = el.querySelector('.article-group');
+    document.querySelectorAll('.portfolio-link').forEach(el => {
+        const contentEl = el.querySelector('.article-group');
 
-el.addEventListener('mousemove', (e) => {
-    tooltip.textContent = contentEl.textContent;
-    tooltip.style.display = 'block';
-    tooltip.style.left = `${e.pageX + 10}px`;
-    tooltip.style.top = `${e.pageY + 10}px`;
-});
+        el.addEventListener('mousemove', (e) => {
+            tooltip.textContent = contentEl.textContent;
+            tooltip.style.display = 'block';
+            tooltip.style.left = `${e.pageX + 10}px`;
+            tooltip.style.top = `${e.pageY + 10}px`;
+        });
 
-el.addEventListener('mouseleave', () => {
-    tooltip.style.display = 'none';
-});
+        el.addEventListener('mouseleave', () => {
+            tooltip.style.display = 'none';
+        });
+    });
 });
