@@ -138,13 +138,15 @@ eleventyNavigation:
                             </div>
                         </a>
                 {%- endfor -%}
-                <div id="tooltip" class="tooltip"></div>
             </article>
             {% endif %}
         </div>
 
     </div>
 {% endblock %}
+
+<div id="tooltip" class="tooltip"></div>
+
 
 <script>
     function typeWriterByWord(elementId, speed = 300) {
@@ -167,11 +169,11 @@ eleventyNavigation:
             }
         }
 
-        addWord();
-
-            typeWriterByWord('typewriter', 400);
-        
+        addWord();        
 }
+typeWriterByWord('typewriter', 400);
+
+
 // Usage
 const tooltip = document.getElementById('tooltip');
 
