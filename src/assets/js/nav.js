@@ -158,7 +158,7 @@ function typeWriterByWord(elementId, speed = 300) {
   addWord();
 }
 
-typeWriterByWord('typewriter', 400);
+typeWriterByWord('typewriter', 100);
 
 // TOOLTIP
 const tooltip = document.getElementById('tooltip');
