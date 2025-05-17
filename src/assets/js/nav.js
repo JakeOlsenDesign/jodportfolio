@@ -138,11 +138,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 //   TYPEWRITER
-function typeWriterByWord(elementId, speed = 300) {
+function typeWriterByWord(elementId, text, speed = 300) {
   const target = document.getElementById(elementId);
   const container = target.parentElement;
-  const text = target.innerText.trim();
-  const words = text.split(' ');
+  const words = text.trim().split(' ');
   target.innerHTML = '';
   let index = 0;
 
@@ -158,7 +157,26 @@ function typeWriterByWord(elementId, speed = 300) {
   addWord();
 }
 
-typeWriterByWord('typewriter', 70);
+// Attach hover listeners to your portfolio links
+const typewriter = document.getElementById('typewriter');
+const originalText = typewriter.innerText;
+
+document.querySelectorAll('.portfolio-link').forEach(link => {
+  link.addEventListener('mouseenter', () => {
+    const desc = link.querySelector('.blog-desc');
+    if (desc) {
+      typeWriterByWord('typewriter', desc.innerText, 70);  // 100 ms per word speed
+    }
+  });
+
+  // Optional: on mouse leave, clear the typewriter paragraph or reset text
+  link.addEventListener('mouseleave', () => {
+    const target = document.getElementById('typewriter');
+    target.innerHTML = ''; // Clear chatbox or put default text here if you want
+     typeWriterByWord('typewriter', originalText, 100);
+  });
+});
+
 
 // // TOOLTIP
 // document.addEventListener('DOMContentLoaded', () => {
