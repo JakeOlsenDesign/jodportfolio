@@ -138,6 +138,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 //   TYPEWRITER
+let typewriterTimeout = null;   // Tracks ongoing typewriter animation
+let hoverTimeout = null;        // Tracks hover-leave delay for restoring intro
+
 function typeWriterByWord(elementId, text, speed = 300) {
   const target = document.getElementById(elementId);
   const container = target.parentElement;
@@ -145,37 +148,47 @@ function typeWriterByWord(elementId, text, speed = 300) {
   target.innerHTML = '';
   let index = 0;
 
+  // Clear any previously scheduled word addition
+  if (typewriterTimeout) {
+    clearTimeout(typewriterTimeout);
+  }
+
   function addWord() {
     if (index < words.length) {
       target.innerHTML += (index === 0 ? '' : ' ') + words[index];
       index++;
       container.scrollTop = container.scrollHeight;
-      setTimeout(addWord, speed);
+      typewriterTimeout = setTimeout(addWord, speed);
     }
   }
 
   addWord();
 }
 
-// Attach hover listeners to your portfolio links
+// Save the initial intro text when the page loads
 const typewriter = document.getElementById('typewriter');
 const originalText = typewriter.innerText;
 
+// Attach hover listeners to portfolio items
 document.querySelectorAll('.portfolio-link').forEach(link => {
   link.addEventListener('mouseenter', () => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+    }
+
     const desc = link.querySelector('.blog-desc');
     if (desc) {
-      typeWriterByWord('typewriter', desc.innerText, 70);  // 100 ms per word speed
+      typeWriterByWord('typewriter', desc.innerText, 70);
     }
   });
 
-  // Optional: on mouse leave, clear the typewriter paragraph or reset text
   link.addEventListener('mouseleave', () => {
-    const target = document.getElementById('typewriter');
-    target.innerHTML = ''; // Clear chatbox or put default text here if you want
-     typeWriterByWord('typewriter', originalText, 100);
+    hoverTimeout = setTimeout(() => {
+      typeWriterByWord('typewriter', originalText, 100);
+    }, 300); // Delay to allow smoother interaction if user moves quickly
   });
 });
+
 
 
 // // TOOLTIP
