@@ -138,32 +138,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 //   TYPEWRITER
-// function typeWriterByWord(elementId, speed = 300) {
-//   const target = document.getElementById(elementId);
-//   const container = target.parentElement;
-//   const text = target.innerText.trim();
-//   const words = text.split(' ');
-//   target.innerHTML = '';
-//   let index = 0;
-
-//   function addWord() {
-//     if (index < words.length) {
-//       target.innerHTML += (index === 0 ? '' : ' ') + words[index];
-//       index++;
-//       container.scrollTop = container.scrollHeight;
-//       setTimeout(addWord, speed);
-//     }
-//   }
-
-//   addWord();
-// }
-
-// typeWriterByWord('typewriter', 100);
-
-function typeWriterByWord(elementId, text, speed = 300) {
+function typeWriterByWord(elementId, speed = 300) {
   const target = document.getElementById(elementId);
   const container = target.parentElement;
-  const words = text.trim().split(' ');
+  const text = target.innerText.trim();
+  const words = text.split(' ');
   target.innerHTML = '';
   let index = 0;
 
@@ -179,22 +158,7 @@ function typeWriterByWord(elementId, text, speed = 300) {
   addWord();
 }
 
-// Attach hover listeners to your portfolio links
-document.querySelectorAll('.portfolio-link').forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    const desc = link.querySelector('.blog-desc');
-    if (desc) {
-      typeWriterByWord('typewriter', desc.innerText, 100);  // 100 ms per word speed
-    }
-  });
-
-  // Optional: on mouse leave, clear the typewriter paragraph or reset text
-  link.addEventListener('mouseleave', () => {
-    const target = document.getElementById('typewriter');
-    target.innerHTML = ''; // Clear chatbox or put default text here if you want
-  });
-});
-
+typeWriterByWord('typewriter', 100);
 
 // // TOOLTIP
 // document.addEventListener('DOMContentLoaded', () => {
@@ -223,46 +187,66 @@ document.querySelectorAll('.portfolio-link').forEach(link => {
 
 
 
-el.addEventListener('mousemove', (e) => {
-  if (!contentEl) return;
+document.addEventListener('DOMContentLoaded', () => {
+  const tooltip = document.getElementById('tooltip');
+  if (!tooltip) return;
 
-  const newContent = contentEl.textContent.trim();
+  const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+  if (!isDesktop) return;
 
-  if (tooltip.textContent !== newContent) {
-    tooltip.classList.add('updating');
+  let fadeTimeout;
 
-    setTimeout(() => {
-      tooltip.textContent = newContent;
-      tooltip.classList.remove('updating');
-    }, 100);
-  }
+  document.querySelectorAll('.portfolio-link').forEach(el => {
+    const contentEl = el.querySelector('.blog-h1');
 
-  clearTimeout(fadeTimeout);
-  tooltip.classList.add('visible');
+        el.addEventListener('mousemove', (e) => {
+    if (!contentEl) return;
 
-  // Tooltip dimensions
-  const tooltipWidth = tooltip.offsetWidth;
-  const tooltipHeight = tooltip.offsetHeight;
-  const margin = 12; // Space between tooltip and cursor
+    const newContent = contentEl.textContent.trim();
 
-  // Default position: centered above the cursor
-  let left = e.clientX - tooltipWidth / 2;
-  let top = e.clientY - tooltipHeight - margin;
+    if (tooltip.textContent !== newContent) {
+        tooltip.classList.add('updating');
 
-  // Prevent tooltip from going off-screen horizontally
-  if (left < margin) {
-    left = margin;
-  } else if (left + tooltipWidth > window.innerWidth - margin) {
-    left = window.innerWidth - tooltipWidth - margin;
-  }
+        setTimeout(() => {
+        tooltip.textContent = newContent;
+        tooltip.classList.remove('updating');
+        }, 100);
+    }
 
-  // If tooltip goes above viewport, move below cursor instead
-  if (top < margin) {
-    top = e.clientY + margin;
-  }
+    clearTimeout(fadeTimeout);
+    tooltip.classList.add('visible');
 
-  tooltip.style.left = `${left}px`;
-  tooltip.style.top = `${top}px`;
+    // Tooltip dimensions
+    const tooltipWidth = tooltip.offsetWidth;
+    const tooltipHeight = tooltip.offsetHeight;
+    const margin = 12; // Space between tooltip and cursor
+
+    // Default position: centered above the cursor
+    let left = e.clientX - tooltipWidth / 2;
+    let top = e.clientY - tooltipHeight - margin;
+
+    // Prevent tooltip from going off-screen horizontally
+    if (left < margin) {
+        left = margin;
+    } else if (left + tooltipWidth > window.innerWidth - margin) {
+        left = window.innerWidth - tooltipWidth - margin;
+    }
+
+    // If tooltip goes above viewport, move below cursor instead
+    if (top < margin) {
+        top = e.clientY + margin;
+    }
+
+    tooltip.style.left = `${left}px`;
+    tooltip.style.top = `${top}px`;
+    });
+
+
+    el.addEventListener('mouseleave', () => {
+      fadeTimeout = setTimeout(() => {
+        tooltip.classList.remove('visible');
+      }, 150);
+    });
+  });
 });
-
 
