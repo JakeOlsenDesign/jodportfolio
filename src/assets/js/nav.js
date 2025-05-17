@@ -187,59 +187,46 @@ typeWriterByWord('typewriter', 100);
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const tooltip = document.getElementById('tooltip');
-  if (!tooltip) return;
+el.addEventListener('mousemove', (e) => {
+  if (!contentEl) return;
 
-  const isDesktop = window.matchMedia('(min-width: 768px)').matches;
-  if (!isDesktop) return;
+  const newContent = contentEl.textContent.trim();
 
-  let fadeTimeout;
+  if (tooltip.textContent !== newContent) {
+    tooltip.classList.add('updating');
 
-  document.querySelectorAll('.portfolio-link').forEach(el => {
-    const contentEl = el.querySelector('.blog-h1');
+    setTimeout(() => {
+      tooltip.textContent = newContent;
+      tooltip.classList.remove('updating');
+    }, 100);
+  }
 
-    el.addEventListener('mousemove', (e) => {
-      if (!contentEl) return;
+  clearTimeout(fadeTimeout);
+  tooltip.classList.add('visible');
 
-      const newContent = contentEl.textContent.trim();
+  // Tooltip dimensions
+  const tooltipWidth = tooltip.offsetWidth;
+  const tooltipHeight = tooltip.offsetHeight;
+  const margin = 12; // Space between tooltip and cursor
 
-      if (tooltip.textContent !== newContent) {
-        tooltip.classList.add('updating');
+  // Default position: centered above the cursor
+  let left = e.clientX - tooltipWidth / 2;
+  let top = e.clientY - tooltipHeight - margin;
 
-        setTimeout(() => {
-          tooltip.textContent = newContent;
-          tooltip.classList.remove('updating');
-        }, 100); // Delay before switching content
-      }
+  // Prevent tooltip from going off-screen horizontally
+  if (left < margin) {
+    left = margin;
+  } else if (left + tooltipWidth > window.innerWidth - margin) {
+    left = window.innerWidth - tooltipWidth - margin;
+  }
 
-      clearTimeout(fadeTimeout);
-      tooltip.classList.add('visible');
+  // If tooltip goes above viewport, move below cursor instead
+  if (top < margin) {
+    top = e.clientY + margin;
+  }
 
-      // Prevent tooltip from going off-screen
-      const tooltipWidth = tooltip.offsetWidth;
-      const tooltipHeight = tooltip.offsetHeight;
-      const margin = 20;
-
-      let left = e.clientX + 10;
-      let top = e.clientY + 10;
-
-      if (left + tooltipWidth + margin > window.innerWidth) {
-        left = e.clientX - tooltipWidth - 10;
-      }
-      if (top + tooltipHeight + margin > window.innerHeight) {
-        top = e.clientY - tooltipHeight - 10;
-      }
-
-      tooltip.style.left = `${left}px`;
-      tooltip.style.top = `${top}px`;
-    });
-
-    el.addEventListener('mouseleave', () => {
-      fadeTimeout = setTimeout(() => {
-        tooltip.classList.remove('visible');
-      }, 150);
-    });
-  });
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
 });
+
 
