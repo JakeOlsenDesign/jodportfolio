@@ -158,7 +158,7 @@ function typeWriterByWord(elementId, speed = 300) {
   addWord();
 }
 
-typeWriterByWord('typewriter', 100);
+typeWriterByWord('typewriter', 70);
 
 // // TOOLTIP
 // document.addEventListener('DOMContentLoaded', () => {
