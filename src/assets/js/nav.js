@@ -162,25 +162,38 @@ typeWriterByWord('typewriter', 100);
 
 // TOOLTIP
 document.addEventListener('DOMContentLoaded', () => {
-    const tooltip = document.getElementById('tooltip');
+  const tooltip = document.getElementById('tooltip');
+  let showTimer = null;
+  let rafId = null;
 
-    document.querySelectorAll('.portfolio-link').forEach(el => {
-        const contentEl = el.querySelector('.blog-h1');
+  document.querySelectorAll('.portfolio-link').forEach(el => {
+    const titleEl = el.querySelector('.blog-h1');
 
-        el.addEventListener('mousemove', (e) => {
-            tooltip.textContent = contentEl.textContent;
-            tooltip.style.display = 'block';
-            tooltip.style.opacity = '1';
-            tooltip.style.left = `${e.clientX + 10}px`;
-            tooltip.style.top = `${e.clientY + 10}px`;
-        });
+    el.addEventListener('mouseenter', (e) => {
+      if (!titleEl) return;
 
-        el.addEventListener('mouseleave', () => {
-            tooltip.style.display = 'none';
-            tooltip.style.opacity = '0';
-        });
+      // Delay showing tooltip
+      showTimer = setTimeout(() => {
+        tooltip.innerHTML = titleEl.textContent;
+        tooltip.classList.add('visible');
+      }, 150); // 150ms delay
     });
-});
 
-console.log(contentEl.textContent); // See what it's outputting
-tooltip.textContent = contentEl.textContent;
+    el.addEventListener('mousemove', (e) => {
+      cancelAnimationFrame(rafId);
+
+      const x = e.clientX + 10;
+      const y = e.clientY + 10;
+
+      rafId = requestAnimationFrame(() => {
+        tooltip.style.left = `${x}px`;
+        tooltip.style.top = `${y}px`;
+      });
+    });
+
+    el.addEventListener('mouseleave', () => {
+      clearTimeout(showTimer);
+      tooltip.classList.remove('visible');
+    });
+  });
+});
