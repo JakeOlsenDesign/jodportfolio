@@ -170,8 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('mousemove', (e) => {
             tooltip.textContent = contentEl.textContent;
             tooltip.style.display = 'block';
-            tooltip.style.left = `${e.pageX + 10}px`;
-            tooltip.style.top = `${e.pageY + 10}px`;
+            tooltip.style.opacity = '1';
+            tooltip.style.left = `${e.clientX + 10}px`;
+            tooltip.style.top = `${e.clientY + 10}px`;
         });
 
         el.addEventListener('mouseleave', () => {
