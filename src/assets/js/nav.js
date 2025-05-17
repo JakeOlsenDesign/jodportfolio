@@ -178,7 +178,7 @@ document.querySelectorAll('.portfolio-link').forEach(link => {
 
     const desc = link.querySelector('.blog-desc');
     if (desc) {
-      typeWriterByWord('typewriter', desc.innerText, 70);
+      typeWriterByWord('typewriter', desc.innerText, 50);
     }
   });
 
