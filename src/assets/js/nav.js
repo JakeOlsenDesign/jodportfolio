@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Delay showing tooltip
       showTimer = setTimeout(() => {
-        tooltip.innerHTML = titleEl.textContent;
+        tooltip.innerHTML = `<strong>${titleEl.textContent}</strong>`;
         tooltip.classList.add('visible');
       }, 150); // 150ms delay
     });
