@@ -237,24 +237,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Tooltip dimensions
     const tooltipWidth = tooltip.offsetWidth;
     const tooltipHeight = tooltip.offsetHeight;
-    const margin = 12; // space between cursor and tooltip
+    const margin = 12; // Space between tooltip and cursor
 
-    // Calculate horizontal center
+    // Default position: centered above the cursor
     let left = e.clientX - tooltipWidth / 2;
-
-    // Calculate vertical position BELOW the cursor
     let top = e.clientY + margin;
 
-    // Keep tooltip inside viewport horizontally
-    if (left < margin) left = margin;
-    else if (left + tooltipWidth > window.innerWidth - margin) {
-    left = window.innerWidth - tooltipWidth - margin;
+    // Prevent tooltip from going off-screen horizontally
+    if (left < margin) {
+        left = margin;
+    } else if (left + tooltipWidth > window.innerWidth - margin) {
+        left = window.innerWidth - tooltipWidth - margin;
+    }
+
+    // If tooltip goes above viewport, move below cursor instead
+    if (top < margin) {
+        top = e.clientY + margin;
     }
 
     // If tooltip runs below viewport, you can optionally move it above cursor
     if (top + tooltipHeight > window.innerHeight - margin) {
     top = e.clientY - tooltipHeight - margin; // fallback above cursor
-    }
+}
 
     tooltip.style.left = `${left}px`;
     tooltip.style.top = `${top}px`;
