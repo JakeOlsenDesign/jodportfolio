@@ -322,13 +322,18 @@
             text-align: center;
             border: 1px solid #fff;
             opacity: 0;
-            transition: opacity 0.3s ease, transform 0.2s ease;
-            transform: translateY(10px);
+            transition: opacity 0.3s ease;
+            will-change: opacity;
+            // transform: translateY(10px);
             }
         .tooltip.visible {
             opacity: 1;
-            transform: translateY(0);
+            // transform: translateY(0);
         }
+
+        .tooltip.updating {
+            opacity: 0.2;
+            }
 
 }
 

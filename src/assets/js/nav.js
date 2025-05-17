@@ -189,14 +189,9 @@ typeWriterByWord('typewriter', 100);
 
 document.addEventListener('DOMContentLoaded', () => {
   const tooltip = document.getElementById('tooltip');
-
-  if (!tooltip) {
-    console.error('Tooltip element not found!');
-    return;
-  }
+  if (!tooltip) return;
 
   const isDesktop = window.matchMedia('(min-width: 768px)').matches;
-
   if (!isDesktop) return;
 
   let fadeTimeout;
@@ -205,13 +200,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentEl = el.querySelector('.blog-h1');
 
     el.addEventListener('mousemove', (e) => {
-      clearTimeout(fadeTimeout);
+      if (!contentEl) return;
 
-      // Set tooltip content
-      tooltip.textContent = contentEl?.textContent || 'Project';
+      const newContent = contentEl.textContent.trim();
+
+      if (tooltip.textContent !== newContent) {
+        tooltip.classList.add('updating');
+
+        setTimeout(() => {
+          tooltip.textContent = newContent;
+          tooltip.classList.remove('updating');
+        }, 100); // Delay before switching content
+      }
+
+      clearTimeout(fadeTimeout);
       tooltip.classList.add('visible');
 
-      // Get viewport dimensions
+      // Prevent tooltip from going off-screen
       const tooltipWidth = tooltip.offsetWidth;
       const tooltipHeight = tooltip.offsetHeight;
       const margin = 20;
@@ -219,12 +224,9 @@ document.addEventListener('DOMContentLoaded', () => {
       let left = e.clientX + 10;
       let top = e.clientY + 10;
 
-      // Adjust if tooltip would overflow to the right
       if (left + tooltipWidth + margin > window.innerWidth) {
         left = e.clientX - tooltipWidth - 10;
       }
-
-      // Adjust if tooltip would overflow at the bottom
       if (top + tooltipHeight + margin > window.innerHeight) {
         top = e.clientY - tooltipHeight - 10;
       }
@@ -236,7 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('mouseleave', () => {
       fadeTimeout = setTimeout(() => {
         tooltip.classList.remove('visible');
-      }, 150); // fade-out delay
+      }, 150);
     });
   });
 });
+
