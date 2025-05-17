@@ -138,11 +138,32 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 //   TYPEWRITER
-function typeWriterByWord(elementId, speed = 300) {
+// function typeWriterByWord(elementId, speed = 300) {
+//   const target = document.getElementById(elementId);
+//   const container = target.parentElement;
+//   const text = target.innerText.trim();
+//   const words = text.split(' ');
+//   target.innerHTML = '';
+//   let index = 0;
+
+//   function addWord() {
+//     if (index < words.length) {
+//       target.innerHTML += (index === 0 ? '' : ' ') + words[index];
+//       index++;
+//       container.scrollTop = container.scrollHeight;
+//       setTimeout(addWord, speed);
+//     }
+//   }
+
+//   addWord();
+// }
+
+// typeWriterByWord('typewriter', 100);
+
+function typeWriterByWord(elementId, text, speed = 300) {
   const target = document.getElementById(elementId);
   const container = target.parentElement;
-  const text = target.innerText.trim();
-  const words = text.split(' ');
+  const words = text.trim().split(' ');
   target.innerHTML = '';
   let index = 0;
 
@@ -158,7 +179,22 @@ function typeWriterByWord(elementId, speed = 300) {
   addWord();
 }
 
-typeWriterByWord('typewriter', 100);
+// Attach hover listeners to your portfolio links
+document.querySelectorAll('.portfolio-link').forEach(link => {
+  link.addEventListener('mouseenter', () => {
+    const desc = link.querySelector('.blog-desc');
+    if (desc) {
+      typeWriterByWord('typewriter', desc.innerText, 100);  // 100 ms per word speed
+    }
+  });
+
+  // Optional: on mouse leave, clear the typewriter paragraph or reset text
+  link.addEventListener('mouseleave', () => {
+    const target = document.getElementById('typewriter');
+    target.innerHTML = ''; // Clear chatbox or put default text here if you want
+  });
+});
+
 
 // // TOOLTIP
 // document.addEventListener('DOMContentLoaded', () => {
