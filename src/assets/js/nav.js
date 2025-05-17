@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tooltip = document.getElementById('tooltip');
 
     document.querySelectorAll('.portfolio-link').forEach(el => {
-        const contentEl = el.querySelector('.article-group');
+        const contentEl = el.querySelector('.blog-h1');
 
         el.addEventListener('mousemove', (e) => {
             tooltip.textContent = contentEl.textContent;
