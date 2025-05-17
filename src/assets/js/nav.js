@@ -187,39 +187,58 @@ typeWriterByWord('typewriter', 100);
 
 
 
+<script>
 document.addEventListener('DOMContentLoaded', () => {
   const tooltip = document.getElementById('tooltip');
-  let showTimer = null;
-  let rafId = null;
+
+  if (!tooltip) {
+    console.error('Tooltip element not found!');
+    return;
+  }
+
+  const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+
+  if (!isDesktop) return;
+
+  let fadeTimeout;
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
-    const titleEl = el.querySelector('.blog-h1');
-
-    el.addEventListener('mouseenter', (e) => {
-      if (!titleEl) return;
-
-      // Delay showing tooltip
-      showTimer = setTimeout(() => {
-        tooltip.innerHTML = `<strong>${titleEl.textContent}</strong>`;
-        tooltip.classList.add('visible');
-      }, 150); // 150ms delay
-    });
+    const contentEl = el.querySelector('.blog-h1');
 
     el.addEventListener('mousemove', (e) => {
-      cancelAnimationFrame(rafId);
+      clearTimeout(fadeTimeout);
 
-      const x = e.clientX + 10;
-      const y = e.clientY + 10;
+      // Set tooltip content
+      tooltip.textContent = contentEl?.textContent || 'Project';
+      tooltip.classList.add('visible');
 
-      rafId = requestAnimationFrame(() => {
-        tooltip.style.left = `${x}px`;
-        tooltip.style.top = `${y}px`;
-      });
+      // Get viewport dimensions
+      const tooltipWidth = tooltip.offsetWidth;
+      const tooltipHeight = tooltip.offsetHeight;
+      const margin = 20;
+
+      let left = e.clientX + 10;
+      let top = e.clientY + 10;
+
+      // Adjust if tooltip would overflow to the right
+      if (left + tooltipWidth + margin > window.innerWidth) {
+        left = e.clientX - tooltipWidth - 10;
+      }
+
+      // Adjust if tooltip would overflow at the bottom
+      if (top + tooltipHeight + margin > window.innerHeight) {
+        top = e.clientY - tooltipHeight - 10;
+      }
+
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${top}px`;
     });
 
     el.addEventListener('mouseleave', () => {
-      clearTimeout(showTimer);
-      tooltip.classList.remove('visible');
+      fadeTimeout = setTimeout(() => {
+        tooltip.classList.remove('visible');
+      }, 150); // fade-out delay
     });
   });
 });
+</script>
