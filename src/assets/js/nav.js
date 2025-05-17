@@ -187,7 +187,6 @@ typeWriterByWord('typewriter', 100);
 
 
 
-<script>
 document.addEventListener('DOMContentLoaded', () => {
   const tooltip = document.getElementById('tooltip');
 
@@ -241,4 +240,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-</script>
