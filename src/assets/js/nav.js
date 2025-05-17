@@ -176,6 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         el.addEventListener('mouseleave', () => {
             tooltip.style.display = 'none';
+            tooltip.style.opacity = '0';
         });
     });
 });
