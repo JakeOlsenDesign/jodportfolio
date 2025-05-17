@@ -309,7 +309,8 @@
 
         .tooltip {
             position: fixed;
-            // background: rgba(0, 0, 0, 0.85);
+            display: block;
+            background: rgba(0, 0, 0, 0.85);
             backdrop-filter: blur(8px);
             color: white;
             padding: 2rem;
@@ -319,13 +320,15 @@
             max-width: 400px;
             border-radius: 100px;
             text-align: center;
-
-            // white-space: nowrap;
-
             border: 1px solid #fff;
-            transition: opacity 0.15s ease-in-out;
             opacity: 0;
+            transition: opacity 0.3s ease, transform 0.2s ease;
+            transform: translateY(10px);
             }
+        .tooltip.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
 }
 
