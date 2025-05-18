@@ -184,7 +184,7 @@ document.querySelectorAll('.portfolio-link').forEach(link => {
 
   link.addEventListener('mouseleave', () => {
     hoverTimeout = setTimeout(() => {
-      typeWriterByWord('typewriter', originalText, 100);
+      typeWriterByWord('typewriter', originalText, 50);
     }, 300); // Delay to allow smoother interaction if user moves quickly
   });
 });
