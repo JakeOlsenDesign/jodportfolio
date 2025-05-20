@@ -229,6 +229,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
     const contentEl = el.querySelector('.blog-h1');
+    const desc = contentEl.querySelector('.blog-desc')?.textContent || '';
+
+    // Inject HTML into tooltip
+        tooltip.innerHTML = `
+            <div class="tooltip-inner">
+            <h3>${contentEl}</h3>
+            <p>${desc}</p>
+            </div>
+        `;
 
         el.addEventListener('mousemove', (e) => {
     if (!contentEl) return;
