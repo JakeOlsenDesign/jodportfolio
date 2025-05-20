@@ -291,3 +291,44 @@ tooltip.style.top = `${top}px`;
   });
 });
 
+// CHATBOX HIDE SHOW
+
+let typewriterTimeout = null;
+
+function typeWriterByWord(elementId, text, speed = 300) {
+  const target = document.getElementById(elementId);
+  const container = target.parentElement;
+  const words = text.trim().split(' ');
+  target.innerHTML = '';
+  let index = 0;
+
+  if (typewriterTimeout) clearTimeout(typewriterTimeout);
+
+  function addWord() {
+    if (index < words.length) {
+      target.innerHTML += (index === 0 ? '' : ' ') + words[index];
+      index++;
+      container.scrollTop = container.scrollHeight;
+      typewriterTimeout = setTimeout(addWord, speed);
+    }
+  }
+
+  addWord();
+}
+
+// Grab initial intro text
+const typewriter = document.getElementById('typewriter');
+const originalText = typewriter.innerText;
+const profilePic = document.getElementById('profile-pic');
+const chatbox = document.getElementById('chatbox');
+
+// Start hidden
+chatbox.classList.remove('visible');
+
+// On profile picture click: show chatbox and type intro
+profilePic.addEventListener('click', () => {
+  if (!chatbox.classList.contains('visible')) {
+    chatbox.classList.add('visible');
+    typeWriterByWord('typewriter', originalText, 100);
+  }
+});
