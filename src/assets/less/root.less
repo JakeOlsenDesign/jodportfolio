@@ -248,34 +248,89 @@
 
         }
 
-        .chat {
-            box-shadow: inset 2px 2px 5px hsl(0, 0%, 0%);
-            backdrop-filter: blur(28px);
-            padding: 1rem;
-            height: 300px;
-            overflow: scroll;
+// CHATBOX
+    .chat-wrapper {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
 
-            background-color: rgb(0 0 0 / 31%);
-            border-radius: 20px;
-            border: 1px solid hsl(0deg 0% 100% / 27.06%);
+    /* Chat toggle holds profile and close button */
+    .chat-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    }
 
-            transform: scaleY(0);
-            transform-origin: top;
-            opacity: 0;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            pointer-events: none; /* Prevent interactions when hidden */
+    /* Profile image floating initially */
+    .profile {
+    cursor: pointer;
+    transition: transform 0.3s ease, margin 0.3s ease;
+    z-index: 2;
+    }
 
-            p {
-                font-size: 16px;
-                font-family: 'Space Mono';
-            }
-            }
+    .profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    }
 
-            .chat.visible {
-            transform: scaleY(1);
-            opacity: 1;
-            pointer-events: auto; /* Enable interactions */
-            }
+    /* Chat box style */
+    .chat {
+    box-shadow: inset 2px 2px 5px hsl(0, 0%, 0%);
+    backdrop-filter: blur(28px);
+    padding: 1rem;
+    height: 300px;
+    width: 320px;
+    overflow: scroll;
+    background-color: rgb(0 0 0 / 31%);
+    border-radius: 20px;
+    border: 1px solid hsl(0deg 0% 100% / 27.06%);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+    }
+
+    /* When visible */
+    .chat.visible {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+    }
+
+    /* Reposition profile in expanded state */
+    .chat-wrapper.open .profile {
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    transform: scale(1);
+    }
+
+    /* Close button */
+    .close-btn {
+    display: none;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    }
+
+    .chat-wrapper.open .close-btn {
+    display: block;
+    }
+
 
 
         // p {

@@ -190,18 +190,34 @@ document.querySelectorAll('.portfolio-link').forEach(link => {
 });
 
 // On profile image click, reveal chat and type intro
-const profile = document.querySelector('.profile');
-const chat = document.querySelector('.chat');
 
-let chatOpened = false; // Track if chat has already been opened
+
+const profile = document.querySelector('.profile');
+const chatWrapper = document.querySelector('.chat-wrapper');
+const chat = document.querySelector('.chat');
+const closeBtn = document.querySelector('.close-btn');
+
+let chatOpen = false;
+
+function openChat() {
+  chat.classList.add('visible');
+  chatWrapper.classList.add('open');
+  typeWriterByWord('typewriter', originalText, 50);
+  chatOpen = true;
+}
+
+function closeChat() {
+  chat.classList.remove('visible');
+  chatWrapper.classList.remove('open');
+  chatOpen = false;
+}
 
 profile.addEventListener('click', () => {
-  if (!chatOpened) {
-    chat.classList.add('visible');
-    typeWriterByWord('typewriter', originalText, 50);
-    chatOpened = true;
-  }
+  chatOpen ? closeChat() : openChat();
 });
+
+closeBtn.addEventListener('click', closeChat);
+
 
 
 // // TOOLTIP
