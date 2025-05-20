@@ -189,6 +189,19 @@ document.querySelectorAll('.portfolio-link').forEach(link => {
   });
 });
 
+// On profile image click, reveal chat and type intro
+const profile = document.querySelector('.profile');
+const chat = document.querySelector('.chat');
+
+let chatOpened = false; // Track if chat has already been opened
+
+profile.addEventListener('click', () => {
+  if (!chatOpened) {
+    chat.classList.add('visible');
+    typeWriterByWord('typewriter', originalText, 50);
+    chatOpened = true;
+  }
+});
 
 
 // // TOOLTIP
