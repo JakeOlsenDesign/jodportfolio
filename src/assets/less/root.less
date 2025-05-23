@@ -401,12 +401,29 @@
             }
         .tooltip.visible {
             opacity: 1;
+            pointer-events: auto;
             // transform: translateY(0);
         }
 
         .tooltip.updating {
             opacity: 0.2;
             }
+
+        .tooltip-inner {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .tooltip-inner:hover {
+            text-decoration: none;
+        }
+
+        .tooltip-inner h3,
+        .tooltip-inner p {
+            margin: 0;
+        }
+            
 
         .tooltip:active {
             transform: translateY(10px);

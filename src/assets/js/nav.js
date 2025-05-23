@@ -262,10 +262,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inject HTML into tooltip
         tooltip.innerHTML = `
-            <div class="tooltip-inner">
-            <h3>${contentEl}</h3>
-            <p>${desc}</p>
-            </div>
+            <a href="${link}" class="tooltip-inner">
+                <h3>${title}</h3>
+                <p>${desc}</p>
+             </a>
         `;
 
         el.addEventListener('mousemove', (e) => {
