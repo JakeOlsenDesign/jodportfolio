@@ -258,12 +258,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
     const titleEl = el.querySelector('.blog-h1');
-    // const descEl = el.querySelector('.blog-desc');
 
     if (!titleEl || !descEl) return;
 
     const title = titleEl.textContent.trim();
-    const desc = descEl.textContent.trim();
     const link = el.getAttribute('href') || '#';
 
     el.addEventListener('mouseenter', () => {
