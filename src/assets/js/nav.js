@@ -257,62 +257,52 @@ document.addEventListener('DOMContentLoaded', () => {
   let fadeTimeout;
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
-    const contentEl = el.querySelector('.blog-h1');
-    const desc = contentEl.querySelector('.blog-desc')?.textContent || '';
+    const titleEl = el.querySelector('.blog-h1');
+    const descEl = el.querySelector('.blog-desc');
 
+    if (!titleEl || !descEl) return;
+
+    const title = titleEl.textContent.trim();
+    const desc = descEl.textContent.trim();
     const link = el.getAttribute('href') || '#';
 
-    // Inject HTML into tooltip
-        tooltip.innerHTML = `
-            <a href="${link}" class="tooltip-inner">
-                <h3>${contentEl}</h3>
-                <p>${desc}</p>
-             </a>
-        `;
-
-        el.addEventListener('mousemove', (e) => {
-    if (!contentEl) return;
-
-    const newContent = contentEl.textContent.trim();
-
-    if (tooltip.textContent !== newContent) {
-        tooltip.classList.add('updating');
-
-        setTimeout(() => {
-        tooltip.textContent = newContent;
-        tooltip.classList.remove('updating');
-        }, 100);
-    }
-
-    clearTimeout(fadeTimeout);
-    tooltip.classList.add('visible');
-
-    // Tooltip dimensions
-    const tooltipWidth = tooltip.offsetWidth;
-    const tooltipHeight = tooltip.offsetHeight;
-    const margin = 12; // Space between tooltip and cursor
-
-// Center horizontally
-let left = e.clientX - tooltipWidth / 2;
-
-// Position vertically so the BOTTOM of the tooltip is near the cursor
-let top = e.clientY - tooltipHeight + margin;
-
-// Ensure tooltip stays inside horizontal bounds
-if (left < margin) left = margin;
-if (left + tooltipWidth > window.innerWidth - margin) {
-  left = window.innerWidth - tooltipWidth - margin;
-}
-
-// Optional: fallback to show tooltip below cursor if it's too high
-if (top < margin) {
-  top = e.clientY + margin;
-}
-
-tooltip.style.left = `${left}px`;
-tooltip.style.top = `${top}px`;
+    el.addEventListener('mouseenter', () => {
+      // Set inner HTML on enter
+      tooltip.innerHTML = `
+        <a href="${link}" class="tooltip-inner">
+          <h3>${title}</h3>
+          <p>${desc}</p>
+        </a>
+      `;
+      tooltip.classList.add('visible');
     });
 
+    el.addEventListener('mousemove', (e) => {
+      clearTimeout(fadeTimeout);
+
+      const tooltipWidth = tooltip.offsetWidth;
+      const tooltipHeight = tooltip.offsetHeight;
+      const margin = 12;
+
+      // Center horizontally
+      let left = e.clientX - tooltipWidth / 2;
+
+      // Position above cursor
+      let top = e.clientY - tooltipHeight - margin;
+
+      // Clamp to viewport
+      if (left < margin) left = margin;
+      if (left + tooltipWidth > window.innerWidth - margin) {
+        left = window.innerWidth - tooltipWidth - margin;
+      }
+
+      if (top < margin) {
+        top = e.clientY + margin; // fallback below cursor
+      }
+
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${top}px`;
+    });
 
     el.addEventListener('mouseleave', () => {
       fadeTimeout = setTimeout(() => {
