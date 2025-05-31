@@ -260,6 +260,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentEl = el.querySelector('.blog-h1');
     const desc = contentEl.querySelector('.blog-desc')?.textContent || '';
 
+    const linkEl = e.currentTarget.closest('a.portfolio-link'); // safest method
+    const link = linkEl?.getAttribute('href') || '#';
+
     // Inject HTML into tooltip
         tooltip.innerHTML = `
             <a href="${link}" class="tooltip-inner">
