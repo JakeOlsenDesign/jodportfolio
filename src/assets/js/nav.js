@@ -257,8 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let fadeTimeout;
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
-    const contentEl = el.querySelector('.blog-h1');
-    const desc = contentEl.querySelector('.blog-desc')?.textContent || '';
+    const title = contentEl.querySelector('.blog-h1')?.textContent || '';
+  const desc = contentEl.querySelector('.blog-desc')?.textContent || '';
 
     const link = el.getAttribute('href') || '#';
 
