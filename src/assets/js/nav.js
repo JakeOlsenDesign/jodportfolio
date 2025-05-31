@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
     const titleEl = el.querySelector('.blog-h1');
-    const descEl = el.querySelector('.blog-desc');
+    // const descEl = el.querySelector('.blog-desc');
 
     if (!titleEl || !descEl) return;
 
@@ -271,7 +271,6 @@ document.addEventListener('DOMContentLoaded', () => {
       tooltip.innerHTML = `
         <a href="${link}" class="tooltip-inner">
           <h3>${title}</h3>
-          <p>${desc}</p>
         </a>
       `;
       tooltip.classList.add('visible');
