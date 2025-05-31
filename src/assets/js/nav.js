@@ -257,15 +257,15 @@ document.addEventListener('DOMContentLoaded', () => {
   let fadeTimeout;
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
-    const title = contentEl.querySelector('h2')?.textContent || '';
-    const desc = contentEl.querySelector('p')?.textContent || '';
+    const contentEl = el.querySelector('.blog-h1');
+    const desc = contentEl.querySelector('.blog-desc')?.textContent || '';
 
     const link = el.getAttribute('href') || '#';
 
     // Inject HTML into tooltip
         tooltip.innerHTML = `
             <a href="${link}" class="tooltip-inner">
-                <h3>${title}</h3>
+                <h3>${contentEl}</h3>
                 <p>${desc}</p>
              </a>
         `;
