@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.portfolio-link').forEach(el => {
     const titleEl = el.querySelector('.blog-h1');
 
-    if (!titleEl || !descEl) return;
+    // if (!titleEl || !descEl) return;
 
     const title = titleEl.textContent.trim();
     const link = el.getAttribute('href') || '#';
