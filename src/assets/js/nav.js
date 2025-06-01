@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let left = e.clientX - tooltipWidth / 2;
 
       // Position above cursor
-      let top = e.clientY - tooltipHeight - margin;
+      let top = e.clientY - tooltipHeight + 10;
 
       // Clamp to viewport
       if (left < margin) left = margin;
