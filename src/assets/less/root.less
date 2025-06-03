@@ -366,77 +366,48 @@
         //   }
     }
 
-        // .tooltip {
-        //     position: fixed;
-        //     display: block;
-        //     backdrop-filter: blur(8px);
-        //     color: white;
-        //     padding: 2rem;
-        //     font-size: 24px;
-        //     pointer-events: none;
-        //     z-index: 9999;
-        //     max-width: 400px;
-        //     border-radius: 100px;
-        //     text-align: center;
-        //     border: 1px solid #fff;
-        //     opacity: 0;
-        //     transition: opacity 0.2s ease;
-        //     will-change: opacity;
-        //     // transform: translateY(10px);
-        //     }
-        // .tooltip.visible {
-        //     opacity: 1;
-        //     pointer-events: auto;
-        //     // transform: translateY(0);
-        // }
+        .tooltip {
+            position: fixed;
+            display: block;
+            backdrop-filter: blur(8px);
+            color: white;
+            padding: 2rem;
+            font-size: 24px;
+            pointer-events: none;
+            z-index: 9999;
+            max-width: 400px;
+            border-radius: 100px;
+            text-align: center;
+            border: 1px solid #fff;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            will-change: opacity;
+            // transform: translateY(10px);
+            }
+        .tooltip.visible {
+            opacity: 1;
+            pointer-events: auto;
+            // transform: translateY(0);
+        }
 
-        // .tooltip.updating {
-        //     opacity: 0.2;
-        //     }
+        .tooltip.updating {
+            opacity: 0.2;
+            }
 
-        // .tooltip-inner {
-        //     display: block;
-        //     text-decoration: none;
-        //     color: inherit;
-        // }
+        .tooltip-inner {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
 
-        // .tooltip-inner:hover {
-        //     text-decoration: none;
-        // }
+        .tooltip-inner:hover {
+            text-decoration: none;
+        }
 
-        // .tooltip-inner h3,
-        // .tooltip-inner p {
-        //     margin: 0;
-        // }
-
-        /* The outer tooltip container - non-interactive, to avoid flicker */
-.tooltip {
-  position: fixed;
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-/* The actual visible part of the tooltip */
-.tooltip-inner {
-  pointer-events: auto; /* clickable! */
-  display: block;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(8px);
-  color: white;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 300px;
-  font-size: 1rem;
-  transition: transform 0.2s ease;
-}
-
-.tooltip.visible {
-  opacity: 1;
-}
-
+        .tooltip-inner h3,
+        .tooltip-inner p {
+            margin: 0;
+        }
             
 
         .tooltip:active {
