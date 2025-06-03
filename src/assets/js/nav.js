@@ -221,31 +221,6 @@ closeBtn.addEventListener('click', closeChat);
 
 
 // // TOOLTIP
-// document.addEventListener('DOMContentLoaded', () => {
-//     const tooltip = document.getElementById('tooltip');
-
-//     document.querySelectorAll('.portfolio-link').forEach(el => {
-//         const contentEl = el.querySelector('.blog-h1');
-
-//         el.addEventListener('mousemove', (e) => {
-//             tooltip.textContent = contentEl.textContent;
-//             tooltip.style.display = 'block';
-//             tooltip.style.opacity = '1';
-//             tooltip.style.left = `${e.clientX + 10}px`;
-//             tooltip.style.top = `${e.clientY + 10}px`;
-//         });
-
-//         el.addEventListener('mouseleave', () => {
-//             tooltip.style.display = 'none';
-//             tooltip.style.opacity = '0';
-//         });
-//     });
-// });
-
-// console.log(contentEl.textContent); // See what it's outputting
-// tooltip.textContent = contentEl.textContent;
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const tooltip = document.getElementById('tooltip');
@@ -258,19 +233,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
     const titleEl = el.querySelector('.blog-h1');
-
-    // if (!titleEl || !descEl) return;
-
-    const title = titleEl.textContent.trim();
+    const title = titleEl?.textContent.trim() || '';
     const link = el.getAttribute('href') || '#';
 
     el.addEventListener('mouseenter', () => {
-      // Set inner HTML on enter
-      tooltip.innerHTML = `
-        <a href="${link}" class="tooltip-inner">
-          <h3>${title}</h3>
-        </a>
-      `;
+      const currentTitle = tooltip.querySelector('h3')?.textContent || '';
+      if (currentTitle !== title) {
+        tooltip.innerHTML = `
+          <div class="tooltip-inner">
+            <a href="${link}" class="tooltip-button">${title}</a>
+          </div>
+        `;
+      }
       tooltip.classList.add('visible');
     });
 
@@ -281,20 +255,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const tooltipHeight = tooltip.offsetHeight;
       const margin = 12;
 
-      // Center horizontally
       let left = e.clientX - tooltipWidth / 2;
-
-      // Position above cursor
       let top = e.clientY - tooltipHeight + 10;
 
-      // Clamp to viewport
       if (left < margin) left = margin;
       if (left + tooltipWidth > window.innerWidth - margin) {
         left = window.innerWidth - tooltipWidth - margin;
       }
 
       if (top < margin) {
-        top = e.clientY + margin; // fallback below cursor
+        top = e.clientY + margin;
       }
 
       tooltip.style.left = `${left}px`;
@@ -308,3 +278,68 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const tooltip = document.getElementById('tooltip');
+//   if (!tooltip) return;
+
+//   const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+//   if (!isDesktop) return;
+
+//   let fadeTimeout;
+
+//   document.querySelectorAll('.portfolio-link').forEach(el => {
+//     const titleEl = el.querySelector('.blog-h1');
+
+//     // if (!titleEl || !descEl) return;
+
+//     const title = titleEl.textContent.trim();
+//     const link = el.getAttribute('href') || '#';
+
+//     el.addEventListener('mouseenter', () => {
+//       const currentHTML = tooltip.querySelector('h3')?.textContent || '';
+//       if (currentHTML !== title) {
+//         tooltip.innerHTML = `
+//           <a href="${link}" class="tooltip-inner">
+//             <h3>${title}</h3>
+//           </a>
+//         `;
+//       }
+//       tooltip.classList.add('visible');
+//     });
+
+//     el.addEventListener('mousemove', (e) => {
+//       clearTimeout(fadeTimeout);
+
+//       const tooltipWidth = tooltip.offsetWidth;
+//       const tooltipHeight = tooltip.offsetHeight;
+//       const margin = 12;
+
+//       // Center horizontally
+//       let left = e.clientX - tooltipWidth / 2;
+
+//       // Position above cursor
+//       let top = e.clientY - tooltipHeight + 10;
+
+//       // Clamp to viewport
+//       if (left < margin) left = margin;
+//       if (left + tooltipWidth > window.innerWidth - margin) {
+//         left = window.innerWidth - tooltipWidth - margin;
+//       }
+
+//       if (top < margin) {
+//         top = e.clientY + margin; // fallback below cursor
+//       }
+
+//       tooltip.style.left = `${left}px`;
+//       tooltip.style.top = `${top}px`;
+//     });
+
+//     el.addEventListener('mouseleave', () => {
+//       fadeTimeout = setTimeout(() => {
+//         tooltip.classList.remove('visible');
+//       }, 150);
+//     });
+//   });
+// });
