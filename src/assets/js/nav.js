@@ -233,50 +233,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.portfolio-link').forEach(el => {
     const titleEl = el.querySelector('.blog-h1');
-    const title = titleEl?.textContent.trim() || '';
+
+    // if (!titleEl || !descEl) return;
+
+    const title = titleEl.textContent.trim();
     const link = el.getAttribute('href') || '#';
 
-    // Helper function to position the tooltip
-    function positionTooltip(e) {
+    el.addEventListener('mouseenter', () => {
+      const currentHTML = tooltip.querySelector('h3')?.textContent || '';
+      if (currentHTML !== title) {
+        tooltip.innerHTML = `
+          <a href="${link}" class="tooltip-inner">
+            <h3>${title}</h3>
+          </a>
+        `;
+      }
+      tooltip.classList.add('visible');
+    });
+
+    el.addEventListener('mousemove', (e) => {
+      clearTimeout(fadeTimeout);
+
       const tooltipWidth = tooltip.offsetWidth;
       const tooltipHeight = tooltip.offsetHeight;
       const margin = 12;
 
+      // Center horizontally
       let left = e.clientX - tooltipWidth / 2;
+
+      // Position above cursor
       let top = e.clientY - tooltipHeight + 10;
 
+      // Clamp to viewport
       if (left < margin) left = margin;
       if (left + tooltipWidth > window.innerWidth - margin) {
         left = window.innerWidth - tooltipWidth - margin;
       }
 
       if (top < margin) {
-        top = e.clientY + margin;
+        top = e.clientY + margin; // fallback below cursor
       }
 
       tooltip.style.left = `${left}px`;
       tooltip.style.top = `${top}px`;
-    }
-
-    el.addEventListener('mouseenter', (e) => {
-      const currentTitle = tooltip.querySelector('h3')?.textContent || '';
-      if (currentTitle !== title) {
-        tooltip.innerHTML = `
-          <div class="tooltip-inner">
-            <a href="${link}" class="tooltip-button">${title}</a>
-          </div>
-        `;
-      }
-
-      tooltip.classList.add('visible');
-      clearTimeout(fadeTimeout);
-      positionTooltip(e); // Position immediately
-    });
-
-    el.addEventListener('mousemove', (e) => {
-      clearTimeout(fadeTimeout);
-      tooltip.classList.add('visible'); // Ensure it's visible even while moving
-      positionTooltip(e);
     });
 
     el.addEventListener('mouseleave', () => {
@@ -286,69 +285,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const tooltip = document.getElementById('tooltip');
-//   if (!tooltip) return;
-
-//   const isDesktop = window.matchMedia('(min-width: 768px)').matches;
-//   if (!isDesktop) return;
-
-//   let fadeTimeout;
-
-//   document.querySelectorAll('.portfolio-link').forEach(el => {
-//     const titleEl = el.querySelector('.blog-h1');
-
-//     // if (!titleEl || !descEl) return;
-
-//     const title = titleEl.textContent.trim();
-//     const link = el.getAttribute('href') || '#';
-
-//     el.addEventListener('mouseenter', () => {
-//       const currentHTML = tooltip.querySelector('h3')?.textContent || '';
-//       if (currentHTML !== title) {
-//         tooltip.innerHTML = `
-//           <a href="${link}" class="tooltip-inner">
-//             <h3>${title}</h3>
-//           </a>
-//         `;
-//       }
-//       tooltip.classList.add('visible');
-//     });
-
-//     el.addEventListener('mousemove', (e) => {
-//       clearTimeout(fadeTimeout);
-
-//       const tooltipWidth = tooltip.offsetWidth;
-//       const tooltipHeight = tooltip.offsetHeight;
-//       const margin = 12;
-
-//       // Center horizontally
-//       let left = e.clientX - tooltipWidth / 2;
-
-//       // Position above cursor
-//       let top = e.clientY - tooltipHeight + 10;
-
-//       // Clamp to viewport
-//       if (left < margin) left = margin;
-//       if (left + tooltipWidth > window.innerWidth - margin) {
-//         left = window.innerWidth - tooltipWidth - margin;
-//       }
-
-//       if (top < margin) {
-//         top = e.clientY + margin; // fallback below cursor
-//       }
-
-//       tooltip.style.left = `${left}px`;
-//       tooltip.style.top = `${top}px`;
-//     });
-
-//     el.addEventListener('mouseleave', () => {
-//       fadeTimeout = setTimeout(() => {
-//         tooltip.classList.remove('visible');
-//       }, 150);
-//     });
-//   });
-// });
