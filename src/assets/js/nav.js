@@ -243,30 +243,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentHTML = tooltip.querySelector('h3')?.textContent || '';
       if (currentHTML !== title) {
         tooltip.innerHTML = `
-          <a href="${link}" class="tooltip-inner tooltip-button">
-            <h3">${title}</h3>
+          <a href="${link}" class="tooltip-inner">
+            <h3>${title}</h3>
           </a>
         `;
       }
       tooltip.classList.add('visible');
-    });
-
-      tooltip.classList.add('visible');
-      clearTimeout(fadeTimeout);
-      positionTooltip(e);
-
-      // Add click animation
-      const button = tooltip.querySelector('.tooltip-button');
-      if (button) {
-        button.addEventListener('click', (e) => {
-          e.preventDefault(); // Optional: remove if you want the link to follow
-          button.classList.add('clicked');
-          setTimeout(() => {
-            button.classList.remove('clicked');
-            window.location.href = link; // Follow the link after animation
-          }, 150);
-        });
-      }
     });
 
     el.addEventListener('mousemove', (e) => {
