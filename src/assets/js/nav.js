@@ -236,21 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const title = titleEl?.textContent.trim() || '';
     const link = el.getAttribute('href') || '#';
 
-    el.addEventListener('mouseenter', () => {
-      const currentTitle = tooltip.querySelector('h3')?.textContent || '';
-      if (currentTitle !== title) {
-        tooltip.innerHTML = `
-          <div class="tooltip-inner">
-            <a href="${link}" class="tooltip-button">${title}</a>
-          </div>
-        `;
-      }
-      tooltip.classList.add('visible');
-    });
-
-    el.addEventListener('mousemove', (e) => {
-      clearTimeout(fadeTimeout);
-
+    // Helper function to position the tooltip
+    function positionTooltip(e) {
       const tooltipWidth = tooltip.offsetWidth;
       const tooltipHeight = tooltip.offsetHeight;
       const margin = 12;
@@ -269,6 +256,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
       tooltip.style.left = `${left}px`;
       tooltip.style.top = `${top}px`;
+    }
+
+    el.addEventListener('mouseenter', (e) => {
+      const currentTitle = tooltip.querySelector('h3')?.textContent || '';
+      if (currentTitle !== title) {
+        tooltip.innerHTML = `
+          <div class="tooltip-inner">
+            <a href="${link}" class="tooltip-button">${title}</a>
+          </div>
+        `;
+      }
+
+      tooltip.classList.add('visible');
+      clearTimeout(fadeTimeout);
+      positionTooltip(e); // Position immediately
+    });
+
+    el.addEventListener('mousemove', (e) => {
+      clearTimeout(fadeTimeout);
+      tooltip.classList.add('visible'); // Ensure it's visible even while moving
+      positionTooltip(e);
     });
 
     el.addEventListener('mouseleave', () => {
@@ -278,6 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
 
 // document.addEventListener('DOMContentLoaded', () => {
