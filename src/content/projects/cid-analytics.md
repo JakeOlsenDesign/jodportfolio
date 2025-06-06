@@ -8,8 +8,8 @@ services:
   - Branding
   - Web Design
 description: Educating and empowering a new generation of homeowners
-image: /assets/images/blog/cida-featured.webp
+image: /assets/images/blog/cida-cover-copy.webp
 logo: /assets/images/blog/cida-logo-full-white.png
-bg: /assets/images/blog/cida-cover-copy.webp
+bg: /assets/images/blog/cida-featured.webp
 ---
 Write your content here.
