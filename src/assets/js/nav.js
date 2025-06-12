@@ -192,31 +192,31 @@ function typeWriterByWord(elementId, text, speed = 300) {
 // On profile image click, reveal chat and type intro
 
 
-const profile = document.querySelector('.profile');
-const chatWrapper = document.querySelector('.chat-wrapper');
-const chat = document.querySelector('.chat');
-const closeBtn = document.querySelector('.close-btn');
+// const profile = document.querySelector('.profile');
+// const chatWrapper = document.querySelector('.chat-wrapper');
+// const chat = document.querySelector('.chat');
+// const closeBtn = document.querySelector('.close-btn');
 
-let chatOpen = false;
+// let chatOpen = false;
 
-function openChat() {
-  chat.classList.add('visible');
-  chatWrapper.classList.add('open');
-  typeWriterByWord('typewriter', originalText, 50);
-  chatOpen = true;
-}
+// function openChat() {
+//   chat.classList.add('visible');
+//   chatWrapper.classList.add('open');
+//   typeWriterByWord('typewriter', originalText, 50);
+//   chatOpen = true;
+// }
 
-function closeChat() {
-  chat.classList.remove('visible');
-  chatWrapper.classList.remove('open');
-  chatOpen = false;
-}
+// function closeChat() {
+//   chat.classList.remove('visible');
+//   chatWrapper.classList.remove('open');
+//   chatOpen = false;
+// }
 
-profile.addEventListener('click', () => {
-  chatOpen ? closeChat() : openChat();
-});
+// profile.addEventListener('click', () => {
+//   chatOpen ? closeChat() : openChat();
+// });
 
-closeBtn.addEventListener('click', closeChat);
+// closeBtn.addEventListener('click', closeChat);
 
 
 
