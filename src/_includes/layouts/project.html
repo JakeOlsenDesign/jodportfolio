@@ -65,25 +65,24 @@
                     <!--Project Template Start-->
                     
                     <div class="intro-container">
-                        <div id="introContent" class="intro-content">
-                            <h1 class="project-h1">{{ title }}</h1>
-                            <p class="description">{{ description }}</p>
-                            <!-- <div class="two-column-container"></div>
-                                <div>
-                                    <h1 class="project-h1">{{ title }}</h1>
-                                    <p class="description">{{ description }}</p>
-                                </div>
-                                <div>
-                                     <div class="credits">
-                                        <span class="subheader">Credits</span>
-                                        <div>
-                                            {% for item in credits %}
-                                                <p>{{ item.credit }}</p>
-                                            {% endfor %}
-                                        </div>
+                        <div id="introContent" class="intro-content two-column-container">
+                            <div>
+                                <h1 class="project-h1">{{ title }}</h1>
+                                <p class="description">{{ description }}</p>
+                            </div>
+                            <div>
+                                <div class="credits">
+                                    <span class="subheader">Credits</span>
+                                    <div>
+                                        {% for item in credits %}
+                                            <p>{{ item.credit }}</p>
+                                        {% endfor %}
                                     </div>
-                                    <div class="services">{{ services }}</div>
                                 </div>
+                                <div class="services">{{ services }}</div>
+                            </div>
+                            <!-- <div class="two-column-container"></div>
+                                
                             </div> -->
                             <!-- <div class="links">
                                 <p>Gallery</p>
