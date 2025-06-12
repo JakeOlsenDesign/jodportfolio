@@ -71,15 +71,11 @@
                                 <p class="description">{{ description }}</p>
                             </div>
                             <div>
-                                <div class="credits">
-                                    <span class="subheader">Credits</span>
-                                    <div>
-                                        {% for item in credits %}
-                                            <p>{{ item.credit }}</p>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                                <div class="services">{{ services }}</div>
+                                {% for item in credits %}
+                                    <p>{{ item.credit }}</p>
+                                {% endfor %}
+                                <p>{{ services }}</p>
+                                <!-- <div class="services">{{ services }}</div> -->
                             </div>
                             <!-- <div class="two-column-container"></div>
                                 

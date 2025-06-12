@@ -365,7 +365,7 @@
     .project-article #project-content p.description {
         font-size: (21/14rem);
         color: #FFF;
-        text-align: center;
+        text-align: right;
         margin-top: 1rem;
     }
 
@@ -699,9 +699,15 @@
     }
 
     .intro-container .two-column-container div:first-child {
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
+        width: 50%;
+    }
+
+    .intro-container.two-column-container div:last-child {
+        width: 50%;
+    }
+
+    .intro-container.two-column-container div:last-child p {
+        text-align: left;
     }
 
     .project-article #project-content h1 {
@@ -713,6 +719,7 @@
         line-height: 1em;
         font-weight: 400;
         color: #FFF;
+        text-align: right;
     }
 
     // .intro-container .two-column-container div:last-child {
@@ -1204,11 +1211,10 @@
                 left: 50%;
                 top: 30%;
                 width: 100%;
+            }
 
-                .two-column-container {
-                    max-width: 700px;
-                    margin: auto;
-                }
+            .intro-content.two-column-container {
+                justify-content: center;
             }
 
             .mobile-image-container {
