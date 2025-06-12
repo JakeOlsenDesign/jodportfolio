@@ -166,28 +166,28 @@ function typeWriterByWord(elementId, text, speed = 300) {
 }
 
 // Save the initial intro text when the page loads
-const typewriter = document.getElementById('typewriter');
-const originalText = typewriter.innerText;
+// const typewriter = document.getElementById('typewriter');
+// const originalText = typewriter.innerText;
 
-// Attach hover listeners to portfolio items
-document.querySelectorAll('.portfolio-link').forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    if (hoverTimeout) {
-      clearTimeout(hoverTimeout);
-    }
+// // Attach hover listeners to portfolio items
+// document.querySelectorAll('.portfolio-link').forEach(link => {
+//   link.addEventListener('mouseenter', () => {
+//     if (hoverTimeout) {
+//       clearTimeout(hoverTimeout);
+//     }
 
-    const desc = link.querySelector('.blog-desc');
-    if (desc) {
-      typeWriterByWord('typewriter', desc.innerText, 50);
-    }
-  });
+//     const desc = link.querySelector('.blog-desc');
+//     if (desc) {
+//       typeWriterByWord('typewriter', desc.innerText, 50);
+//     }
+//   });
 
-  link.addEventListener('mouseleave', () => {
-    hoverTimeout = setTimeout(() => {
-      typeWriterByWord('typewriter', originalText, 50);
-    }, 300); // Delay to allow smoother interaction if user moves quickly
-  });
-});
+//   link.addEventListener('mouseleave', () => {
+//     hoverTimeout = setTimeout(() => {
+//       typeWriterByWord('typewriter', originalText, 50);
+//     }, 300); // Delay to allow smoother interaction if user moves quickly
+//   });
+// });
 
 // On profile image click, reveal chat and type intro
 
