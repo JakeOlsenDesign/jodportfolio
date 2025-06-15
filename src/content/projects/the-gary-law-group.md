@@ -9,8 +9,9 @@ services:
   - Web Design
 description: Fenestration Risk Partners. Foreseeing Risk, Securing Growth.
 credits:
-  - credit: "Team: Edge One Media"
-  - credit: "Role: Lead Designer"
+  - credit: Edge One Media - Company
+  - credit: " Nicholas De Salvo - CEO"
+  - credit: " Madison Stekly - Designer"
 image: /assets/images/blog/tglg-cover.webp
 logo: /assets/images/blog/tglg-logo-horizontal.webp
 bg: /assets/images/blog/tglg-bg-resize.webp
