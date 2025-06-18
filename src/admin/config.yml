@@ -47,13 +47,15 @@ collections:
           - { label: "Author", name: "author", widget: "string", required: false }
           - { label: "Date", name: "date", widget: "datetime", required: false }
           - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
-          - { label: "Services", name: "services", widget: "list", required: false}
           - { label: "Description", name: "description", widget: "string", required: false }
+          - { label: "Role", name: "role", widget: "list", required: false}
+          - { label: "Services", name: "services", widget: "list", required: false}
           -   label: "Credits"
               name: "credits"
               widget: "list"
               fields: 
                 - { label: "Credit", name: "credit", widget: "string", required: false }
+          - { label: "Tools", name: "tools", widget: "list", required: false}
           - { label: 'Case Study', name: "body", widget: 'markdown', default: "Write your content here." }
           - { label: "Featured Image", name: "image", widget: "image", required: false }
           - { label: "Project Logo", name: "logo", widget: "image", required: false }
