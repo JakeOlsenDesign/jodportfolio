@@ -72,16 +72,16 @@
                             </div>
                             <div class="vertical-line"></div>
                             <div class="project-details">
-                                <div><h6>Role:<p>{{ role }}</p></h6></div>
+                                <div><h6>Role:</h6><p>{{ role }}</p></div>
 
-                                <div><h6>Services:<p>{{ services }}</p></h6></div>
+                                <div><h6>Services:</h6><p>{{ services }}</p></div>
 
                                 <h6>Collaborated With:</h6>
                                 {% for item in credits %}
                                     <p>{{ item.credit }}</p>
                                 {% endfor %}
 
-                                <div><h6>Tools:<p>{{ tools }}</p></h6></div>
+                                <div><h6>Tools:</h6><p>{{ tools }}</p></div>
                                 
                                 <!-- <div class="services">{{ services }}</div> -->
                             </div>
