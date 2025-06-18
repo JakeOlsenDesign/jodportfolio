@@ -4,14 +4,21 @@ url: the-gary-law-group
 date: 2025-02-22T17:27:00.000Z
 tags:
   - project
+description: Fenestration Risk Partners. Foreseeing Risk, Securing Growth.
+role:
+  - Lead Designer - Web Design & Development
 services:
   - Branding
   - Web Design
-description: Fenestration Risk Partners. Foreseeing Risk, Securing Growth.
 credits:
   - credit: Edge One Media - Company
   - credit: " Nicholas De Salvo - CEO"
   - credit: " Madison Stekly - Designer"
+tools:
+  - WordPress
+  - Adobe XD
+  - Photoshop
+  - Illustrator
 image: /assets/images/blog/tglg-cover.webp
 logo: /assets/images/blog/tglg-logo-horizontal.webp
 bg: /assets/images/blog/tglg-bg-resize.webp
