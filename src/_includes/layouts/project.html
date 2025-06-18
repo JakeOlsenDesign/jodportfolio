@@ -76,10 +76,12 @@
 
                                 <div><h6>Services:</h6><p>{{ services }}</p></div>
 
-                                <h6>Collaborated With:</h6>
-                                {% for item in credits %}
-                                    <p>{{ item.credit }}</p>
-                                {% endfor %}
+                                <div class="collab">
+                                    <h6>Collaborated With:</h6>
+                                    {% for item in credits %}
+                                        <p>{{ item.credit }}</p>
+                                    {% endfor %}
+                                </div>
 
                                 <div><h6>Tools:</h6><p>{{ tools }}</p></div>
                                 
