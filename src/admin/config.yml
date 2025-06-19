@@ -70,9 +70,8 @@ collections:
               name: "video"
               widget: "file"
               required: false
-              media_library:
-                config:
-                  multiple: false
+              media_folder: "src/assets/videos"
+              public_folder: "/assets/videos"
               hint: "Upload a video file (e.g., MP4 or WebM) to display for this project."
           -   label: "Mobile Website Images"
               name: "mobile_images"
