@@ -132,6 +132,13 @@
                                     <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                 {% endfor %}
 
+                                {% if project.data.video %}
+                                    <video controls class="project-video">
+                                        <source src="{{ project.data.video | url }}" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                {% endif %}
+
                                 <div class="mobile-image-container">
                                     {% for item in mobile_images %}
                                         <img src="{{ item['mi-image'] | url }}" alt="{{ item.alt | default('Mobile Image') }}">
