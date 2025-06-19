@@ -63,8 +63,9 @@ collections:
           -   label: "Project Images"
               name: "project_images"
               widget: "list"
-              fields: 
+              fields: c
                 - { label: "Image", name: "image", widget: "image" }
+          - { label: "Website Video", name: "video", widget: "boolean", required: false, default: false, hint: "Check if this project includes a video." }
           -   label: "Mobile Website Images"
               name: "mobile_images"
               widget: "list"
