@@ -28,6 +28,7 @@ project_images:
   - image: /assets/images/blog/tglg-pi-1.webp
   - image: /assets/images/blog/tglg-pi-2.webp
   - image: /assets/images/blog/tglg-pi-3.webp
+webvideo: true
 video: /assets/images/blog/glg-desktop-resized.mp4
 mobile_images: []
 descriptionimage: /assets/images/blog/screencapture-thegarylawgroup-2025-02-22-17_29_30.webp
