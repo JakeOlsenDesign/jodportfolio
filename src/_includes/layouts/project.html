@@ -134,11 +134,19 @@
 
                                 <div class="video-container">
                                 {% if video %}
-                                    <video controls class="project-video">
-                                        <source src="{{ video | url }}" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <div class="custom-video-wrapper">
+                                    <video id="projectVideo" class="custom-video" src="{{ video | url }}" playsinline></video>
+
+                                    <button id="playButton" class="play-button" aria-label="Play Video">
+                                        ▶
+                                    </button>
+
+                                    <div class="progress-container">
+                                        <div id="progressBar" class="progress-bar"></div>
+                                    </div>
+                                    </div>
                                 {% endif %}
+
                                 </div>
 
                                 <div class="mobile-image-container">
