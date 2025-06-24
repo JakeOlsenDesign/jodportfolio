@@ -133,9 +133,9 @@
                                 {% endfor %}
 
                                 <div class="video-containe">
-                                {% if project.data.video %}
+                                {% if video %}
                                     <video controls class="project-video">
-                                        <source src="{{ project.data.video | url }}" type="video/mp4">
+                                        <source src="{{ video | url }}" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                 {% endif %}
