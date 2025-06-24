@@ -285,3 +285,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// CUSTOM VIDEO PLAYER
+
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("projectVideo");
+  const playButton = document.getElementById("playButton");
+  const progressContainer = document.querySelector(".progress-container");
+  const progressBar = document.getElementById("progressBar");
+
+  if (!video || !playButton || !progressContainer || !progressBar) return;
+
+  // Hide native controls
+  video.controls = false;
+
+  playButton.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+      playButton.style.display = "none";
+    }
+  });
+
+  video.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+      playButton.style.display = "none";
+    } else {
+      video.pause();
+      playButton.style.display = "block";
+    }
+  });
+
+  video.addEventListener("timeupdate", () => {
+    const percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.width = `${percent}%`;
+  });
+
+  progressContainer.addEventListener("click", (e) => {
+    const rect = progressContainer.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const width = rect.width;
+    const duration = video.duration;
+
+    video.currentTime = (clickX / width) * duration;
+  });
+});
