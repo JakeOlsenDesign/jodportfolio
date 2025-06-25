@@ -141,9 +141,11 @@
                                     {% endfor %}
                                 </div>
 
-                                {% for item in project_images %}
-                                    <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                                {% endfor %}
+                                <div class="project-images-container">
+                                    {% for item in project_images %}
+                                        <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                    {% endfor %}
+                                </div>
 
                                 <div class="web-preview-container">
 
