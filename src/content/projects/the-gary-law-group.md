@@ -25,6 +25,7 @@ bg: /assets/images/blog/tglg-bg-resize.webp
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
   - image: /assets/images/blog/tglg-logomock.webp
+webpreview: /assets/images/blog/glg-web-preview.webp
 webvideo: true
 video: /assets/images/blog/glg-desktop-resized.mp4
 mobile_images: []
