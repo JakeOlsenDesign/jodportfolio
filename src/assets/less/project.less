@@ -742,7 +742,7 @@
     }
 
     .web-preview {
-        height: 95vh;
+        aspect-ratio: 16 / 9;
         width: 100%;
         overflow: scroll;
         border: 20px solid;
@@ -750,8 +750,19 @@
         border-radius: 20px;
     }
 
-    .web-preview img {
+    .web-preview img,
+    .mobile-preview img {
         width: 100%;
+    }
+
+    .mobile-preview {
+        // height: 95vh;
+        aspect-ratio: 9 / 16;
+        width: 100%;
+        overflow: scroll;
+        border: 20px solid;
+        background-color: #4d4b66;
+        border-radius: 20px;
     }
 
     .project-video {
