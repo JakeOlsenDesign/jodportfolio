@@ -60,6 +60,16 @@ collections:
           - { label: "Featured Image", name: "image", widget: "image", required: false }
           - { label: "Project Logo", name: "logo", widget: "image", required: false }
           - { label: "Background Image", name: "bg", widget: "image", required: false }
+          -   label: "Brand Process"
+              name: "brand_process"
+              widget: "list"
+              fields: 
+                - { label: "Image", name: "image", widget: "image" }
+          -   label: "Web Process"
+              name: "web_process"
+              widget: "list"
+              fields: 
+                - { label: "Image", name: "image", widget: "image" }
           -   label: "Project Images"
               name: "project_images"
               widget: "list"
