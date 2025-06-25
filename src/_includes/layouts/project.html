@@ -145,22 +145,6 @@
                                     <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                 {% endfor %}
 
-                                <div class="video-container">
-                                {% if video %}
-                                    <div class="custom-video-wrapper">
-                                        <video id="projectVideo" class="project-video" src="{{ video | url }}" playsinline></video>
-
-                                        <button id="playButton" class="play-button" aria-label="Play Video">
-                                            ▶
-                                        </button>
-
-                                        <div class="progress-container">
-                                            <div id="progressBar" class="progress-bar"></div>
-                                        </div>
-                                    </div>
-                                {% endif %}
-                                </div>
-
                                 <div class="web-preview-container">
 
                                     <div class="web-preview">
