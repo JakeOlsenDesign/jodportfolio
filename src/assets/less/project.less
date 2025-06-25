@@ -551,7 +551,7 @@
     }
 
     .project-gallery {
-        display: grid;
+        // display: grid;
         // grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         gap: 2rem;
         // transition: 1s ease;
@@ -750,7 +750,8 @@
 
     .web-preview {
         aspect-ratio: 16 / 9;
-        width: 1200px;
+        width: 100%;
+        max-width: 1000px;
         overflow: scroll;
         border: 20px solid;
         background-color: #4d4b66;
@@ -765,7 +766,8 @@
     .mobile-preview {
         // height: 95vh;
         aspect-ratio: 9 / 16;
-        width: 325px;
+        max-width: 325px;
+        width: 100%;
         overflow: scroll;
         border: 20px solid;
         background-color: #4d4b66;
