@@ -757,8 +757,6 @@
     .custom-video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  margin: 2rem auto;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -777,19 +775,25 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: none;
+  color: rgb(0 0 0 / 75%);
   border: none;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   cursor: pointer;
   z-index: 2;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .play-button:hover {
-  background: rgba(0, 0, 0, 0.8);
+  transform:scale(1.1);
+}
+
+.play-button svg {
+  width: 40px;
+  height: 40px;
+  fill: rgb(0 0 0 / 75%);
 }
 
 /* Progress Bar */
