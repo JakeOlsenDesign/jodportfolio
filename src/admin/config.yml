@@ -66,5 +66,5 @@ collections:
               fields: 
                 - { label: "Image", name: "image", widget: "image" }
           - { label: "Website Preview", name: "webpreview", widget: "image", required: false }
-          - { label: "Mobile Preview", name: "webpreview", widget: "image", required: false }
+          - { label: "Mobile Preview", name: "mobilepreview", widget: "image", required: false }
           - { label: "Final Image", name: "fi", widget: "image", required: false }
