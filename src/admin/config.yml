@@ -65,6 +65,7 @@ collections:
               widget: "list"
               fields: 
                 - { label: "Image", name: "image", widget: "image" }
+          - { label: "Website Preview", name: "webpreview", widget: "image", required: false }
           - { label: "Website Video", name: "webvideo", widget: "boolean", required: false, default: false, hint: "Check if this project includes a video." }
           -   label: "Project Video"
               name: "video"
