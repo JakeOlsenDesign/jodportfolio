@@ -66,14 +66,5 @@ collections:
               fields: 
                 - { label: "Image", name: "image", widget: "image" }
           - { label: "Website Preview", name: "webpreview", widget: "image", required: false }
-          -   label: "Mobile Website Images"
-              name: "mobile_images"
-              widget: "list"
-              fields: 
-                - { label: "Mobile Image", name: "mi-image", widget: "image" }
-          -   label: "Desktop Website Images"
-              name: "desktop_images"
-              widget: "list"
-              fields: 
-                - { label: "Desktop Image", name: "desk-image", widget: "image" }
+          - { label: "Mobile Preview", name: "webpreview", widget: "image", required: false }
           - { label: "Final Image", name: "fi", widget: "image", required: false }
