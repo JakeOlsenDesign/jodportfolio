@@ -66,12 +66,6 @@ collections:
               fields: 
                 - { label: "Image", name: "image", widget: "image" }
           - { label: "Website Preview", name: "webpreview", widget: "image", required: false }
-          - { label: "Website Video", name: "webvideo", widget: "boolean", required: false, default: false, hint: "Check if this project includes a video." }
-          -   label: "Project Video"
-              name: "video"
-              widget: "file"
-              required: false
-              hint: "Upload a video file (e.g., MP4 or WebM) to display for this project."
           -   label: "Mobile Website Images"
               name: "mobile_images"
               widget: "list"
