@@ -1,4 +1,7 @@
 ---
+bg: /assets/images/blog/tglg-bg-resize.webp
+mobilepreview: /assets/images/blog/glg-mobile-preview.webp
+webvideo: true
 title: The Gary Law Group
 url: the-gary-law-group
 date: 2025-02-22T17:27:00.000Z
@@ -21,14 +24,12 @@ tools:
   - Illustrator
 image: /assets/images/blog/tglg-cover.webp
 logo: /assets/images/blog/tglg-logo-horizontal.webp
-bg: /assets/images/blog/tglg-bg-resize.webp
+webpreview: /assets/images/blog/glg-web-preview.webp
+mobile_images: []
+video: /assets/images/blog/glg-desktop-resized.mp4
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
   - image: /assets/images/blog/tglg-logomock.webp
-webpreview: /assets/images/blog/glg-web-preview.webp
-webvideo: true
-video: /assets/images/blog/glg-desktop-resized.mp4
-mobile_images: []
 descriptionimage: /assets/images/blog/screencapture-thegarylawgroup-2025-02-22-17_29_30.webp
 ---
 ## Overview
