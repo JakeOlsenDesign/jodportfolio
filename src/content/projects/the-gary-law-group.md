@@ -1,7 +1,4 @@
 ---
-bg: /assets/images/blog/tglg-bg-resize.webp
-mobilepreview: /assets/images/blog/glg-mobile-preview.webp
-webvideo: true
 title: The Gary Law Group
 url: the-gary-law-group
 date: 2025-02-22T17:27:00.000Z
@@ -24,12 +21,34 @@ tools:
   - Illustrator
 image: /assets/images/blog/tglg-cover.webp
 logo: /assets/images/blog/tglg-logo-horizontal.webp
-webpreview: /assets/images/blog/glg-web-preview.webp
-mobile_images: []
-video: /assets/images/blog/glg-desktop-resized.mp4
+bg: /assets/images/blog/tglg-bg-resize.webp
+brand_process:
+  - image: /assets/images/blog/glg-stylescape-1.webp
+  - image: /assets/images/blog/glg-stylescape-2.webp
+  - image: /assets/images/blog/glg-stylescape-3.webp
+  - image: /assets/images/blog/glg-stylescape-1-r2.webp
+  - image: /assets/images/blog/glg-stylescape-2-r2.webp
+  - image: /assets/images/blog/glg-stylescape-3-r2.webp
+web_process:
+  - image: /assets/images/blog/glg-mockup-2.1.webp
+  - image: /assets/images/blog/glg-mockup-1.1.webp
+  - image: /assets/images/blog/glg-mockup-2.2.webp
+  - image: /assets/images/blog/glg-mockup-3.3.webp
+  - image: /assets/images/blog/glg-mockup-m2.webp
+  - image: /assets/images/blog/glg-mockup-r2-1.webp
+  - image: /assets/images/blog/glg-mockup-r2-2.webp
+  - image: /assets/images/blog/glg-mockup-r3-1.webp
+  - image: /assets/images/blog/glg-mockup-r3-2.webp
+  - image: /assets/images/blog/glg-mockup-r4-1.webp
+  - image: /assets/images/blog/glg-mockup-r4-2.webp
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
   - image: /assets/images/blog/tglg-logomock.webp
+webpreview: /assets/images/blog/glg-web-preview.webp
+mobilepreview: /assets/images/blog/glg-mobile-preview.webp
+webvideo: true
+mobile_images: []
+video: /assets/images/blog/glg-desktop-resized.mp4
 descriptionimage: /assets/images/blog/screencapture-thegarylawgroup-2025-02-22-17_29_30.webp
 ---
 ## Overview
