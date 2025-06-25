@@ -128,6 +128,19 @@
                             </div>
 
                             <div class="project-gallery">
+
+                                <div class="brand-process-container">
+                                    {% for item in brand_process %}
+                                        <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                    {% endfor %}
+                                </div>
+
+                                <div class="web-process-container">
+                                    {% for item in web_process %}
+                                        <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                    {% endfor %}
+                                </div>
+
                                 {% for item in project_images %}
                                     <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                 {% endfor %}
