@@ -37,7 +37,6 @@ web_process:
   - image: /assets/images/blog/glg-mockup-r2-2.webp
   - image: /assets/images/blog/glg-mockup-r3-1.webp
   - image: /assets/images/blog/glg-mockup-r3-2.webp
-  - image: /assets/images/blog/glg-mockup-r4-1.webp
   - image: /assets/images/blog/glg-mockup-r4-2.webp
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
