@@ -34,7 +34,6 @@ web_process:
   - image: /assets/images/blog/glg-mockup-1.1.webp
   - image: /assets/images/blog/glg-mockup-2.2.webp
   - image: /assets/images/blog/glg-mockup-3.3.webp
-  - image: /assets/images/blog/glg-mockup-r2-2.webp
   - image: /assets/images/blog/glg-mockup-r3-1.webp
   - image: /assets/images/blog/glg-mockup-r3-2.webp
   - image: /assets/images/blog/glg-mockup-r4-2.webp
