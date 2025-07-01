@@ -133,9 +133,12 @@
                                 
                                 <div class="brand-process-container lightbox-js">
                                     <h3>Moodboards - Process</h3>
-                                    {% for item in brand_process %}
-                                        <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                                    {% endfor %}
+
+                                    <div class="brand-process">
+                                        {% for item in brand_process %}
+                                            <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                        {% endfor %}
+                                    </div>
                                 </div>
 
                                 <div class="project-images-container">
@@ -148,12 +151,17 @@
 
                                 <div class="web-process-container lightbox-js">
                                     <h3>Mockups</h3>
-                                    {% for item in web_process %}
-                                        <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                                    {% endfor %}
+
+                                    <div class="web-process">
+                                        {% for item in web_process %}
+                                            <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                        {% endfor %}
+                                    </div>
                                 </div>
 
                                 <div class="web-preview-container">
+
+                                    <div class="website-url"><a href=""></a></div>
 
                                     <div class="web-preview">
                                         <p><i>Scroll to preview</i></p>
