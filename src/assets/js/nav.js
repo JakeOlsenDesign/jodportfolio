@@ -331,3 +331,33 @@ document.addEventListener("DOMContentLoaded", function () {
     video.currentTime = (clickX / width) * duration;
   });
 });
+
+// LIGHTBOX
+
+// Get elements
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const triggers = document.querySelectorAll('.lightbox-trigger');
+
+// Open lightbox
+triggers.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+  });
+});
+
+// Close lightbox when clicking outside image
+lightbox.addEventListener('click', (e) => {
+  if (e.target !== lightboxImg) {
+    lightbox.style.display = 'none';
+  }
+});
+
+// Close lightbox on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    lightbox.style.display = 'none';
+  }
+});

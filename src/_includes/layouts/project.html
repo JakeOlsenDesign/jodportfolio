@@ -127,14 +127,14 @@
                                 
                             </div>
 
-                            <div class="project-gallery">
+                            <div class="project-gallery lightbox-js">
                                 <div class="brand-process-container">
                                     {% for item in brand_process %}
                                         <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                     {% endfor %}
                                 </div>
 
-                                <div class="web-process-container">
+                                <div class="web-process-container lightbox-js">
                                     {% for item in web_process %}
                                         <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                     {% endfor %}
@@ -168,6 +168,10 @@
 
                 </section>
             </article>
+
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="">
+            </div>
         </div>
         <!-- End .main-content -->
 
