@@ -40,6 +40,7 @@ web_process:
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
   - image: /assets/images/blog/tglg-logomock.webp
+weburl: https://thegarylawgroup.com/
 webpreview: /assets/images/blog/glg-web-preview.webp
 mobilepreview: /assets/images/blog/glg-mobile-preview.webp
 webvideo: true
