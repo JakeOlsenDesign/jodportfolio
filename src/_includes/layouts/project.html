@@ -130,7 +130,7 @@
                             <div class="project-gallery lightbox-js">
                                 <div class="brand-process-container">
                                     {% for item in brand_process %}
-                                        <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                        <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                     {% endfor %}
                                 </div>
 
