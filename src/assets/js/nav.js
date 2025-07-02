@@ -340,14 +340,33 @@ const lightboxImg = document.getElementById('lightbox-img');
 const triggers = document.querySelectorAll('.lightbox-trigger');
 
 // Open lightbox
+// triggers.forEach(img => {
+//   img.addEventListener('click', () => {
+//     lightbox.style.display = 'flex';
+//     lightboxImg.src = img.src;
+//     lightboxImg.alt = img.alt;
+//     bodyElement.style.overflow = 'hidden';
+//   });
+// });
+
 triggers.forEach(img => {
   img.addEventListener('click', () => {
+    lightbox.className = 'lightbox'; // reset
+
+    if (img.closest('.brand-process')) {
+      lightbox.classList.add('lightbox-active');
+      bodyElement.style.overflow = 'hidden';
+    } else if (img.closest('.web-process')) {
+      lightbox.classList.add('lightbox-active');
+      bodyElement.style.overflow = 'hidden';
+    }
+
     lightbox.style.display = 'flex';
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
-    bodyElement.style.overflow = 'hidden';
   });
 });
+
 
 // Close lightbox when clicking outside image
 lightbox.addEventListener('click', (e) => {
