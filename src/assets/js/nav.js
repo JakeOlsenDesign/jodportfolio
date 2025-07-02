@@ -345,6 +345,7 @@ triggers.forEach(img => {
     lightbox.style.display = 'flex';
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
+    bodyElement.style.overflow = 'hidden';
   });
 });
 
@@ -352,6 +353,7 @@ triggers.forEach(img => {
 lightbox.addEventListener('click', (e) => {
   if (e.target !== lightboxImg) {
     lightbox.style.display = 'none';
+    bodyElement.style.overflow = 'auto';
   }
 });
 
@@ -359,5 +361,6 @@ lightbox.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     lightbox.style.display = 'none';
+    bodyElement.style.overflow = 'auto';
   }
 });
