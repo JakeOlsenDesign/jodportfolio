@@ -356,11 +356,11 @@ triggers.forEach(img => {
     if (img.closest('.brand-process')) {
       lightbox.classList.add('lightbox-active');
       bodyElement.style.overflow = 'hidden';
-      lightboxImg.classList.add('brand-img');
+      lightbox.classList.add('brand-img');
     } else if (img.closest('.web-process')) {
       lightbox.classList.add('lightbox-active');
       bodyElement.style.overflow = 'hidden';
-      lightboxImg.classList.add('web-img');
+      lightbox.classList.add('web-img');
     }
 
     lightbox.style.display = 'flex';
@@ -375,8 +375,8 @@ lightbox.addEventListener('click', (e) => {
   if (e.target !== lightboxImg) {
     lightbox.style.display = 'none';
     bodyElement.style.overflow = 'auto';
-    lightboxImg.classList.remove('web-img');
-    lightboxImg.classList.remove('brand-img');
+    lightbox.classList.remove('web-img');
+    lightbox.classList.remove('brand-img');
   }
 });
 
@@ -385,7 +385,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     lightbox.style.display = 'none';
     bodyElement.style.overflow = 'auto';
-    lightboxImg.classList.remove('web-img');
-    lightboxImg.classList.remove('brand-img');
+    lightbox.classList.remove('web-img');
+    lightbox.classList.remove('brand-img');
   }
 });

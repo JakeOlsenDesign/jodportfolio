@@ -751,12 +751,17 @@
         overflow: hidden;
     }
 
-    #lightbox-img.web-img {
+    .lightbox.web-img {
+        overflow: scroll;
+        align-items: flex-start;
+    }
+
+    .web-img img {
         max-width: unset;
         max-height: unset;
         width: 80%;
         position: relative;
-        top: 5%;
+        top: 15%;
     }
 
 .vertical-line {
