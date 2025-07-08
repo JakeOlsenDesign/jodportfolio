@@ -365,7 +365,7 @@
     .project-article #project-content p.description {
         font-size: (18/14rem);
         color: #FFF;
-        text-align: right;
+        text-align: center;
         margin-top: 1rem;
     }
 
@@ -633,6 +633,11 @@
         display: block;
     }
 
+    .project-details div {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
     // .brand-process-container img,
     // .web-process-container img {
     // }
@@ -764,13 +769,15 @@
     }
 
 .vertical-line {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1px;
-    height: 100%;
     background-color: #FFF;
+
+    position: relative;
+    transform: unset;
+    top: 0;
+    left: 0;
+    margin: 3rem auto;
+    height: 1px;
+    width: 80%;
 }
 
 }
@@ -859,6 +866,10 @@
         padding-left: 3rem;
     }
 
+    .project-details div {
+        text-align: left;
+    }
+
     .intro-container.two-column-container div:last-child p {
         text-align: left;
     }
@@ -880,6 +891,20 @@
         gap: 1rem;
         align-items: start;
         margin-bottom: 1rem;
+    }
+
+    .project-article #project-content p.description {
+        text-align: right;
+    }
+
+    .vertical-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 100%;
+    background-color: #FFF;
     }
     
 }
