@@ -370,25 +370,25 @@ triggers.forEach(img => {
 });
 
 
-// Close lightbox when clicking outside image
-lightbox.addEventListener('click', (e) => {
-  if (e.target !== lightboxImg) {
-    lightbox.style.display = 'none';
-    bodyElement.style.overflow = 'auto';
-    lightbox.classList.remove('web-img');
-    lightbox.classList.remove('brand-img');
-  }
-});
+// // Close lightbox when clicking outside image
+// lightbox.addEventListener('click', (e) => {
+//   if (e.target !== lightboxImg) {
+//     lightbox.style.display = 'none';
+//     bodyElement.style.overflow = 'auto';
+//     lightbox.classList.remove('web-img');
+//     lightbox.classList.remove('brand-img');
+//   }
+// });
 
-// Close lightbox on Escape key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    lightbox.style.display = 'none';
-    bodyElement.style.overflow = 'auto';
-    lightbox.classList.remove('web-img');
-    lightbox.classList.remove('brand-img');
-  }
-});
+// // Close lightbox on Escape key
+// document.addEventListener('keydown', (e) => {
+//   if (e.key === 'Escape') {
+//     lightbox.style.display = 'none';
+//     bodyElement.style.overflow = 'auto';
+//     lightbox.classList.remove('web-img');
+//     lightbox.classList.remove('brand-img');
+//   }
+// });
 
 // ADD CLASS TO PORTFOLIO LINKS
 
