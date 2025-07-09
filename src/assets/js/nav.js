@@ -370,25 +370,37 @@ triggers.forEach(img => {
 });
 
 
-// Close lightbox when clicking outside image
-lightbox.addEventListener('click', (e) => {
-  if (e.target !== lightboxImg) {
-    lightbox.style.display = 'none';
-    bodyElement.style.overflow = 'auto';
-    lightbox.classList.remove('web-img');
-    lightbox.classList.remove('brand-img');
-  }
-});
+const projectContainer = document.querySelector('.project-container');
 
-// Close lightbox on Escape key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    lightbox.style.display = 'none';
-    bodyElement.style.overflow = 'auto';
-    lightbox.classList.remove('web-img');
-    lightbox.classList.remove('brand-img');
+if (projectContainer) {
+  // Only run if lightbox elements actually exist
+  const lightbox = document.querySelector('.lightbox');
+  const lightboxImg = document.querySelector('.lightbox img');
+  const bodyElement = document.body;
+
+  if (lightbox && lightboxImg) {
+    // Close lightbox when clicking outside image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target !== lightboxImg) {
+        lightbox.style.display = 'none';
+        bodyElement.style.overflow = 'auto';
+        lightbox.classList.remove('web-img');
+        lightbox.classList.remove('brand-img');
+      }
+    });
+
+    // Close lightbox on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        lightbox.style.display = 'none';
+        bodyElement.style.overflow = 'auto';
+        lightbox.classList.remove('web-img');
+        lightbox.classList.remove('brand-img');
+      }
+    });
   }
-});
+}
+
 
 // ADD CLASS TO PORTFOLIO LINKS
 
