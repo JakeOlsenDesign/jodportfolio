@@ -389,3 +389,17 @@ document.addEventListener('keydown', (e) => {
     lightbox.classList.remove('brand-img');
   }
 });
+
+// ADD CLASS TO PORTFOLIO LINKS
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".portfolio-link").forEach(link => {
+    const href = link.getAttribute("href");
+    // Extract last non-empty part from href
+    const parts = href.split("/").filter(Boolean);
+    const slug = parts[parts.length - 1];
+    if (slug) {
+      link.classList.add(`portfolio-${slug}`);
+    }
+  });
+});
