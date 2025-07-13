@@ -131,10 +131,10 @@
                                 
                                 <h2>Branding & Design</h2>
                                 
+                                {% if brand_process and brand_process | length > 0 %}
                                 <div class="brand-process-container lightbox-js">
                                     <h3>Moodboards - Process</h3>
-                                    
-                                    {% if web_process and brand_process | length > 0 %}
+                                
                                         <div class="brand-process">
                                             {% for item in brand_process %}
                                                 <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
@@ -152,17 +152,16 @@
                                 <h2>Web Design & Development</h2>
                                 <div class="website-url"><a href="{{ weburl }}" target="_blank">{{ weburl }}</a></div>
 
-                                <div class="web-process-container lightbox-js">
-                                    <h3>Mockups</h3>
-
-                                    {% if web_process and web_process | length > 0 %}
-                                        <div class="web-process">
-                                            {% for item in web_process %}
-                                                <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                                            {% endfor %}
-                                        </div>
-                                    {% endif %}
-                                </div>
+                                {% if web_process and web_process | length > 0 %}
+                                    <div class="web-process-container lightbox-js">
+                                        <h3>Mockups</h3>
+                                            <div class="web-process">
+                                                {% for item in web_process %}
+                                                    <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                                {% endfor %}
+                                            </div>
+                                    </div>
+                                {% endif %}
 
                                 <div class="web-preview-container">
 
