@@ -4,15 +4,30 @@ url: gosselin-martin-associates
 date: 2025-04-26T13:39:00.000Z
 tags:
   - project
+description: Modernizing a Trusted Brand in Healthcare Facilities Management
+role:
+  - Lead Designer - Branding & Web Design/Development
 services:
   - Branding
   - Web Design
-description: Modernizing a Trusted Brand in Healthcare Facilities Management
 credits:
-  - credit: Edge One Media
+  - credit: Edge One Media - Company
+  - credit: Nicholas De Salvo - CEO
+tools:
+  - WordPress
+  - Adobe XD
+  - Photoshop
+  - Illustrator
 image: /assets/images/blog/gm-desktop-mock-5.webp
 logo: /assets/images/blog/gma-logo-update-white.svg
 bg: /assets/images/blog/rsw_3070m.png
+web_process:
+  - image: /assets/images/blog/gosselinmartinassociates-mockup-1.webp
+  - image: /assets/images/blog/gosselinmartinassociates-mockup-2.webp
+  - image: /assets/images/blog/gosselinmartinassociates-mockup-3.webp
+weburl: https://gosselin-associates.com/
+webpreview: /assets/images/blog/screencapture-gosselin-associates-2025-03-02-14_20_57.webp
+mobilepreview: /assets/images/blog/screencapture-gosselin-associates-2025-03-02-15_23_22.webp
 mobile_images:
   - mi-image: /assets/images/blog/gm-mobile-mock-1.webp
   - mi-image: /assets/images/blog/gm-mobile-mock-2.webp
