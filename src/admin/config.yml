@@ -50,6 +50,9 @@ collections:
           - { label: "Description", name: "description", widget: "string", required: false }
           - { label: "Role", name: "role", widget: "list", required: false}
           - { label: "Services", name: "services", widget: "list", required: false}
+            categories:
+            - web
+            - branding
           -   label: "Credits"
               name: "credits"
               widget: "list"
