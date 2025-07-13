@@ -1,4 +1,9 @@
 ---
+web_process:
+  - image: /assets/images/blog/glaucomflecken-mockup-1.webp
+  - image: /assets/images/blog/glaucomflecken-mockup-2.webp
+  - image: /assets/images/blog/glaucomflecken-mockup-3.webp
+  - image: /assets/images/blog/glaucomflecken-mockup-3.2-r2.webp
 wd1: /assets/images/blog/portfolio-website-display-update.webp
 title: Glaucomflecken
 url: glaucomflecken
@@ -6,18 +11,39 @@ author: Jake Olsen
 date: 2025-01-13T18:26:00.000Z
 tags:
   - project
+description: Bringing Humor and Humanity to Healthcare
+role:
+  - Lead Designer - Branding & Web Design/Development
 services:
   - Branding
   - Web Design
   - Graphic Design
-description: Bringing Humor and Humanity to Healthcare
 credits:
-  - credit: "Team: Edge One Media"
-  - credit: "Role: Lead Designer"
+  - credit: Edge One Media - Company
+  - credit: " Nicholas De Salvo - CEO"
+  - credit: " Madison Stekly - Designer"
+tools:
+  - WordPress
+  - Adobe XD
+  - Photoshop
+  - Illustrator
+image: /assets/images/blog/glaucomflecken-intro-dark.webp
 logo: /assets/images/blog/glaucomflecken-mainlogo-bg.webp
 bg: /assets/images/blog/glaucomflecken-pattern-2500-bg.webp
+brand_process:
+  - image: /assets/images/blog/glaucomflecken-stylescape-playful_irreverent_educational-copy.webp
+  - image: /assets/images/blog/glaucomflecken-stylescape-playful_knowledgeable_wholesome-copy.webp
+  - image: /assets/images/blog/glaucomflecken-stylescape-playful_wholesome_knowledgeable-copy.webp
+project_images:
+  - image: /assets/images/blog/glaucomflecken-pairlogos-copy.webp
+  - image: /assets/images/blog/glauctome-banner.webp
+  - image: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
+  - image: /assets/images/blog/portfolio-website-display-update.webp
+  - image: /assets/images/blog/lead-magnet-display-1536x1152.webp
+weburl: https://glaucomflecken.com/
+webpreview: /assets/images/blog/screencapture-glaucomflecken-2025-07-13-13_46_44.webp
+mobilepreview: /assets/images/blog/screencapture-glaucomflecken-2025-07-13-13_48_25.webp
 b1: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
-role: Lead Designer
 pi1: /assets/images/blog/lead-magnet-display-1536x1152.webp
 overview: >-
   Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
@@ -27,14 +53,7 @@ overview: >-
   message of kindness and hope to make things better in the healthcare.
 
   It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
-image: /assets/images/blog/glaucomflecken-intro-dark.webp
 team: Edge One Media
-project_images:
-  - image: /assets/images/blog/glaucomflecken-pairlogos-copy.webp
-  - image: /assets/images/blog/glauctome-banner.webp
-  - image: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
-  - image: /assets/images/blog/portfolio-website-display-update.webp
-  - image: /assets/images/blog/lead-magnet-display-1536x1152.webp
 descriptionimage: ""
 ---
 ## Overview
