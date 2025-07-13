@@ -128,7 +128,8 @@
                             </div>
 
                             <div class="project-gallery">
-                                
+                            
+                                {% if 'branding' in project.data.categories %}
                                 <h2>Branding & Design</h2>
                                 
                                 {% if brand_process and brand_process | length > 0 %}
@@ -143,12 +144,15 @@
                                     {% endif %}
                                 </div>
 
+                                {% endif %}
+
                                 <div class="project-images-container">
                                     {% for item in project_images %}
                                         <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
                                     {% endfor %}
                                 </div>
 
+                                {% if 'web' in project.data.categories %}
                                 <h2>Web Design & Development</h2>
                                 <div class="website-url"><a href="{{ weburl }}" target="_blank">{{ weburl }}</a></div>
 
@@ -180,6 +184,8 @@
                                     {% endif %}
 
                                 </div>
+
+                                {% endif %}
 
                             </div>
 
