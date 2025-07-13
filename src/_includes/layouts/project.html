@@ -162,15 +162,19 @@
 
                                 <div class="web-preview-container">
 
-                                    <div class="web-preview">
-                                        <p><i>Scroll to preview</i></p>
-                                        <img src="{{ webpreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
-                                    </div>
+                                    {% for item in webpreview %}
+                                        <div class="web-preview">
+                                            <p><i>Scroll to preview</i></p>
+                                            <img src="{{ webpreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
+                                        </div>
+                                    {% endfor %}
 
-                                    <div class="mobile-preview">
-                                        <p><i>Scroll to preview</i></p>
-                                        <img src="{{ mobilepreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
-                                    </div>
+                                    {% for item in mobilepreview %}
+                                        <div class="mobile-preview">
+                                            <p><i>Scroll to preview</i></p>
+                                            <img src="{{ mobilepreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
+                                        </div>
+                                     {% endfor %}
 
                                 </div>
 
