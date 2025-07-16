@@ -49,11 +49,11 @@ collections:
           - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
           - { label: "Description", name: "description", widget: "string", required: false }
           - { label: "Role", name: "role", widget: "list", required: false}
-          - label: "Categories"
-            name: "categories"
-            widget: "list"
-            default: ["branding", "web"]
-            hint: "Add project categories like branding, web, etc."
+          -   label: "Categories"
+              name: "categories"
+              widget: "list"
+              default: ["branding", "web"]
+              hint: "Add project categories like branding, web, etc."
           - { label: "Services", name: "services", widget: "list", required: false}
           -   label: "Credits"
               name: "credits"
