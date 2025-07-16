@@ -106,7 +106,6 @@
                                 <div class="two-column-container">
 
                                     <div class="content-container">
-                                        <!-- <div id="caseStudyToggle"><h2>Case Study</h2><span class="view-toggle down-arrow">view</span></span></div> -->
                                         <div id="caseStudy" class="case-study">
                                             <div class="content">
                                                 {{ content | safe }}
@@ -120,10 +119,8 @@
 
                             <div class="project-gallery">
                             
-                                <!-- {% if 'branding' in categories %} -->
                                 <h2>Branding & Design</h2>
                                 
-                                <!-- {% if brand_process and brand_process | length > 0 %} -->
                                     <div class="brand-process-container lightbox-js">
                                         <h3>Moodboards - Process</h3>
                                     
@@ -133,8 +130,7 @@
                                                 {% endfor %}
                                             </div>
                                     </div>
-                                <!-- {% endif %} -->
-                                <!-- {% endif %} -->
+
 
                                 <div class="project-images-container">
                                     {% for item in project_images %}
@@ -142,11 +138,9 @@
                                     {% endfor %}
                                 </div>
 
-                                <!-- {% if 'web' in categories %} -->
                                 <h2>Web Design & Development</h2>
                                 <div class="website-url"><a href="{{ weburl }}" target="_blank">{{ weburl }}</a></div>
 
-                                <!-- {% if web_process and web_process | length > 0 %} -->
                                     <div class="web-process-container lightbox-js">
                                         <h3>Mockups</h3>
                                             <div class="web-process">
@@ -155,7 +149,6 @@
                                                 {% endfor %}
                                             </div>
                                     </div>
-                                <!-- {% endif %} -->
 
                                 <div class="web-preview-container">
 
