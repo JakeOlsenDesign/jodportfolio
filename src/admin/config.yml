@@ -75,7 +75,7 @@ collections:
               widget: "list"
               fields: 
                 - { label: "Image", name: "image", widget: "image" }
-          - { label: "Website URL", name: "weburl", widget: "string", required: false }
+          - { label: "Website URL", name: "url", widget: "string", required: false }
           - { label: "Website Preview", name: "webpreview", widget: "image", required: false }
           - { label: "Mobile Preview", name: "mobilepreview", widget: "image", required: false }
           - { label: "Final Image", name: "fi", widget: "image", required: false }
