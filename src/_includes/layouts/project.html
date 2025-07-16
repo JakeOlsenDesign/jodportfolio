@@ -128,7 +128,7 @@
                             </div>
 
                             <div class="project-gallery">
-                                
+                                {% if 'branding' in categories %}
                                 <h2>Branding & Design</h2>
                                 
                                 {% if brand_process and brand_process | length > 0 %}
@@ -142,6 +142,7 @@
                                         </div>
                                     {% endif %}
                                 </div>
+                                {% endif %}
 
                                 <div class="project-images-container">
                                     {% for item in project_images %}
