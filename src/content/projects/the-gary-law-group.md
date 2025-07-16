@@ -7,6 +7,9 @@ tags:
 description: Fenestration Risk Partners. Foreseeing Risk, Securing Growth.
 role:
   - Lead Designer - Branding & Web Design/Development
+categories:
+  - branding
+  - web
 services:
   - Branding
   - Web Design
