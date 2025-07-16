@@ -85,7 +85,16 @@
 
                                 <div><h6>Tools:</h6><p>{{ tools }}</p></div>
                                 
+                                <!-- <div class="services">{{ services }}</div> -->
                             </div>
+                            <!-- <div class="two-column-container"></div>
+                                
+                            </div> -->
+                            <!-- <div class="links">
+                                <p>Gallery</p>
+                                <p>Case Study</p>
+                            </div> -->
+                            <!-- <img src="{{ descriptionimage }}" alt="{{ imageAlt }}" width="100%" height="500" decoding="async"/> -->
                         </div>
                         <div id="stickyContainer" class="sticky-container ffw">
                             <div class="intro-image" style="background-image:url('{{ bg }}')">
@@ -106,6 +115,7 @@
                                 <div class="two-column-container">
 
                                     <div class="content-container">
+                                        <!-- <div id="caseStudyToggle"><h2>Case Study</h2><span class="view-toggle down-arrow">view</span></span></div> -->
                                         <div id="caseStudy" class="case-study">
                                             <div class="content">
                                                 {{ content | safe }}
@@ -118,19 +128,18 @@
                             </div>
 
                             <div class="project-gallery">
-                            
+                                
                                 <h2>Branding & Design</h2>
                                 
-                                    <div class="brand-process-container lightbox-js">
-                                        <h3>Moodboards - Process</h3>
-                                    
-                                            <div class="brand-process">
-                                                {% for item in brand_process %}
-                                                    <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                                                {% endfor %}
-                                            </div>
-                                    </div>
+                                <div class="brand-process-container lightbox-js">
+                                    <h3>Moodboards - Process</h3>
 
+                                    <div class="brand-process">
+                                        {% for item in brand_process %}
+                                            <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                        {% endfor %}
+                                    </div>
+                                </div>
 
                                 <div class="project-images-container">
                                     {% for item in project_images %}
@@ -141,34 +150,31 @@
                                 <h2>Web Design & Development</h2>
                                 <div class="website-url"><a href="{{ weburl }}" target="_blank">{{ weburl }}</a></div>
 
-                                    <div class="web-process-container lightbox-js">
-                                        <h3>Mockups</h3>
-                                            <div class="web-process">
-                                                {% for item in web_process %}
-                                                    <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                                                {% endfor %}
-                                            </div>
-                                    </div>
+                                <div class="web-process-container lightbox-js">
+                                    <h3>Mockups</h3>
+
+                                    {% if web_process and web_process | length > 0 %}
+                                        <div class="web-process">
+                                            {% for item in web_process %}
+                                                <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
 
                                 <div class="web-preview-container">
 
-                                    {% if webpreview %}
-                                        <div class="web-preview">
-                                            <p><i>Scroll to preview</i></p>
-                                            <img src="{{ webpreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
-                                        </div>
-                                    {% endif %}
+                                    <div class="web-preview">
+                                        <p><i>Scroll to preview</i></p>
+                                        <img src="{{ webpreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
+                                    </div>
 
-                                    {% if webpreview %}
-                                        <div class="mobile-preview">
-                                            <p><i>Scroll to preview</i></p>
-                                            <img src="{{ mobilepreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
-                                        </div>
-                                    {% endif %}
+                                    <div class="mobile-preview">
+                                        <p><i>Scroll to preview</i></p>
+                                        <img src="{{ mobilepreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
+                                    </div>
 
                                 </div>
-
-                                <!-- {% endif %} -->
 
                             </div>
 
