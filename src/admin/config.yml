@@ -3,6 +3,7 @@ backend:
   branch: main
 
 local_backend: true
+
 # change url to a link to the image you want to use, no file paths, must be a URL
 logo_url: https://codestitch.app/frontend/images/logo.png
 
@@ -22,7 +23,7 @@ collections:
           label: "URL Slug",
           name: "url",
           widget: "string",
-          hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+          hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"'
         }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
@@ -31,6 +32,7 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "projects"
     label: "Projects"
     folder: "src/content/projects"
@@ -42,7 +44,7 @@ collections:
           label: "URL Slug",
           name: "url",
           widget: "string",
-          hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+          hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"'
         }
       - { label: "Author", name: "author", widget: "string", required: false }
       - { label: "Date", name: "date", widget: "datetime", required: false }
@@ -58,7 +60,7 @@ collections:
       - label: "Credits"
         name: "credits"
         widget: "list"
-        fields: 
+        fields:
           - { label: "Credit", name: "credit", widget: "string", required: false }
       - { label: "Tools", name: "tools", widget: "list", required: false }
       - { label: 'Case Study', name: "body", widget: 'markdown', default: "Write your content here." }
@@ -68,20 +70,19 @@ collections:
       - label: "Brand Process"
         name: "brand_process"
         widget: "list"
-        fields: 
+        fields:
           - { label: "Image", name: "image", widget: "image" }
       - label: "Web Process"
         name: "web_process"
         widget: "list"
-        fields: 
+        fields:
           - { label: "Image", name: "image", widget: "image" }
       - label: "Project Images"
         name: "project_images"
         widget: "list"
-        fields: 
+        fields:
           - { label: "Image", name: "image", widget: "image" }
       - { label: "Website URL", name: "weburl", widget: "string", required: false }
       - { label: "Website Preview", name: "webpreview", widget: "image", required: false }
       - { label: "Mobile Preview", name: "mobilepreview", widget: "image", required: false }
       - { label: "Final Image", name: "fi", widget: "image", required: false }
-
