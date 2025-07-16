@@ -120,7 +120,7 @@
 
                             <div class="project-gallery">
                             
-                                {% if 'branding' in project.data.categories %}
+                                {% if 'branding' in categories %}
                                 <h2>Branding & Design</h2>
                                 
                                 {% if brand_process and brand_process | length > 0 %}
@@ -143,7 +143,7 @@
                                     {% endfor %}
                                 </div>
 
-                                {% if 'web' in project.data.categories %}
+                                {% if 'web' in categories %}
                                 <h2>Web Design & Development</h2>
                                 <div class="website-url"><a href="{{ weburl }}" target="_blank">{{ weburl }}</a></div>
 
