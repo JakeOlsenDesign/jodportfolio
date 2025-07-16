@@ -18,12 +18,6 @@ collections:
   slug: "{{slug}}"
   fields:
     - { label: "Title", name: "title", widget: "string" }
-    - {
-        label: "URL Slug",
-        name: "url",
-        widget: "string",
-        hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
-      }
     - { label: "Author", name: "author", widget: "string", required: false }
     - { label: "Date", name: "date", widget: "datetime", required: false }
     - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
