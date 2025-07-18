@@ -5,19 +5,19 @@ author: ""
 date: 2025-03-02T14:45:00.000Z
 tags:
   - project
+description: Peace Of Mind Through Holistic Security Solutions
+categories:
+  - branding
+  - web
 services:
   - Branding
   - Web Design
-description: Peace Of Mind Through Holistic Security Solutions
 credits:
   - credit: "Team: Edge One"
   - credit: "Role: Lead Designer"
 image: /assets/images/blog/foresight-portcover-3-crop.webp
 logo: /assets/images/blog/foresight-logo-horizontal-white.webp
 bg: /assets/images/blog/nasa-q1p7bh3shj8-unsplash-resize.webp
-project_images:
-  - image: /assets/images/blog/foresight-logo-comparison.webp
-  - image: /assets/images/blog/foresight-bi.webp
 mobile_images:
   - mi-image: /assets/images/blog/foresightsc-mobile-mock-1.webp
   - mi-image: /assets/images/blog/foresightsc-mobile-mock-2.webp
@@ -36,6 +36,9 @@ desktop_images:
   - desk-image: /assets/images/blog/foresightsc-desktop-mock-5-2.webp
   - desk-image: /assets/images/blog/foresightsc-desktop-mock-6.webp
   - desk-image: /assets/images/blog/foresightsc-desktop-mock-7.webp
+project_images:
+  - image: /assets/images/blog/foresight-logo-comparison.webp
+  - image: /assets/images/blog/foresight-bi.webp
 ---
 ## Overview
 
