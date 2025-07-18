@@ -14,6 +14,9 @@ tags:
 description: Bringing Humor and Humanity to Healthcare
 role:
   - Lead Designer - Branding & Web Design/Development
+categories:
+  - web
+  - branding
 services:
   - Branding
   - Web Design
