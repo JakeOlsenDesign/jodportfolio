@@ -10,7 +10,6 @@ role:
 categories:
   - web
 services:
-  - Branding
   - Web Design
 credits:
   - credit: Edge One Media - Company
