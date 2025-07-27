@@ -648,6 +648,7 @@
 
     .project-images-container img {
         margin: 2rem auto;
+        width: 100%;
     }
 
     .project-article #project-content .brand-process-container {
@@ -656,8 +657,14 @@
         border-radius: 10px;
     }
     
-    .project-article #project-content .brand-process-container img {
+    .project-article #project-content .brand-process-container img,
+    .expanded .brand-process-container img {
         width: 100%;
+    }
+
+    .expanded .brand-process-container img,
+    .expanded .web-process-container img {
+        border-radius: 2px;
     }
 
     .brand-process {
