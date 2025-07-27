@@ -7,8 +7,9 @@ tags:
 description: Modernizing a Trusted Brand in Healthcare Facilities Management
 role:
   - Lead Designer - Branding & Web Design/Development
+categories:
+  - web
 services:
-  - Branding
   - Web Design
 credits:
   - credit: Edge One Media - Company

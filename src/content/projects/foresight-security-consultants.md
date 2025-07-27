@@ -5,19 +5,42 @@ author: ""
 date: 2025-03-02T14:45:00.000Z
 tags:
   - project
+description: Peace Of Mind Through Holistic Security Solutions
+role:
+  - Lead Designer - Branding & Web Design
+categories:
+  - branding
+  - web
 services:
   - Branding
   - Web Design
-description: Peace Of Mind Through Holistic Security Solutions
 credits:
   - credit: "Team: Edge One"
-  - credit: "Role: Lead Designer"
+  - credit: Nicholas De Salvo - CEO
+  - credit: Madison Stekly - Designer
+tools:
+  - Adobe & WordPress
 image: /assets/images/blog/foresight-portcover-3-crop.webp
 logo: /assets/images/blog/foresight-logo-horizontal-white.webp
 bg: /assets/images/blog/nasa-q1p7bh3shj8-unsplash-resize.webp
+brand_process: []
+web_process:
+  - image: /assets/images/blog/fsc-mockup-1.webp
+  - image: /assets/images/blog/fsc-mockup-2.webp
+  - image: /assets/images/blog/fsc-mockup-3.webp
+  - image: /assets/images/blog/fsc-mockup-4.webp
+  - image: /assets/images/blog/fsc-mockup-m1.webp
+  - image: /assets/images/blog/fsc-mockup-m2.webp
+  - image: /assets/images/blog/fsc-mockup-r2-1.webp
+  - image: /assets/images/blog/fsc-mockup-r2-2.webp
+  - image: /assets/images/blog/fsc-mockup-r3-1.webp
+  - image: /assets/images/blog/fsc-mockup-r3-2.webp
 project_images:
   - image: /assets/images/blog/foresight-logo-comparison.webp
   - image: /assets/images/blog/foresight-bi.webp
+weburl: https://foresight-sc.com/
+webpreview: /assets/images/blog/foresight-web-preview.webp
+mobilepreview: /assets/images/blog/foresight-mobile-preview.webp
 mobile_images:
   - mi-image: /assets/images/blog/foresightsc-mobile-mock-1.webp
   - mi-image: /assets/images/blog/foresightsc-mobile-mock-2.webp
