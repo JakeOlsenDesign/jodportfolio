@@ -131,17 +131,18 @@
                                 {% if categories and 'branding' in categories %}
                                 <h2>Branding & Design</h2>
                                 
-                                {% if brand_process and brand_process | length > 0 %}
-                                <div class="brand-process-container lightbox-js">
-                                    <h3>Moodboards - Process</h3>
-                                
-                                        <div class="brand-process">
-                                            {% for item in brand_process %}
-                                                <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                                            {% endfor %}
+                                    {% if brand_process and brand_process | length > 0 %}
+                                        <div class="brand-process-container lightbox-js">
+                                            <h3>Moodboards - Process</h3>
+                                        
+                                                <div class="brand-process">
+                                                    {% for item in brand_process %}
+                                                        <img class="lightbox-trigger" src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                                    {% endfor %}
+                                                </div>  
                                         </div>
                                     {% endif %}
-                                </div>
+                                    
                                 {% endif %}
 
                                 <div class="project-images-container">
@@ -181,10 +182,10 @@
                                                 <img src="{{ mobilepreview }}" alt="{{ imageAlt }}" width="100%" decoding="async"/>
                                             </div>
                                         {% endif %}
-                                
-                                    {% endif %}
-                                    
-                                </div>
+
+                                    </div>
+
+                                {% endif %}
 
                             </div>
 
