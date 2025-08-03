@@ -15,7 +15,7 @@ services:
   - Branding
   - Web Design
 credits:
-  - credit: "Team: Edge One"
+  - credit: "Team: Edge One Media"
   - credit: Nicholas De Salvo - CEO
   - credit: Madison Stekly - Designer
 tools:
