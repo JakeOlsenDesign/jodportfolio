@@ -21,6 +21,16 @@ tools:
 image: /assets/images/blog/clc_pp009_jbp-leadership.webp
 logo: /assets/images/blog/clc-logo.png
 bg: /assets/images/blog/clc-cover-2.webp
+web_process:
+  - image: /assets/images/blog/clc-mockup-1.webp
+  - image: /assets/images/blog/clc-mockup-2.webp
+  - image: /assets/images/blog/clc-mockup-3.webp
+  - image: /assets/images/blog/clc-mockup-4.webp
+  - image: /assets/images/blog/clc-mockup-m1.webp
+  - image: /assets/images/blog/clc-mockup-m2.webp
+weburl: https://clcpallets.com/
+webpreview: /assets/images/blog/clc-web-preview.webp
+mobilepreview: /assets/images/blog/clc-mobile-preview.webp
 ---
 ## Overview
 Commercial Lumber and Pallet Co., Inc. (CLC Pallets) is a leading manufacturer of new wooden pallets and a one-source provider for a wide range of shipping and packaging solutions. With their own milling facilities, a national support network, and a strong commitment to sustainable forestry, CLC Pallets serves as a trusted partner for businesses seeking efficient and eco-friendly packaging. As the first pallet company in the United States to be SFI® Certified, their philosophy is to be the best pallet and lumber provider in the markets they serve.
