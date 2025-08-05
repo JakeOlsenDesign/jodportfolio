@@ -152,11 +152,13 @@
 
                                 {% endif %}
 
-                                <div class="project-images-container">
-                                    {% for item in project_images %}
-                                        <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
-                                    {% endfor %}
-                                </div>
+                                {% if media_type == 'Video' and video_url %}
+                                    <div class="video-container">
+                                        <div class="video-embed">
+                                        <iframe src="{{ video_url }}" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                {% endif %}
 
                                 {% if categories and 'web' in categories %}
 
