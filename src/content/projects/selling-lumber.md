@@ -15,5 +15,9 @@ services:
 image: /assets/images/blog/screenshot-2025-06-06-at-12.52.12 am.png
 logo: /assets/images/blog/sellinglumber-logo-final-white.png
 bg: /assets/images/blog/maciej-rusek-xiqqq0r7vfi-unsplash.webp
+video_url: https://vimeo.com/644652961
+weburl: https://sellinglumber.com/
+webpreview: /assets/images/blog/sl-web-preview.webp
+mobilepreview: /assets/images/blog/sl-mobile-preview.webp
 ---
 Write your content here.
