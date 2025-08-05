@@ -127,9 +127,11 @@
                                 
                             </div>
 
-                            {% if entry.data.media_type == 'Video' and entry.data.video_url %}
+                            {% if media_type == 'Video' and video_url %}
                                 <div class="video-container">
-                                    <iframe src="{{ entry.data.video_url }}" frameborder="0" allowfullscreen></iframe>
+                                    <div class="video-embed">
+                                    <iframe src="{{ video_url }}" frameborder="0" allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             {% endif %}
 
@@ -152,13 +154,11 @@
 
                                 {% endif %}
 
-                                {% if media_type == 'Video' and video_url %}
-                                    <div class="video-container">
-                                        <div class="video-embed">
-                                        <iframe src="{{ video_url }}" frameborder="0" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                {% endif %}
+                                <div class="project-images-container">
+                                    {% for item in project_images %}
+                                        <img src="{{ item.image | url }}" alt="{{ item.alt | default('Project Image') }}">
+                                    {% endfor %}
+                                </div>
 
                                 {% if categories and 'web' in categories %}
 
