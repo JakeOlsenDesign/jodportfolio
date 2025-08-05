@@ -127,6 +127,13 @@
                                 
                             </div>
 
+                            {% if entry.data.media_type == 'Video' and entry.data.video_url %}
+                                <div class="video-container">
+                                    <iframe src="{{ entry.data.video_url }}" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            {% endif %}
+
+
                             <div class="project-gallery">
                                 {% if categories and 'branding' in categories %}
                                 <h2>Branding & Design</h2>
@@ -142,7 +149,7 @@
                                                 </div>  
                                         </div>
                                     {% endif %}
-                                    
+
                                 {% endif %}
 
                                 <div class="project-images-container">
