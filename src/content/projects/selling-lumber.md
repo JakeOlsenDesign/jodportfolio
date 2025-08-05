@@ -12,6 +12,7 @@ services:
   - Branding
   - Web Design
   - Video
+media_type: Video
 image: /assets/images/blog/screenshot-2025-06-06-at-12.52.12 am.png
 logo: /assets/images/blog/sellinglumber-logo-final-white.png
 bg: /assets/images/blog/maciej-rusek-xiqqq0r7vfi-unsplash.webp
