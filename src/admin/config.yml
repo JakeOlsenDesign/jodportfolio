@@ -93,13 +93,15 @@ collections:
       fields:
         - { label: "Image", name: "image", widget: "image" }
     - label: "Video URL"
-      name: "video_url"
-      widget: "string"
+    - label: "Videos"
+      name: "videos"
+      widget: "list"
       required: false
-      hint: "Enter a YouTube or Vimeo embed URL."
-      when:
-        field: "media_type"
-        value: "Video"
+      hint: "Enter YouTube or Vimeo embed URLs."
+      field:
+        label: "Video URL"
+        name: "url"
+        widget: "string"
     - { label: "Website URL", name: "weburl", widget: "string", required: false }
     - { label: "Website Preview", name: "webpreview", widget: "image", required: false }
     - { label: "Mobile Preview", name: "mobilepreview", widget: "image", required: false }
