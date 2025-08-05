@@ -92,7 +92,6 @@ collections:
       widget: "list"
       fields:
         - { label: "Image", name: "image", widget: "image" }
-    - label: "Video URL"
     - label: "Videos"
       name: "videos"
       widget: "list"
