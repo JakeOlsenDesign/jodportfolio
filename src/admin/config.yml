@@ -58,27 +58,39 @@ collections:
     - label: "Credits"
       name: "credits"
       widget: "list"
-      fields: 
+      fields:
         - { label: "Credit", name: "credit", widget: "string", required: false }
     - { label: "Tools", name: "tools", widget: "list", required: false }
     - { label: 'Case Study', name: "body", widget: 'markdown', default: "Write your content here." }
-    - { label: "Featured Image", name: "image", widget: "image", required: false }
+    - label: "Project Media Type" # New field to control video/image visibility
+      name: "media_type"
+      widget: "select"
+      options: ["Image", "Video", "None"]
+      default: "None"
+      hint: "Choose whether to display an image, a video, or neither for this project."
+    - label: "Featured Image" # Now conditional
+      name: "image"
+      widget: "image"
+      required: false
+      when:
+        field: "media_type"
+        value: "Image"
     - { label: "Project Logo", name: "logo", widget: "image", required: false }
     - { label: "Background Image", name: "bg", widget: "image", required: false }
     - label: "Brand Process"
       name: "brand_process"
       widget: "list"
-      fields: 
+      fields:
         - { label: "Image", name: "image", widget: "image" }
     - label: "Web Process"
       name: "web_process"
       widget: "list"
-      fields: 
+      fields:
         - { label: "Image", name: "image", widget: "image" }
     - label: "Project Images"
       name: "project_images"
       widget: "list"
-      fields: 
+      fields:
         - { label: "Image", name: "image", widget: "image" }
     - label: "Video URL"
       name: "video_url"
