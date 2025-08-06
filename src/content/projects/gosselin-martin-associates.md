@@ -19,7 +19,7 @@ tools:
   - Adobe XD
   - Photoshop
   - Illustrator
-fti: /assets/images/blog/tglg-cover.webp
+fti: /assets/images/blog/rsw_3070m.png
 logo: /assets/images/blog/gma-logo-update-white.svg
 bg: /assets/images/blog/rsw_3070m.png
 web_process:
