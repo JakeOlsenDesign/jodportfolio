@@ -63,7 +63,7 @@ collections:
     - { label: "Tools", name: "tools", widget: "list", required: false }
     - { label: 'Case Study', name: "body", widget: 'markdown', default: "Write your content here." }
     - label: "Featured Image" # Now conditional
-      name: "fi"
+      name: "fti"
       widget: "image"
       required: false
     - { label: "Project Logo", name: "logo", widget: "image", required: false }
