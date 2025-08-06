@@ -19,9 +19,13 @@ credits:
 tools:
   - Adobe
   - WordPress
-image: /assets/images/blog/screenshot-2025-06-06-at-12.52.12 am.png
+fti: /assets/images/blog/realitysalestraining-cover.png
 logo: /assets/images/blog/sellinglumber-logo-final-white.png
 bg: /assets/images/blog/maciej-rusek-xiqqq0r7vfi-unsplash.webp
+project_images:
+  - image: /assets/images/blog/realitysalestraining-cover.png
+  - image: /assets/images/blog/rst-nawla2024-brochure-final-outline-display.jpg
+  - image: /assets/images/blog/rst-nawla2024-brochure-final-outline-display2.jpg
 mobilepreview: /assets/images/blog/sl-mobile-preview.webp
 video_url: https://player.vimeo.com/video/644652961
 videos:
@@ -29,10 +33,7 @@ videos:
   - https://player.vimeo.com/video/569716606
 webpreview: /assets/images/blog/sl-web-preview.webp
 media_type: Video
-project_images:
-  - image: /assets/images/blog/realitysalestraining-cover.png
-  - image: /assets/images/blog/rst-nawla2024-brochure-final-outline-display.jpg
-  - image: /assets/images/blog/rst-nawla2024-brochure-final-outline-display2.jpg
+image: /assets/images/blog/screenshot-2025-06-06-at-12.52.12 am.png
 weburl: https://sellinglumber.com/
 ---
 ## Overview

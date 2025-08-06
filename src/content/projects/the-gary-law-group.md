@@ -22,7 +22,7 @@ tools:
   - Adobe XD
   - Photoshop
   - Illustrator
-image: /assets/images/blog/tglg-cover.webp
+fti: /assets/images/blog/tglg-cover.webp
 logo: /assets/images/blog/tglg-logo-horizontal.webp
 bg: /assets/images/blog/tglg-bg-resize.webp
 brand_process:
@@ -40,15 +40,16 @@ web_process:
   - image: /assets/images/blog/glg-mockup-r3-1.webp
   - image: /assets/images/blog/glg-mockup-r3-2.webp
   - image: /assets/images/blog/glg-mockup-r4-2.webp
-project_images:
-  - image: /assets/images/blog/tglg-stationary-update.webp
-  - image: /assets/images/blog/tglg-logomock.webp
-weburl: https://thegarylawgroup.com/
 webpreview: /assets/images/blog/glg-web-preview.webp
 mobilepreview: /assets/images/blog/glg-mobile-preview.webp
 webvideo: true
 mobile_images: []
 video: /assets/images/blog/glg-desktop-resized.mp4
+image: /assets/images/blog/tglg-cover.webp
+project_images:
+  - image: /assets/images/blog/tglg-stationary-update.webp
+  - image: /assets/images/blog/tglg-logomock.webp
+weburl: https://thegarylawgroup.com/
 descriptionimage: /assets/images/blog/screencapture-thegarylawgroup-2025-02-22-17_29_30.webp
 ---
 ## Overview

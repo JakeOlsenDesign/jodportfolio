@@ -16,9 +16,9 @@ credits:
   - credit: Nicholas De Salvo - CEO
 tools:
   - Adobe & WordPress
-image: /assets/images/blog/chris-orcutt-dmex6_oqi-u-unsplash-update.webp
+fti: /assets/images/blog/cida-featured.webp
 logo: /assets/images/blog/cida-logo-full-white.png
-bg: /assets/images/blog/cida-cover-copy.webp
+bg: /assets/images/blog/chris-orcutt-dmex6_oqi-u-unsplash-update.webp
 web_process:
   - image: /assets/images/blog/cida-mockup-1.webp
   - image: /assets/images/blog/cida-mockup-2.webp
@@ -32,6 +32,7 @@ project_images:
 weburl: https://cidanalytics.com/
 webpreview: /assets/images/blog/cida-web-preview.webp
 mobilepreview: /assets/images/blog/cida-mobile-preview.webp
+image: /assets/images/blog/chris-orcutt-dmex6_oqi-u-unsplash-update.webp
 ---
 ## Overview
 CID Analytics is the nation's leading provider of HOA due diligence services, empowering a new generation of homebuyers with critical insights into homeowner associations. With their flagship CIDA REPORT™ and proprietary CIDA SCORE™, they provide a comprehensive examination of an HOA's financial and administrative health. CID Analytics needed a brand refresh and a new website that not only reflected their mission but also streamlined the client's process of ordering a report and submitting documents.
