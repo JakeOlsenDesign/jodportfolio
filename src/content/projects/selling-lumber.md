@@ -29,6 +29,10 @@ videos:
   - https://player.vimeo.com/video/569716606
 webpreview: /assets/images/blog/sl-web-preview.webp
 media_type: Video
+project_images:
+  - image: /assets/images/blog/realitysalestraining-cover.png
+  - image: /assets/images/blog/rst-nawla2024-brochure-final-outline-display.jpg
+  - image: /assets/images/blog/rst-nawla2024-brochure-final-outline-display2.jpg
 weburl: https://sellinglumber.com/
 ---
 ## Overview
