@@ -127,24 +127,24 @@
                                 
                             </div>
 
-                            {% if videos and videos | length > 0 %}
-                                <div class="video-container">
-                                    {% for url in videos %}
-                                    <div class="video-embed">
-                                        <iframe
-                                        src="{{ url }}"
-                                        frameborder="0"
-                                        allowfullscreen
-                                        loading="lazy"
-                                        title="Project Video {{ loop.index }}"
-                                        ></iframe>
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-
-
                             <div class="project-gallery">
+
+                                {% if videos and videos | length > 0 %}
+                                    <div class="video-container">
+                                        {% for url in videos %}
+                                        <div class="video-embed">
+                                            <iframe
+                                            src="{{ url }}"
+                                            frameborder="0"
+                                            allowfullscreen
+                                            loading="lazy"
+                                            title="Project Video {{ loop.index }}"
+                                            ></iframe>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+
                                 {% if categories and 'branding' in categories %}
                                 <h2>Branding & Design</h2>
                                 
