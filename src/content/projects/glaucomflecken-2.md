@@ -30,7 +30,7 @@ tools:
   - Adobe XD
   - Photoshop
   - Illustrator
-image: /assets/images/blog/glaucomflecken-intro-dark.webp
+fti: /assets/images/blog/glaucomflecken-intro-dark.webp
 logo: /assets/images/blog/glaucomflecken-mainlogo-bg.webp
 bg: /assets/images/blog/glaucomflecken-pattern-2500-bg.webp
 brand_process:
@@ -56,6 +56,7 @@ overview: >-
   message of kindness and hope to make things better in the healthcare.
 
   It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
+image: /assets/images/blog/glaucomflecken-intro-dark.webp
 team: Edge One Media
 descriptionimage: ""
 ---
