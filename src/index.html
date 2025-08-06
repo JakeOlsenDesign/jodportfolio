@@ -126,9 +126,46 @@ eleventyNavigation:
                         <a href="{{ post.url }}" class="portfolio-link reveal">
                             <!--Main Article Image-->
 
-                            <div class="blog-mainImage intro-image" style="background-image:url('{{ post.data.fti }}')">
-                                <img class="project-logo" src="{{ post.data.logo }}" alt="{{ post.data.imageAlt }}">
+                            {# --- Portfolio card media: uploaded cover video OR featured image (fti) --- #}
+                            {% set media_type = post.data.media_type | default('') %}
+                            {% set fti = post.data.fti | default(post.data.image) %}
+                            {% set cover_video = post.data.cover_video %}
+
+                            {# Auto-detect when media_type not set #}
+                            {% if not media_type %}
+                            {% if cover_video %}{% set media_type = 'Video' %}
+                            {% elif fti %}{% set media_type = 'Image' %}{% endif %}
+                            {% endif %}
+
+                            {% if media_type == 'Video' and cover_video %}
+                            <div class="blog-mainMedia intro-image">
+                                <video class="cover-video-el" autoplay muted loop playsinline preload="metadata">
+                                <source src="{{ cover_video }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                                </video>
+
+                                <!-- {% if post.data.logo %}
+                                <img class="project-logo" src="{{ post.data.logo }}" alt="{{ post.data.imageAlt | default(post.data.title) }}">
+                                {% endif %} -->
                             </div>
+
+                            {% else %}
+                            <div class="blog-mainImage intro-image" style="background-image:url('{{ fti }}')">
+                                <!-- {% if post.data.logo %}
+                                <img class="project-logo" src="{{ post.data.logo }}" alt="{{ post.data.imageAlt | default(post.data.title) }}">
+                                {% endif %} -->
+                            </div>
+                            {% endif %}
+
+
+                                {% else %}
+                                <div class="blog-mainImage intro-image" style="background-image:url('{{ fti }}')">
+                                    {% if post.data.logo %}
+                                    <img class="project-logo" src="{{ post.data.logo }}" alt="{{ post.data.imageAlt | default(post.data.title) }}">
+                                    {% endif %}
+                                </div>
+                                {% endif %}
+
 
                             <!-- <picture class="blog-mainImage">
                                 <img
