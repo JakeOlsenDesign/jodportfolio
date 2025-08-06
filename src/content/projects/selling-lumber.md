@@ -25,7 +25,7 @@ bg: /assets/images/blog/maciej-rusek-xiqqq0r7vfi-unsplash.webp
 mobilepreview: /assets/images/blog/sl-mobile-preview.webp
 video_url: https://player.vimeo.com/video/644652961
 videos:
-  - https://player.vimeo.com/video/644652961
+  - https://player.vimeo.com/video/569722679
   - https://player.vimeo.com/video/569716606
 webpreview: /assets/images/blog/sl-web-preview.webp
 media_type: Video
