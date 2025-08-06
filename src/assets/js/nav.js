@@ -222,69 +222,69 @@ function typeWriterByWord(elementId, text, speed = 300) {
 
 // // TOOLTIP
 
-document.addEventListener('DOMContentLoaded', () => {
-  const tooltip = document.getElementById('tooltip');
-  if (!tooltip) return;
+// document.addEventListener('DOMContentLoaded', () => {
+//   const tooltip = document.getElementById('tooltip');
+//   if (!tooltip) return;
 
-  const isDesktop = window.matchMedia('(min-width: 768px)').matches;
-  if (!isDesktop) return;
+//   const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+//   if (!isDesktop) return;
 
-  let fadeTimeout;
+//   let fadeTimeout;
 
-  document.querySelectorAll('.portfolio-link').forEach(el => {
-    const titleEl = el.querySelector('.blog-h1');
+//   document.querySelectorAll('.portfolio-link').forEach(el => {
+//     const titleEl = el.querySelector('.blog-h1');
 
-    // if (!titleEl || !descEl) return;
+//     // if (!titleEl || !descEl) return;
 
-    const title = titleEl.textContent.trim();
-    const link = el.getAttribute('href') || '#';
+//     const title = titleEl.textContent.trim();
+//     const link = el.getAttribute('href') || '#';
 
-    el.addEventListener('mouseenter', () => {
-      const currentHTML = tooltip.querySelector('h3')?.textContent || '';
-      if (currentHTML !== title) {
-        tooltip.innerHTML = `
-          <a href="${link}" class="tooltip-inner">
-            <h3>${title}</h3>
-          </a>
-        `;
-      }
-      tooltip.classList.add('visible');
-    });
+//     el.addEventListener('mouseenter', () => {
+//       const currentHTML = tooltip.querySelector('h3')?.textContent || '';
+//       if (currentHTML !== title) {
+//         tooltip.innerHTML = `
+//           <a href="${link}" class="tooltip-inner">
+//             <h3>${title}</h3>
+//           </a>
+//         `;
+//       }
+//       tooltip.classList.add('visible');
+//     });
 
-    el.addEventListener('mousemove', (e) => {
-      clearTimeout(fadeTimeout);
+//     el.addEventListener('mousemove', (e) => {
+//       clearTimeout(fadeTimeout);
 
-      const tooltipWidth = tooltip.offsetWidth;
-      const tooltipHeight = tooltip.offsetHeight;
-      const margin = 12;
+//       const tooltipWidth = tooltip.offsetWidth;
+//       const tooltipHeight = tooltip.offsetHeight;
+//       const margin = 12;
 
-      // Center horizontally
-      let left = e.clientX - tooltipWidth / 2;
+//       // Center horizontally
+//       let left = e.clientX - tooltipWidth / 2;
 
-      // Position above cursor
-      let top = e.clientY - tooltipHeight + 10;
+//       // Position above cursor
+//       let top = e.clientY - tooltipHeight + 10;
 
-      // Clamp to viewport
-      if (left < margin) left = margin;
-      if (left + tooltipWidth > window.innerWidth - margin) {
-        left = window.innerWidth - tooltipWidth - margin;
-      }
+//       // Clamp to viewport
+//       if (left < margin) left = margin;
+//       if (left + tooltipWidth > window.innerWidth - margin) {
+//         left = window.innerWidth - tooltipWidth - margin;
+//       }
 
-      if (top < margin) {
-        top = e.clientY + margin; // fallback below cursor
-      }
+//       if (top < margin) {
+//         top = e.clientY + margin; // fallback below cursor
+//       }
 
-      tooltip.style.left = `${left}px`;
-      tooltip.style.top = `${top}px`;
-    });
+//       tooltip.style.left = `${left}px`;
+//       tooltip.style.top = `${top}px`;
+//     });
 
-    el.addEventListener('mouseleave', () => {
-      fadeTimeout = setTimeout(() => {
-        tooltip.classList.remove('visible');
-      }, 150);
-    });
-  });
-});
+//     el.addEventListener('mouseleave', () => {
+//       fadeTimeout = setTimeout(() => {
+//         tooltip.classList.remove('visible');
+//       }, 150);
+//     });
+//   });
+// });
 
 
 // CUSTOM VIDEO PLAYER
