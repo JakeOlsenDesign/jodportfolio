@@ -19,7 +19,7 @@ credits:
 tools:
   - Adobe
   - WordPress
-fti: /assets/images/blog/screenshot-2025-06-06-at-12.52.12 am.png
+fti: /assets/images/blog/realitysalestraining-cover.png
 logo: /assets/images/blog/sellinglumber-logo-final-white.png
 bg: /assets/images/blog/maciej-rusek-xiqqq0r7vfi-unsplash.webp
 project_images:
