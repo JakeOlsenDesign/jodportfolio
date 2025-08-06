@@ -143,17 +143,10 @@ eleventyNavigation:
                                     <source src="{{ cover_video }}" type="video/mp4">
                                     Your browser does not support the video tag.
                                     </video>
-
-                                    {% if post.data.logo %}
-                                    <img class="project-logo" src="{{ post.data.logo }}" alt="{{ post.data.imageAlt | default(post.data.title) }}">
-                                    {% endif %}
                                 </div>
 
                                 {% else %}
                                 <div class="blog-mainImage intro-image" style="background-image:url('{{ fti }}')">
-                                    {% if post.data.logo %}
-                                    <img class="project-logo" src="{{ post.data.logo }}" alt="{{ post.data.imageAlt | default(post.data.title) }}">
-                                    {% endif %}
                                 </div>
                                 {% endif %}
 
