@@ -126,21 +126,19 @@
                                 </div>
                                 
                             </div>
-
+                            
                             {% if videos and videos | length > 0 %}
                                 <div class="video-container">
-                                    {% for video in videos %}
-                                    {% if video.url %}
-                                        <div class="video-embed">
+                                    {% for url in videos %}
+                                    <div class="video-embed">
                                         <iframe
-                                            src="{{ video.url }}"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            loading="lazy"
-                                            title="Project Video {{ loop.index }}"
+                                        src="{{ url }}"
+                                        frameborder="0"
+                                        allowfullscreen
+                                        loading="lazy"
+                                        title="Project Video {{ loop.index }}"
                                         ></iframe>
-                                        </div>
-                                    {% endif %}
+                                    </div>
                                     {% endfor %}
                                 </div>
                             {% endif %}
