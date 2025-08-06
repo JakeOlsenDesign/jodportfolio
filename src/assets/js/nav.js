@@ -124,16 +124,21 @@ function scrollFunction() {
 document.addEventListener('DOMContentLoaded', function () {
     const maxBlur = 25; // Maximum blur level (starting state)
     const blur = document.querySelector('.blur'); // Select the element to apply blur
-  
-    window.addEventListener('scroll', function () {
-      const scrollY = window.scrollY; // Get current scroll position
-  
-      // Adjust the divisor to control the sensitivity (scroll speed)
-      const sensitivity = 10; // Higher value = slower unblur, lower value = faster unblur
-      const blurLevel = Math.max(maxBlur - scrollY / sensitivity, 0); // Ensure blur level doesn't go below 0
-  
-      // Apply the calculated blur level to the backdrop-filter dynamically
-      blur.style.backdropFilter = `blur(${blurLevel}px)`;
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (document.querySelector(".blur")) {
+            
+        window.addEventListener('scroll', function () {
+            const scrollY = window.scrollY; // Get current scroll position
+        
+            // Adjust the divisor to control the sensitivity (scroll speed)
+            const sensitivity = 10; // Higher value = slower unblur, lower value = faster unblur
+            const blurLevel = Math.max(maxBlur - scrollY / sensitivity, 0); // Ensure blur level doesn't go below 0
+        
+            // Apply the calculated blur level to the backdrop-filter dynamically
+            blur.style.backdropFilter = `blur(${blurLevel}px)`;
+        });
+      }
     });
   });
 
