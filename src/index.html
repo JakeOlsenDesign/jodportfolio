@@ -123,7 +123,7 @@ eleventyNavigation:
             {% else %}
             <article class="recent-articles">
                 {%- for post in collections.project | reverse -%}
-                        <a href="{{ post.url }}" class="portfolio-link">
+                        <a href="{{ post.url }}" class="portfolio-link reveal">
                             <!--Main Article Image-->
 
                             <div class="blog-mainImage intro-image" style="background-image:url('{{ post.data.fi }}')">

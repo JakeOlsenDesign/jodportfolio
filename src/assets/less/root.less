@@ -423,6 +423,48 @@
             transform: scale(0.95);
             }
 
+
+    // FADE & BLUR IN
+
+    /* Base hidden state */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  filter: blur(8px);
+  transition: opacity 600ms cubic-bezier(.22,.98,.35,1),
+              transform 600ms cubic-bezier(.22,.98,.35,1),
+              filter 600ms cubic-bezier(.22,.98,.35,1);
+  will-change: opacity, transform, filter;
+  /* Prevent mouse/keyboard focusing invisible elements from being confusing */
+  pointer-events: none;
+}
+
+/* Visible state (when class .is-visible is added) */
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+  pointer-events: auto;
+}
+
+/* Allow inline data attributes to control duration/delay via CSS variables */
+.reveal {
+  transition-duration: var(--reveal-duration, 600ms);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+/* Respect reduced motion preference: show immediately and avoid transforms */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+    pointer-events: auto !important;
+  }
+}
+
+
 }
 
 /* Desktop - 1024px */

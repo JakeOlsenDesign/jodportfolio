@@ -415,3 +415,52 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// FADE & BLUR IN
+
+// Call this once on page load
+function initRevealOnScroll({
+  selector = '.reveal',
+  root = null,
+  rootMargin = '0px 0px -10% 0px', // start revealing slightly before fully in view
+  threshold = 0.12,                // fraction of element visible
+  once = true                      // unobserve after reveal
+} = {}) {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const nodes = Array.from(document.querySelectorAll(selector));
+
+  // If user prefers reduced motion, just reveal immediately
+  if (prefersReduced) {
+    nodes.forEach(el => {
+      el.classList.add('is-visible');
+    });
+    return;
+  }
+
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      if (entry.isIntersecting) {
+        // Read optional custom duration/delay stored as data attributes (ms)
+        const delay = el.getAttribute('data-reveal-delay');      // e.g. "150"
+        const duration = el.getAttribute('data-reveal-duration'); // e.g. "700"
+        if (delay !== null)  el.style.setProperty('--reveal-delay', `${parseInt(delay, 10)}ms`);
+        if (duration !== null) el.style.setProperty('--reveal-duration', `${parseInt(duration, 10)}ms`);
+
+        el.classList.add('is-visible');
+
+        if (once) observer.unobserve(el);
+      }
+    });
+  }, { root, rootMargin, threshold });
+
+  nodes.forEach(el => io.observe(el));
+
+  // return observer if caller wants to manage it
+  return io;
+}
+
+// Initialize on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+  initRevealOnScroll();
+});
