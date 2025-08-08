@@ -18,7 +18,8 @@ credits:
 tools:
   - Adobe
   - WordPress
-fti: /assets/images/blog/clc_pp009_jbp-leadership.webp
+media_type: Image
+cover_video: /assets/images/blog/clc-cover-v2.webp
 logo: /assets/images/blog/clc-logo.png
 bg: /assets/images/blog/clc-cover-2.webp
 web_process:
@@ -31,6 +32,7 @@ web_process:
 weburl: https://clcpallets.com/
 webpreview: /assets/images/blog/clc-web-preview.webp
 mobilepreview: /assets/images/blog/clc-mobile-preview.webp
+fti: /assets/images/blog/clc_pp009_jbp-leadership.webp
 image: /assets/images/blog/clc_pp009_jbp-leadership.webp
 ---
 ## Overview
