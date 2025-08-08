@@ -23,6 +23,7 @@ tools:
   - Photoshop
   - Illustrator
 media_type: Image
+cover_video: /assets/images/blog/tglg-stationary-update.webp
 logo: /assets/images/blog/tglg-stationary-update.webp
 bg: /assets/images/blog/tglg-bg-resize.webp
 brand_process:
