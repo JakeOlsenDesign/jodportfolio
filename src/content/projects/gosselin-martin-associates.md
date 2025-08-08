@@ -20,7 +20,7 @@ tools:
   - Photoshop
   - Illustrator
 media_type: Image
-cover_video: /assets/images/blog/gm-cover.webp
+cover_video: /assets/images/blog/gm-cover-v2.webp
 logo: /assets/images/blog/gma-logo-update-white.svg
 bg: /assets/images/blog/rsw_3070m.png
 web_process:
