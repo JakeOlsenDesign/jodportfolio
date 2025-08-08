@@ -22,8 +22,8 @@ tools:
   - Adobe XD
   - Photoshop
   - Illustrator
-fti: /assets/images/blog/tglg-cover.webp
-logo: /assets/images/blog/tglg-logo-horizontal.webp
+media_type: Image
+logo: /assets/images/blog/tglg-stationary-update.webp
 bg: /assets/images/blog/tglg-bg-resize.webp
 brand_process:
   - image: /assets/images/blog/glg-stylescape-1.webp
@@ -45,6 +45,7 @@ mobilepreview: /assets/images/blog/glg-mobile-preview.webp
 webvideo: true
 mobile_images: []
 video: /assets/images/blog/glg-desktop-resized.mp4
+fti: /assets/images/blog/tglg-cover.webp
 image: /assets/images/blog/tglg-cover.webp
 project_images:
   - image: /assets/images/blog/tglg-stationary-update.webp
