@@ -19,22 +19,23 @@ credits:
 tools:
   - Adobe
   - WordPress
-fti: /assets/images/blog/realitysalestraining-cover.png
+media_type: Video
+cover_video: /assets/images/blog/sellinglumber-cover.webm
 logo: /assets/images/blog/sellinglumber-logo-final-white.png
 bg: /assets/images/blog/maciej-rusek-xiqqq0r7vfi-unsplash.webp
 project_images:
   - image: /assets/images/blog/realitysalestraining-cover.png
   - image: /assets/images/blog/rst-nawla2024-brochure-final-outline-display.jpg
   - image: /assets/images/blog/rst-nawla2024-brochure-final-outline-display2.jpg
-mobilepreview: /assets/images/blog/sl-mobile-preview.webp
-video_url: https://player.vimeo.com/video/644652961
 videos:
   - https://player.vimeo.com/video/569722679
   - https://player.vimeo.com/video/569716606
-webpreview: /assets/images/blog/sl-web-preview.webp
-media_type: Video
-image: /assets/images/blog/screenshot-2025-06-06-at-12.52.12 am.png
 weburl: https://sellinglumber.com/
+webpreview: /assets/images/blog/sl-web-preview.webp
+mobilepreview: /assets/images/blog/sl-mobile-preview.webp
+video_url: https://player.vimeo.com/video/644652961
+fti: /assets/images/blog/realitysalestraining-cover.png
+image: /assets/images/blog/screenshot-2025-06-06-at-12.52.12 am.png
 ---
 ## Overview
 Selling Lumber, a program by Reality Sales Training, is a virtual sales manager course created to accelerate the professional development of lumber salespeople. It is led by James Olsen, an experienced sales coach with a background in lumber trading. The core mission is to transform new sales professionals into profitable contributors in a matter of months, while also giving experienced salespeople a significant competitive edge. The program and company are dedicated to providing "Real Training, Real Consulting, Real Results" to help clients achieve their sales goals.
