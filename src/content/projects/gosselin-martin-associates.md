@@ -19,7 +19,8 @@ tools:
   - Adobe XD
   - Photoshop
   - Illustrator
-fti: /assets/images/blog/rsw_3070m.png
+media_type: Image
+cover_video: /assets/images/blog/gm-cover.webp
 logo: /assets/images/blog/gma-logo-update-white.svg
 bg: /assets/images/blog/rsw_3070m.png
 web_process:
@@ -39,6 +40,7 @@ mobile_images:
   - mi-image: /assets/images/blog/gm-mobile-mock-7.webp
   - mi-image: /assets/images/blog/gm-mobile-mock-8.webp
   - mi-image: /assets/images/blog/gm-mobile-mock-9.webp
+fti: /assets/images/blog/rsw_3070m.png
 image: /assets/images/blog/gm-desktop-mock-5.webp
 desktop_images:
   - desk-image: /assets/images/blog/gm-desktop-mock-1.webp
