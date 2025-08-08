@@ -20,7 +20,7 @@ tools:
   - Adobe
   - WordPress
 media_type: Video
-cover_video: /assets/images/blog/sellinglumber-cover.webm
+cover_video: /assets/images/blog/sellinglumber-cover-v2.webm
 logo: /assets/images/blog/sellinglumber-logo-final-white.png
 bg: /assets/images/blog/maciej-rusek-xiqqq0r7vfi-unsplash.webp
 project_images:
