@@ -20,8 +20,8 @@ credits:
   - credit: Madison Stekly - Designer
 tools:
   - Adobe & WordPress
-media_type: Image
-cover_video: /assets/images/blog/foresight-portcover-3.webp
+media_type: Video
+cover_video: /assets/images/blog/foresight-cover-long.webm
 logo: /assets/images/blog/foresight-logo-horizontal-white.webp
 bg: /assets/images/blog/nasa-q1p7bh3shj8-unsplash-resize.webp
 brand_process: []
