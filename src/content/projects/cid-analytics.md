@@ -16,7 +16,8 @@ credits:
   - credit: Nicholas De Salvo - CEO
 tools:
   - Adobe & WordPress
-fti: /assets/images/blog/cida-featured.webp
+media_type: Image
+cover_video: /assets/images/blog/cida-featured.webp
 logo: /assets/images/blog/cida-logo-full-white.png
 bg: /assets/images/blog/chris-orcutt-dmex6_oqi-u-unsplash-update.webp
 web_process:
@@ -32,6 +33,7 @@ project_images:
 weburl: https://cidanalytics.com/
 webpreview: /assets/images/blog/cida-web-preview.webp
 mobilepreview: /assets/images/blog/cida-mobile-preview.webp
+fti: /assets/images/blog/cida-featured.webp
 image: /assets/images/blog/chris-orcutt-dmex6_oqi-u-unsplash-update.webp
 ---
 ## Overview
