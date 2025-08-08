@@ -31,7 +31,7 @@ tools:
   - Photoshop
   - Illustrator
 media_type: Image
-cover_video: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
+cover_video: /assets/images/blog/glaucomflecken-cover.webp
 logo: /assets/images/blog/glaucomflecken-mainlogo-bg.webp
 bg: /assets/images/blog/glaucomflecken-pattern-2500-bg.webp
 brand_process:
