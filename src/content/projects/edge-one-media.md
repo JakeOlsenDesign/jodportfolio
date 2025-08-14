@@ -8,7 +8,7 @@ categories:
   - web
 services:
   - WebDesign
-media_type: Image
+media_type: Video
 cover_video: /assets/images/blog/edgeone-cover.mp4
 ---
 Write your content here.
