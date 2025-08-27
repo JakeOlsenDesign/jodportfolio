@@ -248,6 +248,12 @@
 
     #profile img {
         max-width: 300px;
+        -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
+        mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
     }
 
     .profile img {
@@ -257,31 +263,7 @@
     border: 2px solid white;
     }
 
-    // BLUR PROFILE
-
-    .img-blur-fade {
-  position: relative;
-  display: grid;       /* easy stacking */
-  overflow: hidden;    /* hide blur spill */
-}
-.img-blur-fade > img {
-  grid-area: 1 / 1;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* The blurred bottom overlay */
-.img-blur-fade .blur-layer {
-  filter: blur(14px);
-  transform: scale(1.04); /* hide blur edges at sides */
-  transform-origin: center;
-  /* Only show the bottom, with a soft gradient blend */
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, transparent 60%, #000 100%);
-          mask-image: linear-gradient(to bottom, transparent 0, transparent 60%, #000 100%);
-  pointer-events: none;   /* clicks go to image below */
-}
-
+   
 
     /* Chat box style */
     .chat {
