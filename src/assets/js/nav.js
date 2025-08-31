@@ -143,56 +143,56 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 //   TYPEWRITER
-let typewriterTimeout = null;   // Tracks ongoing typewriter animation
-let hoverTimeout = null;        // Tracks hover-leave delay for restoring intro
+// let typewriterTimeout = null;   // Tracks ongoing typewriter animation
+// let hoverTimeout = null;        // Tracks hover-leave delay for restoring intro
 
-function typeWriterByWord(elementId, text, speed = 300) {
-  const target = document.getElementById(elementId);
-  const container = target.parentElement;
-  const words = text.trim().split(' ');
-  target.innerHTML = '';
-  let index = 0;
+// function typeWriterByWord(elementId, text, speed = 300) {
+//   const target = document.getElementById(elementId);
+//   const container = target.parentElement;
+//   const words = text.trim().split(' ');
+//   target.innerHTML = '';
+//   let index = 0;
 
-  // Clear any previously scheduled word addition
-  if (typewriterTimeout) {
-    clearTimeout(typewriterTimeout);
-  }
+//   // Clear any previously scheduled word addition
+//   if (typewriterTimeout) {
+//     clearTimeout(typewriterTimeout);
+//   }
 
-  function addWord() {
-    if (index < words.length) {
-      target.innerHTML += (index === 0 ? '' : ' ') + words[index];
-      index++;
-      container.scrollTop = container.scrollHeight;
-      typewriterTimeout = setTimeout(addWord, speed);
-    }
-  }
+//   function addWord() {
+//     if (index < words.length) {
+//       target.innerHTML += (index === 0 ? '' : ' ') + words[index];
+//       index++;
+//       container.scrollTop = container.scrollHeight;
+//       typewriterTimeout = setTimeout(addWord, speed);
+//     }
+//   }
 
-  addWord();
-}
+//   addWord();
+// }
 
 // Save the initial intro text when the page loads
-const typewriter = document.getElementById('typewriter');
-const originalText = typewriter.innerText;
+// const typewriter = document.getElementById('typewriter');
+// const originalText = typewriter.innerText;
 
-// Attach hover listeners to portfolio items
-document.querySelectorAll('.portfolio-link').forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    if (hoverTimeout) {
-      clearTimeout(hoverTimeout);
-    }
+// // Attach hover listeners to portfolio items
+// document.querySelectorAll('.portfolio-link').forEach(link => {
+//   link.addEventListener('mouseenter', () => {
+//     if (hoverTimeout) {
+//       clearTimeout(hoverTimeout);
+//     }
 
-    const desc = link.querySelector('.blog-desc');
-    if (desc) {
-      typeWriterByWord('typewriter', desc.innerText, 50);
-    }
-  });
+//     const desc = link.querySelector('.blog-desc');
+//     if (desc) {
+//       typeWriterByWord('typewriter', desc.innerText, 50);
+//     }
+//   });
 
-  link.addEventListener('mouseleave', () => {
-    hoverTimeout = setTimeout(() => {
-      typeWriterByWord('typewriter', originalText, 50);
-    }, 300); // Delay to allow smoother interaction if user moves quickly
-  });
-});
+//   link.addEventListener('mouseleave', () => {
+//     hoverTimeout = setTimeout(() => {
+//       typeWriterByWord('typewriter', originalText, 50);
+//     }, 300); // Delay to allow smoother interaction if user moves quickly
+//   });
+// });
 
 // On profile image click, reveal chat and type intro
 
