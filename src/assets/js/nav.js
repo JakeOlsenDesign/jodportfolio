@@ -170,7 +170,7 @@ function typeWriterByWord(elementId, text, speed = 300) {
   addWord();
 }
 
-Save the initial intro text when the page loads
+// Save the initial intro text when the page loads
 const typewriter = document.getElementById('typewriter');
 const originalText = typewriter.innerText;
 
