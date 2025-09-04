@@ -515,3 +515,8 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('mousemove', onMove);
   });
 })();
+
+document.querySelectorAll('.img-hover[data-img]').forEach(el => {
+  const img = new Image();
+  img.src = el.dataset.img;
+});
