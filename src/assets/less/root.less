@@ -1286,19 +1286,6 @@
             display: flex;
             align-items: center;
 
-            &:before {
-                position: absolute;
-                bottom: calc(-2 / 16 * 1rem);
-                left: 0;
-                /* active state underline */
-                content: "";
-                opacity: 1;
-                display: none;
-                background: currentColor;
-                height: 1px;
-                width: 100%;
-            }
-
             &.cs-active {
                 &:before {
                     display: block;
