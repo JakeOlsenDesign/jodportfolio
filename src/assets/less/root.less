@@ -305,6 +305,9 @@
 
     .home .intro-container .button {
         background-image: linear-gradient(to right, #4568DC, #B06AB3);
+        background-size: 125% 100%;
+        transition: 0.25s ease;
+        background-position: right;
         color: #FFF;
         padding: 10px 15px;
         text-decoration: none;
@@ -316,6 +319,10 @@
         margin-top: 1rem;
         font-family: 'wotfardsemibold';
         display: inline-block;
+    }
+
+    .home .intro-container .button:hover {
+        background-position: left;
     }
 
     /* Profile image floating initially */
