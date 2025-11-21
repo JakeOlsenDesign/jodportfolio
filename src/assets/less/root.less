@@ -624,6 +624,15 @@
     /* Visual tweaks for floating look */
     border-radius: 20px; 
     box-shadow: 0 -10px 30px rgba(0,0,0,0.1); /* Shadow on top shows overlap */
+
+        display: grid;
+    grid-template-columns: 40% 60%; /* 40% text, 60% image */
+    align-items: center;
+    
+    background-color: #fff; /* Crucial: Needs background to cover card behind it */
+    overflow: hidden;       /* Ensures images don't bleed out */
+    transform-origin: center top; /* Pivot point for the GSAP scaling */
+    box-sizing: border-box;
 }
 
 // OPTION 3
