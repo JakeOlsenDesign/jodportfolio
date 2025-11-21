@@ -595,21 +595,52 @@
     padding-bottom: 10vh; /* Extra space at bottom */
 }
 
+// OPTION 1
 /* The Individual Sticky Card */
+// .project-card-sticky {
+//     position: sticky;
+//     top: 0;
+//     height: 100vh; /* Must be full viewport height to work best */
+    
+//     display: grid;
+//     grid-template-columns: 40% 60%; /* 40% text, 60% image */
+//     align-items: center;
+    
+//     background-color: #fff; /* Crucial: Needs background to cover card behind it */
+//     overflow: hidden;       /* Ensures images don't bleed out */
+//     transform-origin: center top; /* Pivot point for the GSAP scaling */
+//     box-sizing: border-box;
+// }
+
+// OPTION 2
 .project-card-sticky {
-    position: sticky;
-    top: 0;
-    height: 100vh; /* Must be full viewport height to work best */
+    /* Stick to the vertical center */
+    position: sticky; 
+    top: 10vh;         /* 10vh space at top */
+    height: 80vh;      /* 10vh space at bottom */
     
-    display: grid;
-    grid-template-columns: 40% 60%; /* 40% text, 60% image */
-    align-items: center;
+    margin-bottom: 10vh; /* Adds breathing room between cards */
     
-    background-color: #fff; /* Crucial: Needs background to cover card behind it */
-    overflow: hidden;       /* Ensures images don't bleed out */
-    transform-origin: center top; /* Pivot point for the GSAP scaling */
-    box-sizing: border-box;
+    /* Visual tweaks for floating look */
+    border-radius: 20px; 
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.1); /* Shadow on top shows overlap */
 }
+
+// OPTION 3
+// .project-card-sticky {
+//     position: sticky;
+//     top: 5rem; /* Base sticking point */
+//     height: 85vh; 
+    
+//     /* Visual separation */
+//     border-top: 1px solid #000;
+//     box-shadow: 0 -5px 10px rgba(0,0,0,0.05);
+// }
+
+// /* Only works if you have a manageable number of items (e.g. < 10) */
+// .project-card-sticky:nth-child(1) { top: 5rem; }
+// .project-card-sticky:nth-child(2) { top: 7rem; }
+// .project-card-sticky:nth-child(3) { top: 9rem; }
 
 /* LEFT SIDE */
 .card-content {
