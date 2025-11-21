@@ -523,34 +523,34 @@ document.querySelectorAll('.img-hover[data-img]').forEach(el => {
 
 
 // SCROLL EFFECT
-document.addEventListener("DOMContentLoaded", (event) => {
-  // Register GSAP
-  gsap.registerPlugin(ScrollTrigger);
+// document.addEventListener("DOMContentLoaded", (event) => {
+//   // Register GSAP
+//   gsap.registerPlugin(ScrollTrigger);
 
-  const cards = gsap.utils.toArray(".project-card-sticky");
+//   const cards = gsap.utils.toArray(".project-card-sticky");
 
-  cards.forEach((card, index) => {
+//   cards.forEach((card, index) => {
     
-    // We define the animation for the CURRENT card 
-    // based on the scroll position of the triggering element.
+//     // We define the animation for the CURRENT card 
+//     // based on the scroll position of the triggering element.
     
-    // Check if it's not the last card (last card doesn't need to fade away)
-    if(index !== cards.length - 1) {
+//     // Check if it's not the last card (last card doesn't need to fade away)
+//     if(index !== cards.length - 1) {
         
-        gsap.to(card, {
-            scale: 0.9,       // Shrink slightly
-            opacity: 0.0,     // Fade out completely
-            filter: "blur(10px)", // Add blur
-            ease: "none",     // Linear ease for direct scroll control
-            scrollTrigger: {
-                trigger: card,
-                start: "top top", // When card hits top of viewport
-                end: "bottom top", // When card leaves top of viewport
-                scrub: true,       // Tie animation to scrollbar
-                pin: false,        // CSS Sticky handles the pinning!
-                markers: false     // Set to true for debugging
-            }
-        });
-    }
-  });
-});
+//         gsap.to(card, {
+//             scale: 0.9,       // Shrink slightly
+//             opacity: 0.0,     // Fade out completely
+//             filter: "blur(10px)", // Add blur
+//             ease: "none",     // Linear ease for direct scroll control
+//             scrollTrigger: {
+//                 trigger: card,
+//                 start: "top top", // When card hits top of viewport
+//                 end: "bottom top", // When card leaves top of viewport
+//                 scrub: true,       // Tie animation to scrollbar
+//                 pin: false,        // CSS Sticky handles the pinning!
+//                 markers: false     // Set to true for debugging
+//             }
+//         });
+//     }
+//   });
+// });
