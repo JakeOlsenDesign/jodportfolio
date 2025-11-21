@@ -133,13 +133,12 @@ eleventyNavigation:
                 </div>
             </div> -->
 
-            {% if collections.project | length == 0 %}
+            <!-- {% if collections.project | length == 0 %}
                 <h1>No Recent Posts</h1>
             {% else %}
             <article class="recent-articles">
                 {%- for post in collections.project | reverse -%}
                         <a href="{{ post.url }}" class="portfolio-link reveal">
-                            <!--Main Article Image-->
 
                                 {# --- Portfolio card media: uploaded cover video OR featured image (fti) --- #}
                                 {% set media_type = post.data.media_type | default('') %}
@@ -165,16 +164,6 @@ eleventyNavigation:
                                 </div>
                                 {% endif %}
 
-
-                            <!-- <picture class="blog-mainImage">
-                                <img
-                                src="{{ post.data.image }}"
-                                alt="{{ post.data.imageAlt }}"
-                                width="795"
-                                height="400"
-                                decoding="async"/>
-                            </picture> -->
-                            <!--Article Info-->
                             <div class="title-container">
                                 <h2 class="blog-h1">
                                     {{ post.data.title }}
@@ -183,12 +172,67 @@ eleventyNavigation:
                                     {{ post.data.description }}
                                 </p>
                                 <p class="readmore">VIEW PROJECT</p>
-                                <!-- <a href="{{ post.url }}" class="blog-link">Continue Reading</a> -->
                             </div>
                         </a>
                 {%- endfor -%}
             </article>
-            {% endif %}
+            {% endif %} -->
+
+
+<!-- NEW LAYOUT -->
+<section class="portfolio-roll-container">
+  
+  {% if collections.project | length == 0 %}
+    <div class="no-posts"><h1>No Recent Posts</h1></div>
+  {% else %}
+    
+    {%- for post in collections.project | reverse -%}
+      
+      <article class="project-card-sticky">
+        
+        <div class="card-content">
+          <div class="content-inner">
+            <h2 class="blog-h1">{{ post.data.title }}</h2>
+            <p class="blog-desc">{{ post.data.description }}</p>
+            
+            <a href="{{ post.url }}" class="readmore-btn">VIEW PROJECT</a>
+          </div>
+        </div>
+
+        <div class="card-visuals">
+            <div class="visual-base" style="background-image: url('{{ post.data.image }}');"></div>
+
+            <a href="{{ post.url }}" class="visual-overlay-wrapper">
+                {% set media_type = post.data.media_type | default('') %}
+                {% set fti = post.data.fti | default(post.data.image) %}
+                {% set cover_video = post.data.cover_video %}
+
+                {# Auto-detect logic #}
+                {% if not media_type %}
+                    {% if cover_video %}{% set media_type = 'Video' %}
+                    {% elif fti %}{% set media_type = 'Image' %}{% endif %}
+                {% endif %}
+
+                {% if media_type == 'Video' and cover_video %}
+                    <video class="overlay-media" autoplay muted loop playsinline preload="metadata">
+                        <source src="{{ cover_video }}" type="video/mp4">
+                    </video>
+                {% else %}
+                    <img src="{{ fti }}" alt="{{ post.data.imageAlt }}" class="overlay-media">
+                {% endif %}
+            </a>
+        </div>
+
+      </article>
+    {%- endfor -%}
+
+  {% endif %}
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
         </div>
 <!-- <div id="tooltip" class="tooltip"></div> -->
     </div>
