@@ -140,6 +140,18 @@ eleventyNavigation:
                 {%- for post in collections.project | reverse -%}
                         <a href="{{ post.url }}" class="portfolio-link reveal">
 
+                            <div class="title-container">
+                                <div class="content-container">
+                                    <h2 class="blog-h1">
+                                        {{ post.data.title }}
+                                    </h2>
+                                    <p class="blog-desc">
+                                        {{ post.data.description }}
+                                    </p>
+                                    <p class="readmore">VIEW PROJECT</p>
+                                </div>
+                            </div>
+
                                 {# --- Portfolio card media: uploaded cover video OR featured image (fti) --- #}
                                 {% set media_type = post.data.media_type | default('') %}
                                 {% set fti = post.data.fti | default(post.data.image) %}
@@ -164,15 +176,6 @@ eleventyNavigation:
                                 </div>
                                 {% endif %}
 
-                            <div class="title-container">
-                                <h2 class="blog-h1">
-                                    {{ post.data.title }}
-                                </h2>
-                                <p class="blog-desc">
-                                    {{ post.data.description }}
-                                </p>
-                                <p class="readmore">VIEW PROJECT</p>
-                            </div>
                         </a>
                 {%- endfor -%}
             </article>
