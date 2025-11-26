@@ -781,10 +781,10 @@
     h6 {
         margin: 0;
         color: var(--headerColor);
-        // font-family: "PP Editorial Old", sans-serif;
+        font-family: "PP Editorial Old", sans-serif;
         // font-family: "League Gothic", sans-serif;
         // font-family: "Special Gothic", sans-serif;
-        font-family: 'Aneto Skyline';;
+        // font-family: 'Aneto Skyline';;
         text-transform: uppercase;
         text-wrap: pretty;
         font-weight: 700;
@@ -2479,6 +2479,7 @@
             margin-bottom: 3rem;
             text-decoration: none;
             display: flex;
+            flex-wrap: wrap;
         }
 
         .portfolio-link .title-container {
@@ -2486,7 +2487,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-around;
-            width: 50%;
+            width: 100%;
             padding: 5%;
         }
 
@@ -2574,6 +2575,9 @@
     .recent-articles {
         .portfolio-link {
             width: 100%;
+        }
+        .portfolio-link .title-container {
+            width: 50%;
         }
     }
 
