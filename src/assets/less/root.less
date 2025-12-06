@@ -782,13 +782,15 @@
     h6 {
         margin: 0;
         color: var(--headerColor);
-        font-family: "PP Editorial Old", sans-serif;
+        // font-family: "PP Editorial Old", sans-serif;
         // font-family: "League Gothic", sans-serif;
         // font-family: "Special Gothic", sans-serif;
-        // font-family: 'Aneto Skyline';;
+        // font-family: 'Aneto Skyline';
+        font-family: 'Clash Display', sans-serif;
         text-transform: uppercase;
         text-wrap: pretty;
-        font-weight: 700;
+        font-weight: 675;
+        letter-spacing: -0.02em;
     }
 
     p,
@@ -1091,6 +1093,103 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+// CLASH
+
+@font-face {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-display: swap; /* Critical for fast rendering */
+  
+  /* Defines the weight range available in the variable file */
+  font-weight: 200 700; 
+
+  src: 
+    /* 1. Variable WOFF2 (Highest Priority) */
+    url('/assets/fonts/ClashDisplay-Variable.woff2') format('woff2-variations'),
+    /* 2. Variable WOFF (Fallback for older browsers) */
+    url('/assets/fonts/ClashDisplay-Variable.woff') format('woff'),
+    /* 3. Variable TTF (Fallback for Safari/iOS older than 14) */
+    url('/assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
+}
+
+/* --- Static Fallback: Extra Light (200) --- */
+@font-face {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200; 
+  src: 
+    url('/assets/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+    url('/assets/fonts/ClashDisplay-Extralight.woff') format('woff'),
+    url('/assets/fonts/ClashDisplay-Extralight.ttf') format('truetype'),
+    url('/assets/fonts/ClashDisplay-Extralight.eot?#iefix') format('embedded-opentype'); /* IE Fallback */
+}
+
+/* --- Static Fallback: Light (300) --- */
+@font-face {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300; 
+  src: 
+    url('/assets/fonts/ClashDisplay-Light.woff2') format('woff2'),
+    url('/assets/fonts/ClashDisplay-Light.woff') format('woff'),
+    url('/assets/fonts/ClashDisplay-Light.ttf') format('truetype'),
+    url('/assets/fonts/ClashDisplay-Light.eot?#iefix') format('embedded-opentype');
+}
+
+/* --- Static Fallback: Regular (400) --- */
+@font-face {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400; 
+  src: 
+    url('/assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+    url('/assets/fonts/ClashDisplay-Regular.woff') format('woff'),
+    url('/assets/fonts/ClashDisplay-Regular.ttf') format('truetype'),
+    url('/assets/fonts/ClashDisplay-Regular.eot?#iefix') format('embedded-opentype');
+}
+
+/* --- Static Fallback: Medium (500) --- */
+@font-face {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500; 
+  src: 
+    url('/assets/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+    url('/assets/fonts/ClashDisplay-Medium.woff') format('woff'),
+    url('/assets/fonts/ClashDisplay-Medium.ttf') format('truetype'),
+    url('/assets/fonts/ClashDisplay-Medium.eot?#iefix') format('embedded-opentype');
+}
+
+/* --- Static Fallback: Semibold (600) --- */
+@font-face {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600; 
+  src: 
+    url('/assets/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+    url('/assets/fonts/ClashDisplay-Semibold.woff') format('woff'),
+    url('/assets/fonts/ClashDisplay-Semibold.ttf') format('truetype'),
+    url('/assets/fonts/ClashDisplay-Semibold.eot?#iefix') format('embedded-opentype');
+}
+
+/* --- Static Fallback: Bold (700) --- */
+@font-face {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700; 
+  src: 
+    url('/assets/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+    url('/assets/fonts/ClashDisplay-Bold.woff') format('woff'),
+    url('/assets/fonts/ClashDisplay-Bold.ttf') format('truetype'),
+    url('/assets/fonts/ClashDisplay-Bold.eot?#iefix') format('embedded-opentype');
 }
 
 }
