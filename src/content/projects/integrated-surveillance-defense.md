@@ -19,5 +19,6 @@ tools:
   - Adobe Products
 media_type: Image
 cover_video: /assets/images/blog/isd-cover.webp
+bg: /assets/images/blog/isd-cover.webp
 ---
 Write your content here.
