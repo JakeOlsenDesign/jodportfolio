@@ -4,7 +4,6 @@ url: selling-lumber
 date: 2025-06-06T00:45:00.000Z
 tags:
   - project
-description: A Bottom Line Approach To Sales Training
 role:
   - Lead Designer
 categories:
@@ -19,6 +18,11 @@ credits:
 tools:
   - Adobe
   - WordPress
+description: A Bottom Line Approach To Sales Training
+overview: >-
+  ## Overview
+
+  Selling Lumber, a program by Reality Sales Training, is a virtual sales manager course created to accelerate the professional development of lumber salespeople. It is led by James Olsen, an experienced sales coach with a background in lumber trading. The core mission is to transform new sales professionals into profitable contributors in a matter of months, while also giving experienced salespeople a significant competitive edge. The program and company are dedicated to providing "Real Training, Real Consulting, Real Results" to help clients achieve their sales goals.
 media_type: Video
 cover_video: /assets/images/blog/sellinglumber-cover-v2.webm
 logo: /assets/images/blog/sellinglumber-logo-final-white.png
@@ -37,9 +41,6 @@ video_url: https://player.vimeo.com/video/644652961
 fti: /assets/images/blog/realitysalestraining-cover.png
 image: /assets/images/blog/screenshot-2025-06-06-at-12.52.12 am.png
 ---
-## Overview
-Selling Lumber, a program by Reality Sales Training, is a virtual sales manager course created to accelerate the professional development of lumber salespeople. It is led by James Olsen, an experienced sales coach with a background in lumber trading. The core mission is to transform new sales professionals into profitable contributors in a matter of months, while also giving experienced salespeople a significant competitive edge. The program and company are dedicated to providing "Real Training, Real Consulting, Real Results" to help clients achieve their sales goals.
-
 ## Challenges
 * Slow Onboarding Process: The traditional learning curve for new salespeople in the specialized lumber industry is often long, delaying their ability to contribute to the bottom line.
 * Building Sales Confidence and Skills: Both new and experienced sales professionals can benefit from structured training to improve their closing techniques, negotiation skills, and ability to manage accounts effectively.
