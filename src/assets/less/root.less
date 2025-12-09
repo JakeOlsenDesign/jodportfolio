@@ -2655,13 +2655,21 @@
         .readmore:after {
             content: '\203A';
             color: #FFF;
-            font-size: 21px;
+            font-size: 28px;
+            transform: translateX(5px);
+            opacity: 0;
+            transition: 1s ease-out;
         }
 
         .project-container .readmore:hover {
             // background-image: linear-gradient(to left, #4568DC, #B06AB3);
             // background-position: left;
             position: relative;
+            color: #B06AB3;
+        }
+
+        .readmore:hover:after {
+            transform: translateX(10px);
             color: #B06AB3;
         }
     
