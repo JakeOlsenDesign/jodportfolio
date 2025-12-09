@@ -165,7 +165,7 @@ eleventyNavigation:
 
                                 {% if media_type == 'Video' and cover_video %}
                                     <div class="blog-mainMedia intro-image">
-                                        <a href="{{ post.url }}"></a>
+                                        <a href="{{ post.url }}">
                                             <video class="cover-video-el" autoplay muted loop playsinline preload="metadata">
                                             <source src="{{ cover_video }}" type="video/mp4">
                                             Your browser does not support the video tag.
