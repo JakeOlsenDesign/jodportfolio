@@ -5,7 +5,6 @@ author: ""
 date: 2025-03-02T14:45:00.000Z
 tags:
   - project
-description: Peace Of Mind Through Holistic Security Solutions
 role:
   - Lead Designer - Branding & Web Design
 categories:
@@ -20,6 +19,12 @@ credits:
   - credit: Madison Stekly - Designer
 tools:
   - Adobe & WordPress
+description: Peace Of Mind Through Holistic Security Solutions
+overview: Foresight Security Consulting, a Northwest-based global firm,
+  specializes in proactive, holistic risk mitigation solutions. They are
+  dedicated to enhancing the physical and psychological safety of diverse
+  clients, including educational institutions, houses of worship, businesses of
+  all sizes, media organizations, and high-net-worth individuals.
 media_type: Video
 cover_video: /assets/images/blog/foresight-cover-long.webm
 logo: /assets/images/blog/foresight-logo-horizontal-white.webp
@@ -63,10 +68,6 @@ desktop_images:
   - desk-image: /assets/images/blog/foresightsc-desktop-mock-6.webp
   - desk-image: /assets/images/blog/foresightsc-desktop-mock-7.webp
 ---
-## Overview
-
-Foresight Security Consulting, a Northwest-based global firm, specializes in proactive, holistic risk mitigation solutions. They are dedicated to enhancing the physical and psychological safety of diverse clients, including educational institutions, houses of worship, businesses of all sizes, media organizations, and high-net-worth individuals.
-
 ## Challenges
 
 1. **Outdated Brand Identity**: Foresight's existing branding lacked modern appeal and did not fully convey their expertise and commitment to safety.
