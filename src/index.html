@@ -164,16 +164,20 @@ eleventyNavigation:
                                 {% endif %}
 
                                 {% if media_type == 'Video' and cover_video %}
-                                <div class="blog-mainMedia intro-image">
-                                    <video class="cover-video-el" autoplay muted loop playsinline preload="metadata">
-                                    <source src="{{ cover_video }}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                    </video>
-                                </div>
+                                <a href="{{ post.url }}">
+                                    <div class="blog-mainMedia intro-image">
+                                        <video class="cover-video-el" autoplay muted loop playsinline preload="metadata">
+                                        <source src="{{ cover_video }}" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </a>
 
                                 {% else %}
-                                <div class="blog-mainImage intro-image" style="background-image:url('{{ cover_video }}')">
-                                </div>
+                                <a href="{{ post.url }}"></a>
+                                    <div class="blog-mainImage intro-image" style="background-image:url('{{ cover_video }}')">
+                                    </div>
+                                </a>
                                 {% endif %}
 
                             </div>
