@@ -11,7 +11,6 @@ author: Jake Olsen
 date: 2025-01-13T18:26:00.000Z
 tags:
   - project
-description: Bringing Humor and Humanity to Healthcare
 role:
   - Lead Designer - Branding & Web Design/Development
 categories:
@@ -30,6 +29,15 @@ tools:
   - Adobe XD
   - Photoshop
   - Illustrator
+description: Bringing Humor and Humanity to Healthcare
+overview: >-
+  Dr. Will Flanary, known as "Dr. Glaucomflecken," and his wife Kristin, "Lady
+  Glaucomflecken," are more than just medical influencers. They use comedy and
+  advocacy to highlight issues in healthcare while educating and entertaining
+  their growing audience.
+
+
+  With increasing demand for speaking engagements and expanded content offerings, they needed a **brand identity and website refresh** that showcased their personalities, established credibility, and created a structured user experience for fans, media partners, and event organizers.
 media_type: Image
 cover_video: /assets/images/blog/glaucomflecken-cover.webp
 logo: /assets/images/blog/glaucomflecken-mainlogo-bg.webp
@@ -38,36 +46,22 @@ brand_process:
   - image: /assets/images/blog/glaucomflecken-stylescape-playful_irreverent_educational-copy.webp
   - image: /assets/images/blog/glaucomflecken-stylescape-playful_knowledgeable_wholesome-copy.webp
   - image: /assets/images/blog/glaucomflecken-stylescape-playful_wholesome_knowledgeable-copy.webp
-webpreview: /assets/images/blog/screencapture-glaucomflecken-2025-07-13-13_46_44.webp
-mobilepreview: /assets/images/blog/screencapture-glaucomflecken-2025-07-13-13_48_25.webp
-b1: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
-pi1: /assets/images/blog/lead-magnet-display-1536x1152.webp
-overview: >-
-  Dr. and Lady Glaucomfecken are extremely tapped in with their target market.
-  They grew their audience from sharing and criticizing the faults of the
-  healthcare system with humor and irreverence that resonated with healthcare
-  workers. This stemmed from a desire to bring joy to their viewers with a
-  message of kindness and hope to make things better in the healthcare.
-
-  It was important that we showcased their playful personalities while keeping a professional demeanor. This challenge was highlighted since they wished to branch into more podcasting and public speaking and wanted to balance their humor and opinions on serious matters.
-fti: /assets/images/blog/glaucomflecken-intro-dark.webp
-image: /assets/images/blog/glaucomflecken-intro-dark.webp
-weburl: https://glaucomflecken.com/
-team: Edge One Media
 project_images:
   - image: /assets/images/blog/glaucomflecken-pairlogos-copy.webp
   - image: /assets/images/blog/glauctome-banner.webp
   - image: /assets/images/blog/glaucomflecken-brandshowcase-update2-1.webp
   - image: /assets/images/blog/portfolio-website-display-update.webp
   - image: /assets/images/blog/lead-magnet-display-1536x1152.webp
+weburl: https://glaucomflecken.com/
+webpreview: /assets/images/blog/screencapture-glaucomflecken-2025-07-13-13_46_44.webp
+mobilepreview: /assets/images/blog/screencapture-glaucomflecken-2025-07-13-13_48_25.webp
+b1: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
+pi1: /assets/images/blog/lead-magnet-display-1536x1152.webp
+fti: /assets/images/blog/glaucomflecken-intro-dark.webp
+image: /assets/images/blog/glaucomflecken-intro-dark.webp
+team: Edge One Media
 descriptionimage: ""
 ---
-## Overview
-
-Dr. Will Flanary, known as "Dr. Glaucomflecken," and his wife Kristin, "Lady Glaucomflecken," are more than just medical influencers. They use comedy and advocacy to highlight issues in healthcare while educating and entertaining their growing audience.
-
-With increasing demand for speaking engagements and expanded content offerings, they needed a **brand identity and website refresh** that showcased their personalities, established credibility, and created a structured user experience for fans, media partners, and event organizers.
-
 ## Challenges
 
 ### 1. Balancing Comedy with Professionalism
