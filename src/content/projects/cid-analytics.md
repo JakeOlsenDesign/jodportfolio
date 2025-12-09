@@ -4,7 +4,6 @@ url: cid-analytics
 date: 2025-06-05T21:29:00.000Z
 tags:
   - project
-description: Educating and empowering a new generation of homeowners
 categories:
   - branding
   - web
@@ -16,6 +15,14 @@ credits:
   - credit: Nicholas De Salvo - CEO
 tools:
   - Adobe & WordPress
+description: Educating and empowering a new generation of homeowners
+overview: CID Analytics is the nation's leading provider of HOA due diligence
+  services, empowering a new generation of homebuyers with critical insights
+  into homeowner associations. With their flagship CIDA REPORT™ and proprietary
+  CIDA SCORE™, they provide a comprehensive examination of an HOA's financial
+  and administrative health. CID Analytics needed a brand refresh and a new
+  website that not only reflected their mission but also streamlined the
+  client's process of ordering a report and submitting documents.
 media_type: Image
 cover_video: /assets/images/blog/cida-featured.webp
 logo: /assets/images/blog/cida-logo-full-white.png
@@ -36,9 +43,6 @@ mobilepreview: /assets/images/blog/cida-mobile-preview.webp
 fti: /assets/images/blog/cida-featured.webp
 image: /assets/images/blog/chris-orcutt-dmex6_oqi-u-unsplash-update.webp
 ---
-## Overview
-CID Analytics is the nation's leading provider of HOA due diligence services, empowering a new generation of homebuyers with critical insights into homeowner associations. With their flagship CIDA REPORT™ and proprietary CIDA SCORE™, they provide a comprehensive examination of an HOA's financial and administrative health. CID Analytics needed a brand refresh and a new website that not only reflected their mission but also streamlined the client's process of ordering a report and submitting documents.
-
 ## Challenges
 
 * Creating a Human-Centric Brand Identity: The brand needed to shift focus from just the homes to the people buying them, emphasizing trust and empowerment for first-time buyers and families.
@@ -46,6 +50,7 @@ CID Analytics is the nation's leading provider of HOA due diligence services, em
 * Simplifying Complex Information: HOA governance, finance, and legal documents can be overwhelming. The challenge was to present this complex information in a clear, easy-to-understand format through the CIDA Report and the website.
 
 ## Solutions
+
 * Refined Brand Identity: CID Analytics' brand imagery was refocused on homebuyers and families. A professional, minimalistic wordmark logo was developed to build trust, while maintaining the brand's established color palette.   
 * Custom Website Design: A new website was crafted with a streamlined user interface. This included a simplified checkout process for the CIDA Report and a clear, easy-to-follow flow for clients to submit their documents. The design was updated to be more human-centric, aligning with the new brand identity.
 * Content Organization Strategy: The new website was structured to clearly communicate the value of the CIDA Report and CIDA Score. It included dedicated sections explaining the core concepts of their due diligence—Reserves, Financial Reporting, Governance, Management, and Insurance—making the information more accessible and understandable for potential clients. 
