@@ -138,7 +138,7 @@ eleventyNavigation:
             {% else %}
             <article class="recent-articles">
                 {%- for post in collections.project | reverse -%}
-                        <a href="{{ post.url }}" class="portfolio-link reveal">
+                        <div class="project-container reveal">
 
                             <div class="title-container">
                                 <div class="content-container">
@@ -148,7 +148,7 @@ eleventyNavigation:
                                     <p class="blog-desc">
                                         {{ post.data.description }}
                                     </p>
-                                    <p class="readmore">VIEW PROJECT</p>
+                                    <a href="{{ post.url }}" class="readmore">VIEW PROJECT<a>
                                 </div>
                             </div>
 
@@ -176,7 +176,7 @@ eleventyNavigation:
                                 </div>
                                 {% endif %}
 
-                        </a>
+                            </div>
                 {%- endfor -%}
             </article>
             {% endif %}
