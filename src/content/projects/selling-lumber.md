@@ -22,6 +22,7 @@ description: A Bottom Line Approach To Sales Training
 overview: >-
   ## Overview
 
+
   Selling Lumber, a program by Reality Sales Training, is a virtual sales manager course created to accelerate the professional development of lumber salespeople. It is led by James Olsen, an experienced sales coach with a background in lumber trading. The core mission is to transform new sales professionals into profitable contributors in a matter of months, while also giving experienced salespeople a significant competitive edge. The program and company are dedicated to providing "Real Training, Real Consulting, Real Results" to help clients achieve their sales goals.
 media_type: Video
 cover_video: /assets/images/blog/sellinglumber-cover-v2.webm
