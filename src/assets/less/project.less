@@ -392,7 +392,11 @@
         width: 95vw !important;
     }
 
-    .overview, .branding, .webdesign, .outcome {
+    .overview {
+
+    }
+
+    .branding, .webdesign, .outcome {
         max-width: 800px;
         margin: 5rem 0;
     }
@@ -507,10 +511,11 @@
         display: grid;
         // grid-template-rows: 0.16fr;
         max-height: 0px;
-        transition: 1s ease;
+        // transition: 1s ease;
         overflow: hidden;
         position: relative;
         padding-left: 1rem;
+        margin-top: 2rem;
     }
 
     .case-study .content {
@@ -888,7 +893,7 @@
 
     .content-column-container.expanded .case-study-wrapper,
     .content-column-container.expanded .project-gallery {
-        width: 45%;
+        width: 47%;
         gap: 2rem;
         justify-content: space-between;
         display: block;
