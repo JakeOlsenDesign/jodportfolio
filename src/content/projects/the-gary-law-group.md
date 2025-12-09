@@ -4,7 +4,6 @@ url: the-gary-law-group
 date: 2025-02-22T17:27:00.000Z
 tags:
   - project
-description: Fenestration Risk Partners. Foreseeing Risk, Securing Growth.
 role:
   - Lead Designer - Branding & Web Design/Development
 categories:
@@ -22,6 +21,15 @@ tools:
   - Adobe XD
   - Photoshop
   - Illustrator
+description: Fenestration Risk Partners. Foreseeing Risk, Securing Growth.
+overview: >-
+  The Gary Law Group (GLG) are more than just a law firm, they work closely with
+  their clients to become partners in risk prevention for window and door
+  manufacturers. Instead of just defending clients, their goal is to help
+  businesses avoid legal trouble altogether.
+
+
+  GLG needed a brand identity and website refresh that communicated their proactive approach, role as educators, risk mitigators, and long-term allies - setting them apart from traditional law firms while reinforcing their leadership in fenestration law.
 media_type: Image
 cover_video: /assets/images/blog/tglg-stationary-update.webp
 logo: /assets/images/blog/tglg-stationary-update.webp
@@ -54,12 +62,6 @@ project_images:
 weburl: https://thegarylawgroup.com/
 descriptionimage: /assets/images/blog/screencapture-thegarylawgroup-2025-02-22-17_29_30.webp
 ---
-## Overview
-
-The Gary Law Group (GLG) are more than just a law firm, they work closely with their clients to become partners in risk prevention for window and door manufacturers. Instead of just defending clients, their goal is to help businesses avoid legal trouble altogether.
-
-GLG needed a brand identity and website refresh that communicated their proactive approach, role as educators, risk mitigators, and long-term allies - setting them apart from traditional law firms while reinforcing their leadership in fenestration law.
-
 ## Challenges
 
 ### 1. Differentiating from Traditional Law Firms
