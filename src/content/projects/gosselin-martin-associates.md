@@ -4,7 +4,6 @@ url: gosselin-martin-associates
 date: 2025-04-26T13:39:00.000Z
 tags:
   - project
-description: Modernizing a Trusted Brand in Healthcare Facilities Management
 role:
   - Lead Designer - Branding & Web Design/Development
 categories:
@@ -19,6 +18,14 @@ tools:
   - Adobe XD
   - Photoshop
   - Illustrator
+description: Modernizing a Trusted Brand in Healthcare Facilities Management
+overview: Gosselin Martin Associates (G/MA) is a nationally recognized leader in
+  healthcare facilities management recruitment, succession planning, and career
+  development. With decades of experience, G/MA connects hospitals and systems
+  with top-tier facilities professionals. As their services expanded to include
+  educational content like the Healthcare Facilities Network and the High
+  Reliability Podcast, they needed a refreshed brand identity and website that
+  reflected their growth while honoring their established reputation.
 media_type: Image
 cover_video: /assets/images/blog/gm-cover-v2.webp
 logo: /assets/images/blog/gma-logo-update-white.svg
@@ -55,10 +62,6 @@ desktop_images:
   - desk-image: /assets/images/blog/gm-desktop-mock-10.webp
   - desk-image: /assets/images/blog/gm-desktop-mock-11.webp
 ---
-## **Overview**
-
-Gosselin Martin Associates (G/MA) is a nationally recognized leader in healthcare facilities management recruitment, succession planning, and career development. With decades of experience, G/MA connects hospitals and systems with top-tier facilities professionals. As their services expanded to include educational content like the Healthcare Facilities Network and the High Reliability Podcast, they needed a refreshed brand identity and website that reflected their growth while honoring their established reputation.
-
 ## Challenges
 
 1. **Updating a Legacy Logo**\
