@@ -59,7 +59,7 @@ collections:
       widget: "list"
       fields:
         - { label: "Credit", name: "credit", widget: "string", required: false }
-    - { label: "Tools", name: "tools", widget: "list", required: false }
+    - { label: "Tools", name: "tools", widget: "string", required: false }
     - { label: "Description", name: "description", widget: "string", required: false }
     - { label: 'Overview', name: "overview", widget: 'markdown', default: "Write your content here." }
     - { label: 'Case Study', name: "body", widget: 'markdown', default: "Write your content here." }
