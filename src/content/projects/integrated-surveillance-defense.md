@@ -4,8 +4,7 @@ url: integrated-surveillance-defense
 date: 2025-12-06T10:48:00.000-08:00
 tags:
   - project
-role:
-  - Lead Designer - Web Design
+role: Lead Designer - Web Design
 categories:
   - branding
   - web
@@ -15,8 +14,7 @@ credits:
   - credit: "Team: Edge One Media"
   - credit: Nicholas De Salvo - CEO
   - credit: Jenaya Stevenson - Designer
-tools:
-  - Adobe &Wordpress
+tools: Adobe & Wordpress
 description: A Creative and Modern Online Identity Redesign For A Intelligence
   Integration Company
 overview: >-
