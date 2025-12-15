@@ -11,8 +11,7 @@ author: Jake Olsen
 date: 2025-01-13T18:26:00.000Z
 tags:
   - project
-role:
-  - Lead Designer - Branding & Web Design/Development
+role: Lead Designer - Branding & Web Design/Development
 categories:
   - web
   - branding
@@ -24,11 +23,7 @@ credits:
   - credit: Edge One Media - Company
   - credit: " Nicholas De Salvo - CEO"
   - credit: " Madison Stekly - Designer"
-tools:
-  - WordPress
-  - Adobe XD
-  - Photoshop
-  - Illustrator
+tools: WordPress, Adobe XD, Photoshop, Illustrator
 description: Bringing Humor and Humanity to Healthcare
 overview: >-
   Dr. Will Flanary, known as "Dr. Glaucomflecken," and his wife Kristin, "Lady
