@@ -4,8 +4,7 @@ url: clc-pallets
 date: 2025-06-05T23:23:00.000Z
 tags:
   - project
-role:
-  - Lead Designer - Web Design/Development
+role: Lead Designer - Web Design/Development
 categories:
   - web
 services:
