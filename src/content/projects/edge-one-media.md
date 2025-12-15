@@ -9,6 +9,9 @@ categories:
   - web
 services:
   - Web Design
+credits:
+  - credit: Nicholas De Salvo - CEO
+  - credit: Jenaya Stevenson - Designer
 tools: Adobe & WordPress
 description: It was time to give Edge One Media it's own refreshing edge! We
   evolved the homepage to explore what makes us passionate about serving the
@@ -24,6 +27,8 @@ overview: >-
   We set out to redesign our own brand and website with the same care, process, and standards we apply to our clients. That meant stepping back, challenging assumptions, and rebuilding our digital presence from the ground up.
 media_type: Video
 cover_video: /assets/images/blog/eom-cover2.mp4
+logo: /assets/images/blog/edgeone-logo.webp
+bg: /assets/images/blog/edgeone-apple-test.png
 weburl: https://edge-one.com/
 webpreview: /assets/images/blog/screencapture-edge-one-2025-12-15-00_31_19.png
 mobilepreview: /assets/images/blog/screencapture-edge-one-2025-12-15-00_31_47.png
