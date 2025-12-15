@@ -27,8 +27,12 @@ overview: >-
   We set out to redesign our own brand and website with the same care, process, and standards we apply to our clients. That meant stepping back, challenging assumptions, and rebuilding our digital presence from the ground up.
 media_type: Video
 cover_video: /assets/images/blog/eom-cover2.mp4
-logo: /assets/images/blog/edgeone-logo.webp
+logo: /assets/images/blog/edgeone-logo-outline.webp
 bg: /assets/images/blog/edgeone-apple-test.png
+brand_process:
+  - image: /assets/images/blog/edgeone-stylescape-1.png
+  - image: /assets/images/blog/edgeone-stylescape-2.png
+  - image: /assets/images/blog/edgeone-stylescape-3.png
 weburl: https://edge-one.com/
 webpreview: /assets/images/blog/screencapture-edge-one-2025-12-15-00_31_19.png
 mobilepreview: /assets/images/blog/screencapture-edge-one-2025-12-15-00_31_47.png
