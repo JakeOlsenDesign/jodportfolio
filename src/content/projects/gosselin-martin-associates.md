@@ -4,8 +4,7 @@ url: gosselin-martin-associates
 date: 2025-04-26T13:39:00.000Z
 tags:
   - project
-role:
-  - Lead Designer - Branding & Web Design/Development
+role: Lead Designer - Branding & Web Design/Development
 categories:
   - web
 services:
@@ -13,11 +12,7 @@ services:
 credits:
   - credit: Edge One Media - Company
   - credit: Nicholas De Salvo - CEO
-tools:
-  - WordPress
-  - Adobe XD
-  - Photoshop
-  - Illustrator
+tools: WordPress, Adobe XD, Photoshop, Illustrator
 description: Modernizing a Trusted Brand in Healthcare Facilities Management
 overview: Gosselin Martin Associates (G/MA) is a nationally recognized leader in
   healthcare facilities management recruitment, succession planning, and career

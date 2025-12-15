@@ -13,8 +13,7 @@ services:
 credits:
   - credit: "Team: Edge One Media"
   - credit: Nicholas De Salvo - CEO
-tools:
-  - Adobe & WordPress
+tools: Adobe & WordPress
 description: Educating and empowering a new generation of homeowners
 overview: CID Analytics is the nation's leading provider of HOA due diligence
   services, empowering a new generation of homebuyers with critical insights
