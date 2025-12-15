@@ -31,11 +31,15 @@ overview: >-
 media_type: Image
 cover_video: /assets/images/blog/isd-cover.webp
 logo: /assets/images/blog/isd-logo-white-transparent-background-768x269.png
-bg: /assets/images/blog/isd-cover.webp
+bg: /assets/images/blog/isd-bg.webp
 web_process:
   - image: /assets/images/blog/isd-mockup-r1.1.png
   - image: /assets/images/blog/isd-mockup-r1.2.png
   - image: /assets/images/blog/isd-mockup-r1.3-jen.png
+project_images:
+  - image: /assets/images/blog/isr-global-service-dark.webp
+  - image: /assets/images/blog/eo-ir-system-combo-full.webp
+  - image: /assets/images/blog/air-sea-land-combo.webp
 weburl: https://isr-def.com/
 webpreview: /assets/images/blog/screencapture-isr-def-2025-12-06-23_17_34.png
 mobilepreview: /assets/images/blog/screencapture-isr-def-2025-12-06-23_30_17.png
