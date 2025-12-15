@@ -5,8 +5,7 @@ author: ""
 date: 2025-03-02T14:45:00.000Z
 tags:
   - project
-role:
-  - Lead Designer - Branding & Web Design
+role: Lead Designer - Branding & Web Design
 categories:
   - branding
   - web
@@ -17,8 +16,7 @@ credits:
   - credit: "Team: Edge One Media"
   - credit: Nicholas De Salvo - CEO
   - credit: Madison Stekly - Designer
-tools:
-  - Adobe & WordPress
+tools: Adobe & WordPress
 description: Peace Of Mind Through Holistic Security Solutions
 overview: Foresight Security Consulting, a Northwest-based global firm,
   specializes in proactive, holistic risk mitigation solutions. They are
