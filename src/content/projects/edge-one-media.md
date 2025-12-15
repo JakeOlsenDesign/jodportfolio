@@ -24,6 +24,9 @@ overview: >-
   We set out to redesign our own brand and website with the same care, process, and standards we apply to our clients. That meant stepping back, challenging assumptions, and rebuilding our digital presence from the ground up.
 media_type: Video
 cover_video: /assets/images/blog/eom-cover2.mp4
+weburl: https://edge-one.com/
+webpreview: /assets/images/blog/screencapture-edge-one-2025-12-15-00_31_19.png
+mobilepreview: /assets/images/blog/screencapture-edge-one-2025-12-15-00_31_47.png
 ---
 ## Challenges
 
