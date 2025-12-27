@@ -32,7 +32,13 @@ brand_process:
   - image: /assets/images/blog/edgeone-stylescape-1.png
   - image: /assets/images/blog/edgeone-stylescape-2.png
   - image: /assets/images/blog/edgeone-stylescape-3.png
-web_process: []
+web_process:
+  - image: /assets/images/blog/eom-mockup-1.png
+  - image: /assets/images/blog/eom-mockup-2.png
+  - image: /assets/images/blog/eom-mockup-3.png
+  - image: /assets/images/blog/eom-mockup-3.2.png
+  - image: /assets/images/blog/eom-mockup-r2-1.png
+  - image: /assets/images/blog/eom-mockup-r2-2.png
 weburl: https://edge-one.com/
 webpreview: /assets/images/blog/screencapture-edge-one-2025-12-15-00_31_19.png
 mobilepreview: /assets/images/blog/screencapture-edge-one-2025-12-15-00_31_47.png
