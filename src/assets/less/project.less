@@ -870,6 +870,53 @@ p strong {
     font-family: 'wotfardsemibold';
 }
 
+// PREVIOUS AND NEXT PROJECTS
+
+.project-nav-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+.project-nav-card {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.project-nav-card video,
+.project-nav-card .bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-nav-card .bg-img {
+  background-size: cover;
+  background-position: center;
+}
+
+.project-nav-title {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 1.5rem;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(6px);
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
+}
+
+
 }
 
 /* Tablet - 1024px */

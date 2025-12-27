@@ -222,6 +222,51 @@
             <div class="lightbox" id="lightbox">
                 <img id="lightbox-img" src="" alt="">
             </div>
+
+            {% set projects = collections.projects %}
+            {% set index = projects | indexOf(page) %}
+            {% set prevPost = projects[index + 1] %}
+            {% set nextPost = projects[index - 1] %}
+
+            <div class="project-nav-wrapper">
+
+                {% if prevPost %}
+                <a href="{{ prevPost.url }}" class="project-nav-card prev">
+                    <div class="project-bg">
+                    {% if prevPost.data.cover_video %}
+                        <video autoplay muted loop playsinline preload="metadata">
+                        <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
+                        </video>
+                    {% else %}
+                        <div class="bg-img" style="background-image:url('{{ prevPost.data.fti }}')"></div>
+                    {% endif %}
+                    </div>
+                    <div class="project-nav-title">
+                    ← {{ prevPost.data.title }}
+                    </div>
+                </a>
+                {% endif %}
+
+
+                {% if nextPost %}
+                <a href="{{ nextPost.url }}" class="project-nav-card next">
+                    <div class="project-bg">
+                    {% if nextPost.data.cover_video %}
+                        <video autoplay muted loop playsinline preload="metadata">
+                        <source src="{{ nextPost.data.cover_video }}" type="video/mp4">
+                        </video>
+                    {% else %}
+                        <div class="bg-img" style="background-image:url('{{ nextPost.data.fti }}')"></div>
+                    {% endif %}
+                    </div>
+                    <div class="project-nav-title">
+                    {{ nextPost.data.title }} →
+                    </div>
+                </a>
+                {% endif %}
+
+                </div>
+
         </div>
         <!-- End .main-content -->
 
