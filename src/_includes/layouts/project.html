@@ -223,50 +223,62 @@
                 <img id="lightbox-img" src="" alt="">
             </div>
 
-            {% set projects = collections.projects %}
-            {% set index = projects | indexOf(page) %}
-            {% set prevPost = projects[index + 1] %}
-            {% set nextPost = projects[index - 1] %}
-
-            <div class="project-nav-wrapper">
-
-                {% if prevPost %}
+            {% comment %}
+            Build the current project's index safely
+          {% endcomment %}
+          {% set projects = collections.project | reverse %}
+          {% set currentIndex = -1 %}
+          
+          {% for p in projects %}
+            {% if p.url == page.url %}
+              {% set currentIndex = loop.index0 %}
+            {% endif %}
+          {% endfor %}
+          
+          {% set prevPost = projects[currentIndex + 1] %}
+          {% set nextPost = projects[currentIndex - 1] %}
+          
+          
+          <div class="project-nav-wrapper">
+          
+            {% if prevPost %}
+              {% set prevMedia = prevPost.data.cover_video or prevPost.data.fti or prevPost.data.image %}
+              {% if prevMedia %}
                 <a href="{{ prevPost.url }}" class="project-nav-card prev">
-                    <div class="project-bg">
+                  <div class="project-bg">
                     {% if prevPost.data.cover_video %}
-                        <video autoplay muted loop playsinline preload="metadata">
+                      <video autoplay muted loop playsinline preload="metadata">
                         <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
-                        </video>
+                      </video>
                     {% else %}
-                        <div class="bg-img" style="background-image:url('{{ prevPost.data.fti }}')"></div>
+                      <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>
                     {% endif %}
-                    </div>
-                    <div class="project-nav-title">
-                    ← {{ prevPost.data.title }}
-                    </div>
+                  </div>
+                  <div class="project-nav-title">← {{ prevPost.data.title }}</div>
                 </a>
-                {% endif %}
-
-
-                {% if nextPost %}
+              {% endif %}
+            {% endif %}
+          
+            {% if nextPost %}
+              {% set nextMedia = nextPost.data.cover_video or nextPost.data.fti or nextPost.data.image %}
+              {% if nextMedia %}
                 <a href="{{ nextPost.url }}" class="project-nav-card next">
-                    <div class="project-bg">
+                  <div class="project-bg">
                     {% if nextPost.data.cover_video %}
-                        <video autoplay muted loop playsinline preload="metadata">
+                      <video autoplay muted loop playsinline preload="metadata">
                         <source src="{{ nextPost.data.cover_video }}" type="video/mp4">
-                        </video>
+                      </video>
                     {% else %}
-                        <div class="bg-img" style="background-image:url('{{ nextPost.data.fti }}')"></div>
+                      <div class="bg-img" style="background-image:url('{{ nextMedia }}')"></div>
                     {% endif %}
-                    </div>
-                    <div class="project-nav-title">
-                    {{ nextPost.data.title }} →
-                    </div>
+                  </div>
+                  <div class="project-nav-title">{{ nextPost.data.title }} →</div>
                 </a>
-                {% endif %}
-
-                </div>
-
+              {% endif %}
+            {% endif %}
+          
+          </div>
+          
         </div>
         <!-- End .main-content -->
 
