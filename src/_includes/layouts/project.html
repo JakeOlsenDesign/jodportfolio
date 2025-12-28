@@ -238,42 +238,44 @@
           
           <div class="project-nav-wrapper">
           
-            {% if prevPost %}
-              {% set prevMedia = prevPost.data.cover_video or prevPost.data.fti or prevPost.data.image %}
-              {% if prevMedia %}
-                <a href="{{ prevPost.url }}" class="project-nav-card prev">
-                  <div class="project-bg">
-                    {% if prevPost.data.cover_video %}
-                      <video autoplay muted loop playsinline preload="metadata">
-                        <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
-                      </video>
-                    {% else %}
-                      <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>
-                    {% endif %}
-                  </div>
-                  <div class="project-nav-title">← {{ prevPost.data.title }}</div>
-                </a>
-              {% endif %}
-            {% endif %}
+            <div class="project-nav-container">
+                {% if prevPost %}
+                {% set prevMedia = prevPost.data.cover_video or prevPost.data.fti or prevPost.data.image %}
+                {% if prevMedia %}
+                    <a href="{{ prevPost.url }}" class="project-nav-card prev">
+                    <div class="project-bg">
+                        {% if prevPost.data.cover_video %}
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
+                        </video>
+                        {% else %}
+                        <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>
+                        {% endif %}
+                    </div>
+                    <div class="project-nav-title">← {{ prevPost.data.title }}</div>
+                    </a>
+                {% endif %}
+                {% endif %}
+            
+                {% if nextPost %}
+                {% set nextMedia = nextPost.data.cover_video or nextPost.data.fti or nextPost.data.image %}
+                {% if nextMedia %}
+                    <a href="{{ nextPost.url }}" class="project-nav-card next">
+                    <div class="project-bg">
+                        {% if nextPost.data.cover_video %}
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="{{ nextPost.data.cover_video }}" type="video/mp4">
+                        </video>
+                        {% else %}
+                        <div class="bg-img" style="background-image:url('{{ fti }}')"></div>
+                        {% endif %}
+                    </div>
+                    <div class="project-nav-title">{{ nextPost.data.title }} →</div>
+                    </a>
+                {% endif %}
+                {% endif %}
           
-            {% if nextPost %}
-              {% set nextMedia = nextPost.data.cover_video or nextPost.data.fti or nextPost.data.image %}
-              {% if nextMedia %}
-                <a href="{{ nextPost.url }}" class="project-nav-card next">
-                  <div class="project-bg">
-                    {% if nextPost.data.cover_video %}
-                      <video autoplay muted loop playsinline preload="metadata">
-                        <source src="{{ nextPost.data.cover_video }}" type="video/mp4">
-                      </video>
-                    {% else %}
-                      <div class="bg-img" style="background-image:url('{{ fti }}')"></div>
-                    {% endif %}
-                  </div>
-                  <div class="project-nav-title">{{ nextPost.data.title }} →</div>
-                </a>
-              {% endif %}
-            {% endif %}
-          
+            </div>
           </div>
           
         </div>
