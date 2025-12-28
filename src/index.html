@@ -77,6 +77,10 @@ eleventyNavigation:
     </script>
 {% endblock %}
 
+{% if page.url == "/" %}
+<script src="/assets/js/cursor-preview.js" defer></script>
+{% endif %}
+
 {% block body %}
     <!-- ============================================ -->
     <!--                    LANDING                   -->
