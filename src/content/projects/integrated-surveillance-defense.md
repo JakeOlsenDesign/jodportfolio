@@ -30,7 +30,7 @@ overview: >-
   ISD partnered with Edge One Media to refresh their digital identity, reorganize content, and elevate their web experience to match the confidence and professionalism of their real-world solutions.
 media_type: Image
 fti: /assets/images/blog/isd-cover.webp
-cover_video: /assets/images/blog/isd-cover.webp
+cover_video: ""
 logo: /assets/images/blog/isd-logo-white-transparent-background-768x269.png
 bg: /assets/images/blog/isd-bg.webp
 web_process:
