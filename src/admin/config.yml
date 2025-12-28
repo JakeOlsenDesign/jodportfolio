@@ -68,15 +68,23 @@ collections:
       widget: "select"
       options: ["None", "Image", "Video"]
       default: "Image"
-      hint: "Choose whether the portfolio card uses a featured image or a short uploaded video."
+      hint: "Choose whether the portfolio card uses a featured image or a short uploaded video. If none is chosen, only the logo and title appear."
+    - label: "Cover Image"
+      name: "fti"
+      widget: "image"
+      required: false
+      hint: "Homepage image thumbnail — only shown when Image is selected."
+      condition:
+        field: media_type
+        equals: "Image"
     - label: "Cover Video"
       name: "cover_video"
       widget: "file"
       required: false
-      hint: "Upload a short optimized MP4 or WEBM to use as the cover on the home page. Shown when Media Type = Video."
-      when:
-        field: "media_type"
-        value: "Video"
+      hint: "Short MP4 / WEBM for homepage preview — only shown when Video is selected."
+      condition:
+        field: media_type
+        equals: "Video"
     - { label: "Project Logo", name: "logo", widget: "image", required: false }
     - { label: "Background Image", name: "bg", widget: "image", required: false }
     - label: "Brand Process"

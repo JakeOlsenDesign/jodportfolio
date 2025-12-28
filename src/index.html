@@ -152,30 +152,30 @@ eleventyNavigation:
                                 </div>
                             </div>
 
-                                {# --- Portfolio card media: uploaded cover video OR featured image (fti) --- #}
-                                {% set media_type = post.data.media_type | default('') %}
-                                {% set fti = post.data.fti | default(post.data.image) %}
+                                {% set fti = post.data.fti 
+                                    or post.data.image 
+                                    or post.data.bg 
+                                    or post.data.fi 
+                                %}
+                                
+                                {% set media_type = post.data.media_type %}
                                 {% set cover_video = post.data.cover_video %}
-
-                                {# Auto-detect when media_type not set #}
-                                {% if not media_type %}
-                                {% if cover_video %}{% set media_type = 'Video' %}
-                                {% elif fti %}{% set media_type = 'Image' %}{% endif %}
-                                {% endif %}
-
-                                {% if media_type == 'Video' and cover_video %}
+                                
+                                {% if media_type == "Video" and cover_video %}
                                     <div class="blog-mainMedia intro-image">
                                         <a href="{{ post.url }}">
-                                            <video class="cover-video-el" autoplay muted loop playsinline preload="metadata">
-                                            <source src="{{ cover_video }}" type="video/mp4">
-                                            Your browser does not support the video tag.
+                                            <video autoplay muted loop playsinline preload="metadata">
+                                                <source src="{{ cover_video }}" type="video/mp4">
                                             </video>
                                         </a>
                                     </div>
-
+                                
                                 {% else %}
-                                    <a href="{{ post.url }}" class="blog-mainImage intro-image" style="background-image:url('{{ fti }}')"></a>
+                                    <a href="{{ post.url }}" class="blog-mainImage intro-image" 
+                                       style="background-image:url('{{ fti }}')">
+                                    </a>
                                 {% endif %}
+                                
 
                             </div>
                 {%- endfor -%}
