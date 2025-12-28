@@ -873,11 +873,8 @@ p strong {
 // PREVIOUS AND NEXT PROJECTS
 
 .project-nav-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin: 5rem 0;
   position: relative;
+  width: 100%;
 }
 
 .project-nav-container {
@@ -886,6 +883,10 @@ p strong {
     position: relative;
     transform: translateX(-50%);
     padding: 3rem 35px 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 5rem 0;
 }
 
 .project-nav-card {
