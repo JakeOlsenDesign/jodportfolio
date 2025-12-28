@@ -23,7 +23,8 @@ overview: CID Analytics is the nation's leading provider of HOA due diligence
   website that not only reflected their mission but also streamlined the
   client's process of ordering a report and submitting documents.
 media_type: Image
-cover_video: /assets/images/blog/cida-featured.webp
+fti: /assets/images/blog/cida-featured.webp
+cover_video: ""
 logo: /assets/images/blog/cida-logo-full-white.png
 bg: /assets/images/blog/chris-orcutt-dmex6_oqi-u-unsplash-update.webp
 web_process:
@@ -39,7 +40,6 @@ project_images:
 weburl: https://cidanalytics.com/
 webpreview: /assets/images/blog/cida-web-preview.webp
 mobilepreview: /assets/images/blog/cida-mobile-preview.webp
-fti: /assets/images/blog/cida-featured.webp
 image: /assets/images/blog/chris-orcutt-dmex6_oqi-u-unsplash-update.webp
 ---
 ## Challenges

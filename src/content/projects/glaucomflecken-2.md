@@ -34,7 +34,8 @@ overview: >-
 
   With increasing demand for speaking engagements and expanded content offerings, they needed a **brand identity and website refresh** that showcased their personalities, established credibility, and created a structured user experience for fans, media partners, and event organizers.
 media_type: Image
-cover_video: /assets/images/blog/glaucomflecken-cover.webp
+fti: /assets/images/blog/glaucomflecken-cover.webp
+cover_video: ""
 logo: /assets/images/blog/glaucomflecken-mainlogo-bg.webp
 bg: /assets/images/blog/glaucomflecken-pattern-2500-bg.webp
 brand_process:
@@ -52,7 +53,6 @@ webpreview: /assets/images/blog/screencapture-glaucomflecken-2025-07-13-13_46_44
 mobilepreview: /assets/images/blog/screencapture-glaucomflecken-2025-07-13-13_48_25.webp
 b1: /assets/images/blog/glaucomflecken-logo-cover-2-1536x864.webp
 pi1: /assets/images/blog/lead-magnet-display-1536x1152.webp
-fti: /assets/images/blog/glaucomflecken-intro-dark.webp
 image: /assets/images/blog/glaucomflecken-intro-dark.webp
 team: Edge One Media
 descriptionimage: ""

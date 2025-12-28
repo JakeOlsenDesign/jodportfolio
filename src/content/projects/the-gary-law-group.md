@@ -31,8 +31,9 @@ overview: >-
 
   GLG needed a brand identity and website refresh that communicated their proactive approach, role as educators, risk mitigators, and long-term allies - setting them apart from traditional law firms while reinforcing their leadership in fenestration law.
 media_type: Image
-cover_video: /assets/images/blog/tglg-stationary-update.webp
-logo: /assets/images/blog/tglg-stationary-update.webp
+fti: /assets/images/blog/tglg-stationary-update.webp
+cover_video: ""
+logo: /assets/images/blog/tglg-logo-subtitle-update.webp
 bg: /assets/images/blog/tglg-bg-resize.webp
 brand_process:
   - image: /assets/images/blog/glg-stylescape-1.webp
@@ -49,17 +50,16 @@ web_process:
   - image: /assets/images/blog/glg-mockup-r3-1.webp
   - image: /assets/images/blog/glg-mockup-r3-2.webp
   - image: /assets/images/blog/glg-mockup-r4-2.webp
+project_images:
+  - image: /assets/images/blog/tglg-stationary-update.webp
+  - image: /assets/images/blog/tglg-logomock.webp
+weburl: https://thegarylawgroup.com/
 webpreview: /assets/images/blog/glg-web-preview.webp
 mobilepreview: /assets/images/blog/glg-mobile-preview.webp
 webvideo: true
 mobile_images: []
 video: /assets/images/blog/glg-desktop-resized.mp4
-fti: /assets/images/blog/tglg-cover.webp
 image: /assets/images/blog/tglg-cover.webp
-project_images:
-  - image: /assets/images/blog/tglg-stationary-update.webp
-  - image: /assets/images/blog/tglg-logomock.webp
-weburl: https://thegarylawgroup.com/
 descriptionimage: /assets/images/blog/screencapture-thegarylawgroup-2025-02-22-17_29_30.webp
 ---
 ## Challenges

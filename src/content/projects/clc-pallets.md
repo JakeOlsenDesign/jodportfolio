@@ -26,7 +26,8 @@ overview: Commercial Lumber and Pallet Co., Inc. (CLC Pallets) is a leading
   SFI® Certified, their philosophy is to be the best pallet and lumber provider
   in the markets they serve.
 media_type: Image
-cover_video: /assets/images/blog/clc-cover-v2.webp
+fti: /assets/images/blog/clc-cover-v2.webp
+cover_video: ""
 logo: /assets/images/blog/clc-logo.png
 bg: /assets/images/blog/clc-cover-2.webp
 web_process:
@@ -39,7 +40,6 @@ web_process:
 weburl: https://clcpallets.com/
 webpreview: /assets/images/blog/clc-web-preview.webp
 mobilepreview: /assets/images/blog/clc-mobile-preview.webp
-fti: /assets/images/blog/clc_pp009_jbp-leadership.webp
 image: /assets/images/blog/clc_pp009_jbp-leadership.webp
 ---
 ## Challenges

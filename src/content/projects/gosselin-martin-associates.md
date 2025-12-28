@@ -22,7 +22,8 @@ overview: Gosselin Martin Associates (G/MA) is a nationally recognized leader in
   Reliability Podcast, they needed a refreshed brand identity and website that
   reflected their growth while honoring their established reputation.
 media_type: Image
-cover_video: /assets/images/blog/gm-cover-v2.webp
+fti: /assets/images/blog/gm-cover-v2.webp
+cover_video: ""
 logo: /assets/images/blog/gma-logo-update-white.svg
 bg: /assets/images/blog/rsw_3070m.png
 web_process:
@@ -42,7 +43,6 @@ mobile_images:
   - mi-image: /assets/images/blog/gm-mobile-mock-7.webp
   - mi-image: /assets/images/blog/gm-mobile-mock-8.webp
   - mi-image: /assets/images/blog/gm-mobile-mock-9.webp
-fti: /assets/images/blog/rsw_3070m.png
 image: /assets/images/blog/gm-desktop-mock-5.webp
 desktop_images:
   - desk-image: /assets/images/blog/gm-desktop-mock-1.webp
