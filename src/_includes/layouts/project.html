@@ -243,10 +243,10 @@
                 {% if nextPost %}
                 {% set nextMedia = nextPost.data.cover_video or nextPost.data.fti or nextPost.data.image %}
                 {% if nextMedia %}
-                    <a href="{{ nextPost.url }}" class="project-nav-card next">
+                    <div class="project-nav-card next">
 
                         <div class="project-nav-title">
-                            <h2>{{ nextPost.data.title }}</h2>
+                            <a href="{{ nextPost.url }}"><h2>{{ nextPost.data.title }}</h2></a>
                             <p class="blog-desc">
                                 {{ nextPost.data.description }}
                             </p>
@@ -262,16 +262,17 @@
                             <div class="bg-img" style="background-image:url('{{ bg }}')"></div>
                             {% endif %}
                         </div>
-                    </a>
+                    </div>
                 {% endif %}
                 {% endif %}
 
                 {% if prevPost %}
                 {% set prevMedia = prevPost.data.cover_video or prevPost.data.fti or prevPost.data.image %}
                 {% if prevMedia %}
-                    <a href="{{ prevPost.url }}" class="project-nav-card prev">
+                    <div class="project-nav-card prev">
+                        
                         <div class="project-nav-title">
-                            <h2>{{ prevPost.data.title }}</h2>
+                           <a href="{{ prevPost.url }}"><h2>{{ prevPost.data.title }}</h2></a>
                             <p class="blog-desc">
                                 {{ prevPost.data.description }}
                             </p>
@@ -287,7 +288,8 @@
                             <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>
                             {% endif %}
                         </div>
-                    </a>
+
+                    </div>
                 {% endif %}
                 {% endif %}
           
