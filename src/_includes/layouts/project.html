@@ -244,13 +244,15 @@
                 {% set nextMedia = nextPost.data.cover_video or nextPost.data.fti or nextPost.data.image %}
                 {% if nextMedia %}
                     <a href="{{ nextPost.url }}" class="project-nav-card next">
+
                         <div class="project-nav-title">
-                            <h2>{{ prevPost.data.title }}</h2>
+                            <h2>{{ nextPost.data.title }}</h2>
                             <p class="blog-desc">
-                                {{ post.data.description }}
+                                {{ nextPost.data.description }}
                             </p>
                             <a href="{{ post.url }}" class="readmore">VIEW PROJECT</a>
                         </div>
+
                         <div class="project-bg">
                             {% if nextPost.data.cover_video %}
                             <video autoplay muted loop playsinline preload="metadata">
@@ -271,7 +273,7 @@
                         <div class="project-nav-title">
                             <h2>{{ prevPost.data.title }}</h2>
                             <p class="blog-desc">
-                                {{ post.data.description }}
+                                {{ prevPost.data.description }}
                             </p>
                             <a href="{{ post.url }}" class="readmore">VIEW PROJECT</a>
                         </div>
