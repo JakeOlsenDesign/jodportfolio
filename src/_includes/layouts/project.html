@@ -262,16 +262,23 @@
                 {% set prevMedia = prevPost.data.cover_video or prevPost.data.fti or prevPost.data.image %}
                 {% if prevMedia %}
                     <a href="{{ prevPost.url }}" class="project-nav-card prev">
-                    <div class="project-bg">
-                        {% if prevPost.data.cover_video %}
-                        <video autoplay muted loop playsinline preload="metadata">
-                            <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
-                        </video>
-                        {% else %}
-                        <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>
-                        {% endif %}
-                    </div>
-                    <div class="project-nav-title"><h2>{{ prevPost.data.title }}</h2></div>
+                        <div class="project-nav-title">
+                            <h2>{{ prevPost.data.title }}</h2>
+                            <p class="blog-desc">
+                                {{ post.data.description }}
+                            </p>
+                            <a href="{{ post.url }}" class="readmore">VIEW PROJECT<a>
+                        </div>
+
+                        <div class="project-bg">
+                            {% if prevPost.data.cover_video %}
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
+                            </video>
+                            {% else %}
+                            <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>
+                            {% endif %}
+                        </div>
                     </a>
                 {% endif %}
                 {% endif %}
