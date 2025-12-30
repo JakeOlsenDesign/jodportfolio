@@ -239,23 +239,6 @@
           <div class="project-nav-wrapper">
           
             <div class="project-nav-container">
-                {% if prevPost %}
-                {% set prevMedia = prevPost.data.cover_video or prevPost.data.fti or prevPost.data.image %}
-                {% if prevMedia %}
-                    <a href="{{ prevPost.url }}" class="project-nav-card prev">
-                    <div class="project-bg">
-                        {% if prevPost.data.cover_video %}
-                        <video autoplay muted loop playsinline preload="metadata">
-                            <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
-                        </video>
-                        {% else %}
-                        <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>
-                        {% endif %}
-                    </div>
-                    <div class="project-nav-title"><h2>{{ prevPost.data.title }}</h2></div>
-                    </a>
-                {% endif %}
-                {% endif %}
             
                 {% if nextPost %}
                 {% set nextMedia = nextPost.data.cover_video or nextPost.data.fti or nextPost.data.image %}
@@ -271,6 +254,24 @@
                         {% endif %}
                     </div>
                     <div class="project-nav-title"><h2>{{ nextPost.data.title }}</h2></div>
+                    </a>
+                {% endif %}
+                {% endif %}
+
+                {% if prevPost %}
+                {% set prevMedia = prevPost.data.cover_video or prevPost.data.fti or prevPost.data.image %}
+                {% if prevMedia %}
+                    <a href="{{ prevPost.url }}" class="project-nav-card prev">
+                    <div class="project-bg">
+                        {% if prevPost.data.cover_video %}
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
+                        </video>
+                        {% else %}
+                        <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>
+                        {% endif %}
+                    </div>
+                    <div class="project-nav-title"><h2>{{ prevPost.data.title }}</h2></div>
                     </a>
                 {% endif %}
                 {% endif %}
