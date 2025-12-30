@@ -903,6 +903,7 @@ p strong {
 
   border-radius: 0;
   height: 500px;
+  overflow: hidden;
 }
 
 .project-nav-card video,
@@ -917,6 +918,11 @@ p strong {
 .project-nav-card .bg-img {
   background-size: cover;
   background-position: center;
+}
+
+.project-nav-card .bg-img:hover {
+    transform: scale(1.15);
+    transition: 0.15s ease-out;
 }
 
 .project-nav-title {
