@@ -884,7 +884,7 @@ p strong {
     transform: translateX(-50%);
     // padding: 3rem 35px 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 5rem 0;
 
     padding: 0;
@@ -1129,13 +1129,25 @@ p strong {
 
 .project-nav-card video,
 .project-nav-card .bg-img {
-    height: 35vh;
-    min-height: 550px;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
+
+.project-nav-card .project-bg {
+    width: 50%;
+    height: 100%;
+}
+
 
 .project-nav-card .bg-img {
   background-size: cover;
   background-position: center;
+}
+
+.project-nav-title {
+    width: 50%;
+    background: unset;
 }
     
 }
