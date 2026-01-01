@@ -886,6 +886,7 @@ p strong {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 5rem 0;
+    padding: 3rem 35px 1rem;
 
     padding: 0;
     gap: 0;
@@ -901,6 +902,11 @@ p strong {
   justify-content: center;
   align-items: center;
   border-radius: 0;
+}
+
+.project-nav-card:first-child {
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
 }
 
 .project-nav-card video,
