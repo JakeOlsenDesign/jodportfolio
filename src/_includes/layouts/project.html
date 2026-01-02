@@ -253,7 +253,7 @@
                             <a href="{{ post.url }}" class="readmore">VIEW PROJECT</a>
                         </div>
 
-                        <a href="{{ post.url }}" class="project-bg">
+                        <a href="{{ nextPost.url }}" class="project-bg">
                             {% if nextPost.data.cover_video %}
                             <video autoplay muted loop playsinline preload="metadata">
                                 <source src="{{ nextPost.data.cover_video }}" type="video/mp4">
@@ -279,7 +279,7 @@
                             <a href="{{ post.url }}" class="readmore">VIEW PROJECT</a>
                         </div>
 
-                        <a href="{{ post.url }}" class="project-bg">
+                        <a href="{{ prevPost.url }}" class="project-bg">
                             {% if prevPost.data.cover_video %}
                             <video autoplay muted loop playsinline preload="metadata">
                                 <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
