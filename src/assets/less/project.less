@@ -880,15 +880,17 @@ p strong {
 
 .project-nav-container {
     width: 100vw;
+    max-width: 1600px;
+    max-width: 1;
     left: 50%;
     position: relative;
     transform: translateX(-50%);
     // padding: 3rem 35px 1rem;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 5rem 0;
     padding: 3rem 35px 1rem;
-    gap: 0;
+    gap: 5rem;
 }
 
 .project-nav-card {
@@ -902,6 +904,9 @@ p strong {
   align-items: center;
   border-radius: 0;
   transition: 0.3s ease-out;
+
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
 }
 
 .project-nav-card:first-child {
@@ -963,6 +968,7 @@ p strong {
     font-size: clamp(24px, 60px, 4vw);
     font-weight: 500;
     width: 100%;
+    line-height: 1.2;
 }
 
 .project-nav-title a {
