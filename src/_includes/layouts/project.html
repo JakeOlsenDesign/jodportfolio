@@ -255,8 +255,9 @@
 
                         <a href="{{ nextPost.url }}" class="project-bg">
                             {% if nextPost.data.cover_video %}
-                            <video autoplay muted loop playsinline preload="metadata">
-                                <source src="{{ nextPost.data.cover_video }}" type="video/mp4">
+                            {% set nextPoster = nextPost.data.fti or nextPost.data.image or nextPost.data.bg or nextPost.data.fi %}
+                            <video autoplay muted loop playsinline preload="metadata"{% if nextPoster %} poster="{{ nextPoster }}"{% endif %}>
+                                <source src="{{ nextPost.data.cover_video }}" type="video/webm">
                             </video>
                             {% else %}
                             <div class="bg-img" style="background-image:url('{{ nextMedia }}')"></div>
@@ -281,8 +282,9 @@
 
                         <a href="{{ prevPost.url }}" class="project-bg">
                             {% if prevPost.data.cover_video %}
-                            <video autoplay muted loop playsinline preload="metadata">
-                                <source src="{{ prevPost.data.cover_video }}" type="video/mp4">
+                            {% set prevPoster = prevPost.data.fti or prevPost.data.image or prevPost.data.bg or prevPost.data.fi %}
+                            <video autoplay muted loop playsinline preload="metadata"{% if prevPoster %} poster="{{ prevPoster }}"{% endif %}>
+                                <source src="{{ prevPost.data.cover_video }}" type="video/webm">
                             </video>
                             {% else %}
                             <div class="bg-img" style="background-image:url('{{ prevMedia }}')"></div>

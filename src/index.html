@@ -168,8 +168,8 @@ eleventyNavigation:
                                 {% if media_type == "Video" and cover_video %}
                                     <div class="blog-mainMedia intro-image">
                                         <a href="{{ post.url }}">
-                                            <video autoplay muted loop playsinline preload="metadata">
-                                                <source src="{{ cover_video }}" type="video/mp4">
+                                            <video autoplay muted loop playsinline preload="metadata"{% if fti %} poster="{{ fti }}"{% endif %}>
+                                                <source src="{{ cover_video }}" type="video/webm">
                                             </video>
                                         </a>
                                     </div>

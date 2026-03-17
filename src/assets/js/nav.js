@@ -292,6 +292,15 @@ document.addEventListener('DOMContentLoaded', function () {
 // });
 
 
+// MOBILE AUTOPLAY FIX
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('video[autoplay]').forEach(video => {
+    video.play().catch(() => {
+      // Autoplay blocked — poster image will show as fallback
+    });
+  });
+});
+
 // CUSTOM VIDEO PLAYER
 
 document.addEventListener("DOMContentLoaded", function () {
