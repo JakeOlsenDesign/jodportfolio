@@ -1,4 +1,6 @@
 .vscode
 .cache
+.claude/
+.DS_Store
 node_modules
 public
